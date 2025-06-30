@@ -1,0 +1,148 @@
+{
+    "window.commandCenter": true,
+    "github.copilot.enable": {
+        "quarto": false,
+        "*": false,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false,
+        "cpp": false,
+        "python": false
+    },
+    "update.showReleaseNotes": false,
+    "vim.vimrc.enable": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.workspaceFolder": "/Users/gotokenichiro/.leetcode",
+    "markdown.preview.fontSize": 12,
+    "editor.fontSize": 12.4,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "explorer.confirmDragAndDrop": false,
+    "editor.minimap.autohide": true,
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "files.autoSaveDelay": 100,
+    "files.insertFinalNewline": true,
+    "notebook.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "[plaintext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "files.insertFinalNewline": false
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "ruff.enable": true,
+    "ruff.organizeImports": true,
+    "markdown.preview.openMarkdownLinks": "inEditor",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "go.toolsManagement.autoUpdate": true,
+    "editor.accessibilitySupport": "on",
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "is:open assignee:${user} repo:${owner}/${repository}",
+            "groupBy": [
+                "milestone"
+            ]
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "accessibility.signalOptions.volume": 0,
+    "[typst]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "[typst-code]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "makefile.configureOnOpen": true,
+    "github.copilot.editor.enableAutoCompletions": false,
+    "cursor.cpp.disabledLanguages": [
+        "scminput",
+        "quarto",
+        "cpp",
+        "plaintext",
+        "python"
+    ],
+    "rust-analyzer.workspace.discoverConfig": null,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontFamily": "'UDEV Gothic LG', 'JetBrains Mono', 'Source Code Pro', 'Geist Mono', monospace",
+    "editor.fontWeight": "normal",
+    "diffEditor.renderSideBySide": true,
+    "roo-cline.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "MATLAB.installPath": "/Applications/MATLAB_R2024b.app",
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "docker-desktop"
+    ],
+    "git.autofetch": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "background.fullscreen": {
+        "images": ["https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/04/23/59155606/003418fb427e744e39cc2eb75de361c0_8944167051788124028.png?x-oss-process=image%2Fformat%2Cwebp"],    
+        "opacity": 0.12,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    },
+    "background.editor": {
+        "useFront": true,
+        "style": {
+            "background-position": "100% 100%",
+            "background-size": "auto",
+            "opacity": 0.6
+        },
+        "styles": [
+            {},
+            {},
+            {}
+        ],
+        "interval": 0,
+        "random": false
+    },
+    "background.enabled": false,
+    "workbench.colorTheme": "Monokai",
+    "python.languageServer": "Default",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true
+    },
+    "explorer.confirmPasteNative": false,
+    "editor.lineNumbers": "relative",
+    "vim.neovimPath": "/opt/homebrew/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua"
+}

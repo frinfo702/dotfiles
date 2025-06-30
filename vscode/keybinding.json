@@ -1,0 +1,111 @@
+[
+    {
+        "key": "F5",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cd ${fileDirname} && g++ -std=gnu++17 ${file} \n ./a.out \n"
+        }
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    // lazyvim like setting
+    {
+        "key": "shift+k",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && !sideBarFocus  && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && !sideBarFocus && vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "Enter",
+        "command": "list.toggleExpand",
+        "when": "explorerViewletFocus && explorerViewletVisible && explorerResourceIsFolder && !inputFocus"
+    },
+    // ファイルの時は"Enter" or "o"で同一タブで表示
+    {
+        "key": "Enter",
+        "command": "list.select",
+        "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    // "s"で別ウィンドウで開く
+    {
+        "key": "s",
+        "command": "explorer.openToSide",
+        "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    // --- ファイルシステム系 ---
+    // explorer: toggle
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "workbench.explorer.fileView.focus",
+        "when": "!filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus"
+    },
+    // explorer: open
+    {
+        "key": "Enter",
+        "command": "macros.selectAndToggleSidebar",
+        "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "t",
+        "command": "macros.selectAndToggleSidebar",
+        "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    // explorer: move
+    {
+        "key": "Enter",
+        "command": "list.toggleExpand",
+        "when": "explorerViewletFocus && explorerViewletVisible && explorerResourceIsFolder && !inputFocus"
+    },
+    // explorer: rename
+    {
+        "key": "space r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // explorer: copy
+    {
+        "key": "space c",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // explorer: paste
+    {
+        "key": "space p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // explorer: new file
+    {
+        "key": "space a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // explorer: delete file
+    {
+        "key": "space d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // explorer: new folder
+    {
+        "key": "space f",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    }
+]
