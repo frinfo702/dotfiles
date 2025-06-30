@@ -107,5 +107,17 @@
         "key": "space f",
         "command": "explorer.newFolder",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "g p",
+        "command": "workbench.action.goBack",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'",
+        "args": {}
+    },
+    {
+        "key": "g n", // 参考：進む(Next)のキーとして g+n を設定
+        "command": "workbench.action.goForward",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'",
+        "args": {}
     }
 ]
