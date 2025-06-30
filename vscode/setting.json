@@ -144,5 +144,15 @@
     "explorer.confirmPasteNative": false,
     "editor.lineNumbers": "relative",
     "vim.neovimPath": "/opt/homebrew/bin/nvim",
-    "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua"
+    "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua",
+    "vim.normalModeKeyBindings": [
+    {
+        "before": ["g", "p"],
+        "after": ["<C-o>"]
+    },
+    {
+        "before": ["g", "n"], // 参考: 「進む」を g+n に割り当て
+        "after": ["<C-i>"]
+    }
+]
 }
