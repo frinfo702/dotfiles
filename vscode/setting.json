@@ -133,7 +133,7 @@
     },
     "background.enabled": false,
     "workbench.colorTheme": "Monokai",
-    "python.languageServer": "Default",
+    "python.languageServer": "None",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -145,14 +145,17 @@
     "editor.lineNumbers": "relative",
     "vim.neovimPath": "/opt/homebrew/bin/nvim",
     "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua",
-    "vim.normalModeKeyBindings": [
-    {
-        "before": ["g", "p"],
-        "after": ["<C-o>"]
+    "macros.list": {
+        // サイドバーを必ず開き、Explorer を表示してフォーカスを移す
+        "focusExplorerWithSidebar": [
+            "workbench.action.focusSideBar", // 開く＋フォーカス
+            "workbench.view.explorer"        // Explorer パネル表示
+        ]
     },
-    {
-        "before": ["g", "n"], // 参考: 「進む」を g+n に割り当て
-        "after": ["<C-i>"]
-    }
-]
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["g", "p"],
+            "after": ["<C-o>"]
+        }
+    ]
 }
