@@ -17,7 +17,14 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    {
+      "LazyVim/LazyVim",
+      import = "lazyvim.plugins",
+      opts = {
+        colorscheme = "vercel",
+      },
+      version = false, -- 明示的にversionをfalseに設定
+    },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -32,7 +39,7 @@ require("lazy").setup({
   },
   install = { colorscheme = { "tiesen243/vercel.nvim", "habamax" } },
   checker = {
-    enabled = true, -- check for plugin updates periodically
+    enabled = false, -- 一時的にチェッカーを無効化
     notify = false, -- notify on update
   }, -- automatically check for plugin updates
   performance = {
