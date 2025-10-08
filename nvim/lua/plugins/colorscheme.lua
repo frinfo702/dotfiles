@@ -8,6 +8,7 @@ return {
         theme = "dark",
         -- ここに他のオプションを書く場合はコンマを忘れずに
       })
+      vim.cmd.colorscheme("vercel")
     end,
   },
 }
