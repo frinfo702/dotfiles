@@ -10,3 +10,5 @@ require("config.lazy")
 
 -- Neovim起動時にPATHを拡張
 -- vim.env.PATH = vim.env.PATH .. ":/opt/homebrew/bin"
+
+vim.keymap.set("i", "jk", "<Esc>")
