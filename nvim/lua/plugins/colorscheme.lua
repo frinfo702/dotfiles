@@ -1,6 +1,22 @@
 return {
   {
+    "rebelot/kanagawa.nvim",
+    name = "kanagawa",
+    priority = 1000,
+    config = function()
+      require("kanagawa").setup({
+        theme = "dragon", -- select from "wave", "dragon", "lotus"
+        background = {
+          dark = "dragon",
+          light = "lotus",
+        },
+      })
+      vim.cmd.colorscheme("kanagawa")
+    end,
+  },
+  {
     "tiesen243/vercel.nvim",
+    enabled = false,
     lazy = false,
     priority = 1000,
     config = function()
