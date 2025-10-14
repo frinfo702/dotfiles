@@ -5,9 +5,9 @@ return {
     priority = 1000,
     config = function()
       require("kanagawa").setup({
-        theme = "dragon", -- select from "wave", "dragon", "lotus"
+        theme = "wave", -- select from "wave", "dragon", "lotus"
         background = {
-          dark = "dragon",
+          dark = "wave",
           light = "lotus",
         },
       })
