@@ -1,7 +1,18 @@
 return {
   {
-    "Mofiqul/vscode.nvim",
+    "folke/tokyonight.nvim",
     enabled = true,
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = "night",
+      light_style = "day",
+      transparent = false,
+    },
+  },
+  {
+    "Mofiqul/vscode.nvim",
+    enabled = false,
     lazy = false,
     priority = 1000,
     opts = {
@@ -65,6 +76,15 @@ return {
         -- ここに他のオプションを書く場合はコンマを忘れずに
       })
       vim.cmd.colorscheme("vercel")
+    end,
+  },
+  {
+    "dapovich/anysphere.nvim",
+    enabled = false,
+    config = function()
+      require("anysphere").setup({
+        -- your options
+      })
     end,
   },
 }
