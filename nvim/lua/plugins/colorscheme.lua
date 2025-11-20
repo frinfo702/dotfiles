@@ -1,7 +1,31 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      -- colorscheme = "gruvbox-material",
+      colorscheme = "oxocarbon",
+    },
+  },
+  {
+    "sainnhe/gruvbox-material",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.gruvbox_material_background = "hard" -- "medium", "soft", "hard"
+      vim.g.gruvbox_material_foreground = "material"
+      vim.cmd.colorscheme("gruvbox-material")
+    end,
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("oxocarbon")
+    end,
+  },
+  {
     "folke/tokyonight.nvim",
-    enabled = true,
     lazy = false,
     priority = 1000,
     opts = {
@@ -12,7 +36,6 @@ return {
   },
   {
     "Mofiqul/vscode.nvim",
-    enabled = false,
     lazy = false,
     priority = 1000,
     opts = {
@@ -43,7 +66,6 @@ return {
   },
   {
     "rose-pine/neovim",
-    enabled = false,
     name = "rose-pine",
     config = function()
       vim.cmd("colorscheme rose-pine")
@@ -51,12 +73,11 @@ return {
   },
   {
     "rebelot/kanagawa.nvim",
-    enabled = false,
     name = "kanagawa",
     priority = 1000,
     config = function()
       require("kanagawa").setup({
-        theme = "wave", -- select from "wave", "dragon", "lotus"
+        theme = "dragon", -- select from "wave", "dragon", "lotus"
         background = {
           dark = "wave",
           light = "lotus",
@@ -67,7 +88,6 @@ return {
   },
   {
     "tiesen243/vercel.nvim",
-    enabled = false,
     lazy = false,
     priority = 1000,
     config = function()
@@ -80,7 +100,6 @@ return {
   },
   {
     "dapovich/anysphere.nvim",
-    enabled = false,
     config = function()
       require("anysphere").setup({
         -- your options
