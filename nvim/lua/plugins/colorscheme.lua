@@ -2,8 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "gruvbox-material",
-      colorscheme = "oxocarbon",
+      colorscheme = "black",
     },
   },
   {
@@ -13,16 +12,13 @@ return {
     config = function()
       vim.g.gruvbox_material_background = "hard" -- "medium", "soft", "hard"
       vim.g.gruvbox_material_foreground = "material"
-      vim.cmd.colorscheme("gruvbox-material")
     end,
   },
   {
     "nyoom-engineering/oxocarbon.nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-      vim.cmd.colorscheme("oxocarbon")
-    end,
+    config = function() end,
   },
   {
     "folke/tokyonight.nvim",
@@ -61,16 +57,14 @@ return {
         opts.group_overrides = opts.group_overrides(c)
       end
       vs.setup(opts)
-      vim.cmd.colorscheme("vscode")
     end,
   },
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    config = function()
-      vim.cmd("colorscheme rose-pine")
-    end,
-  },
+  -- {
+  --   "rose-pine/neovim",
+  --   name = "rose-pine",
+  --   config = function()
+  --   end,
+  -- },
   {
     "rebelot/kanagawa.nvim",
     name = "kanagawa",
@@ -83,7 +77,6 @@ return {
           light = "lotus",
         },
       })
-      vim.cmd.colorscheme("kanagawa")
     end,
   },
   {
@@ -95,15 +88,23 @@ return {
         theme = "dark",
         -- ここに他のオプションを書く場合はコンマを忘れずに
       })
-      vim.cmd.colorscheme("vercel")
     end,
   },
+  -- {
+  --   "dapovich/anysphere.nvim",
+  --   config = function()
+  --     require("anysphere").setup({
+  --       -- your options
+  --     })
+  --   end,
+  -- },
   {
-    "dapovich/anysphere.nvim",
-    config = function()
-      require("anysphere").setup({
-        -- your options
-      })
-    end,
+    { "alexanderbluhm/black.nvim" },
+    {
+      "LazyVim/LazyVim",
+      opts = {
+        colorscheme = "black",
+      },
+    },
   },
 }
