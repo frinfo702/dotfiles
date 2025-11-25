@@ -12,5 +12,5 @@ require("config.lazy")
 -- vim.env.PATH = vim.env.PATH .. ":/opt/homebrew/bin"
 
 vim.keymap.set("i", "jk", "<Esc>")
-vim.keymap.set("i", "j", "gj")
-vim.keymap.set("i", "k", "gk")
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
