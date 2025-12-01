@@ -55,7 +55,7 @@ return {
       end
 
       -- actually register (needed if user disabled automatic lspconfig setup)
-      lspconfig.ruff_lsp.setup(opts.servers.ruff_lsp)
+      lspconfig.ruff.setup(opts.servers.ruff_lsp)
       lspconfig.pyright.setup(opts.servers.pyright)
     end,
   },
