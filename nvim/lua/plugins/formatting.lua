@@ -18,6 +18,9 @@ return {
         lua = { "stylua" },
         python = { "ruff_format" },
         rust = { "rustfmt" },
+        c = { "clang-format" },
+        cpp = { "clang-format" },
+
         ["_"] = { "trim_whitespace" },
       },
 
