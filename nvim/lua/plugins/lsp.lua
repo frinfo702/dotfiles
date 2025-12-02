@@ -1,5 +1,4 @@
 return {
-  --  mason: installer
   {
     "williamboman/mason.nvim",
     cmd = "Mason",
@@ -7,7 +6,6 @@ return {
     opts = {},
   },
 
-  -- LSP config
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -16,15 +14,28 @@ return {
       "hrsh7th/cmp-nvim-lsp",
     },
     config = function()
+      vim.api.nvim_create_autocmd("LspAttach", {
+        group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+        callback = function(ev)
+          local opts = { buffer = ev.buf, silent = true }
+          vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<cr>", opts)
+          vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<cr>", opts)
+          vim.keymap.set("n", "gp", "<C-o>", opts)
+          vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references<cr>", opts)
+          vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+          vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+        end,
+      })
+
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
-          "pyright", -- Python type checker
-          "ruff", -- Python Linter/Formatter
-          "clangd", -- C++
+          "pyright",
+          "ruff",
+          "clangd",
         },
         handlers = {
           function(server_name)
@@ -32,12 +43,23 @@ return {
               capabilities = capabilities,
             })
           end,
+          ["lua_ls"] = function()
+            lspconfig.lua_ls.setup({
+              capabilities = capabilities,
+              settings = {
+                Lua = {
+                  diagnostics = {
+                    globals = { "vim" },
+                  },
+                },
+              },
+            })
+          end,
         },
       })
     end,
   },
 
-  -- completion
   {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
@@ -75,4 +97,4 @@ return {
       })
     end,
   },
-}
+
