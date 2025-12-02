@@ -20,6 +20,7 @@ return {
         rust = { "rustfmt" },
         c = { "clang-format" },
         cpp = { "clang-format" },
+        scala = { "scalafmt" },
 
         ["_"] = { "trim_whitespace" },
       },

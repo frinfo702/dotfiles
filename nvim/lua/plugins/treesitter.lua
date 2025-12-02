@@ -6,11 +6,23 @@ return {
     config = function()
       require("nvim-treesitter.configs").setup({
         ensure_installed = {
-            "bash", "c", "cpp", "lua", "python", "rust", "scala", "vim", "vimdoc", "markdown", "zig", "go"
+          "bash",
+          "c",
+          "cpp",
+          "lua",
+          "python",
+          "rust",
+          "scala",
+          "vim",
+          "vimdoc",
+          "markdown",
+          "zig",
+          "go",
+          "scala",
         },
         highlight = { enable = true }, -- enable highlighting
-        indent = { enable = true },    -- enable event
+        indent = { enable = true }, -- enable event
       })
     end,
-  }
+  },
 }
