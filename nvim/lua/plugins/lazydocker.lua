@@ -4,7 +4,6 @@ return {
     version = "*",
     opts = {
       size = 20,
-      open_mapping = [[<leader>do]],
       direction = "float",
       float_opts = {
         border = "rounded",
