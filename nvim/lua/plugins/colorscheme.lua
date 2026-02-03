@@ -16,4 +16,5 @@ return {
   { "tiesen243/vercel.nvim", name = "vercel" },
   { "dapovich/anysphere.nvim", name = "anysphere" },
   { "alexanderbluhm/black.nvim", name = "black" },
+  { "datsfilipe/vesper.nvim", name = "vesper" }
 }

@@ -13,8 +13,6 @@ return {
 
   { "nyoom-engineering/oxocarbon.nvim", priority = 1000 },
   { "folke/tokyonight.nvim", priority = 1000 },
-  { "rebelot/kanagawa.nvim", priority = 1000 },
-
   {
     "dapovich/anysphere.nvim",
     priority = 1000,

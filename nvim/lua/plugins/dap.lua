@@ -5,6 +5,8 @@ return {
       "rcarriga/nvim-dap-ui",
       "nvim-neotest/nvim-nio",
       "jay-babu/mason-nvim-dap.nvim",
+      "mfussenegger/nvim-dap-python",
+      "leoluz/nvim-dap-go",
     },
     keys = {
       {
@@ -60,15 +62,40 @@ return {
         dapui.close()
       end
 
-      require("mason-nvim-dap").setup({
-        ensure_installed = { "codelldb" },
+      local mason_nvim_dap = require("mason-nvim-dap")
+      local registry = require("mason-registry")
+
+      mason_nvim_dap.setup({
+        ensure_installed = { "codelldb", "python", "delve" },
         automatic_installation = true,
         handlers = {
           function(config)
-            require("mason-nvim-dap").default_setup(config)
+            mason_nvim_dap.default_setup(config)
+          end,
+          python = function(config)
+            mason_nvim_dap.default_setup(config)
+
+            local ok, dap_python = pcall(require, "dap-python")
+            if not ok then
+              return
+            end
+
+            local success, debugpy = pcall(registry.get_package, "debugpy")
+            if not success then
+              return
+            end
+
+            local install_path = debugpy:get_install_path()
+            local python_path = install_path .. "/venv/bin/python"
+            dap_python.setup(python_path)
           end,
         },
       })
+
+      local ok, dap_go = pcall(require, "dap-go")
+      if ok then
+        dap_go.setup()
+      end
 
       --------------------------------------
       --- clang
@@ -90,6 +117,19 @@ return {
       --- c++
       --------------------------------------
       dap.configurations.cpp = dap.configurations.c
+
+      --------------------------------------
+      --- python
+      --------------------------------------
+      dap.configurations.python = dap.configurations.python or {
+        {
+          type = "python",
+          request = "launch",
+          name = "Launch file",
+          program = "${file}",
+          justMyCode = false,
+        },
+      }
     end,
   },
 }
