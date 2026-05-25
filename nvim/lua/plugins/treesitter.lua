@@ -18,7 +18,6 @@ return {
           "markdown",
           "zig",
           "go",
-          "scala",
         },
         highlight = { enable = true }, -- enable highlighting
         indent = { enable = true }, -- enable event
