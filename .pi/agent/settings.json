@@ -1,0 +1,70 @@
+{
+  "lastChangelogVersion": "0.75.5",
+  "defaultProvider": "deepseek",
+  "defaultModel": "deepseek-v4-flash",
+  "defaultThinkingLevel": "xhigh",
+  "hideThinkingBlock": true,
+  "thinkingBudgets": {
+    "minimal": 1024,
+    "low": 4096,
+    "medium": 10240,
+    "high": 32768
+  },
+  "packages": [
+    "npm:pi-subagents",
+    "npm:pi-agent-flow",
+    "npm:pi-kimi-coder",
+    "npm:pi-lsp-extension",
+    "npm:@juicesharp/rpiv-web-tools",
+    "npm:pi-mcp-adapter"
+  ],
+  "modelCycles": [
+    "kimi-coder/kimi-for-coding",
+    "deepseek/deepseek-v4-pro",
+    "deepseek/deepseek-v4-flash"
+  ],
+  "subagents": {
+    "agentOverrides": {
+      "scout": {
+        "model": "deepseek/deepseek-v4-flash",
+        "thinking": "xhigh",
+        "fallbackModels": ["deepseek/deepseek-v4-pro"]
+      },
+      "researcher": {
+        "model": "deepseek/deepseek-v4-pro",
+        "thinking": "xhigh",
+        "fallbackModels": ["kimi-coder/kimi-k2.6"]
+      },
+      "planner": {
+        "model": "kimi-coder/kimi-k2.6",
+        "thinking": "xhigh",
+        "fallbackModels": ["deepseek/deepseek-v4-pro"]
+      },
+      "worker": {
+        "model": "kimi-coder/kimi-for-coding",
+        "thinking": "xhigh",
+        "fallbackModels": ["deepseek/deepseek-v4-pro"]
+      },
+      "reviewer": {
+        "model": "deepseek/deepseek-v4-pro",
+        "thinking": "xhigh",
+        "fallbackModels": ["kimi-coder/kimi-for-coding"]
+      },
+      "context-builder": {
+        "model": "deepseek/deepseek-v4-flash",
+        "thinking": "low",
+        "fallbackModels": ["deepseek/deepseek-v4-pro"]
+      },
+      "oracle": {
+        "model": "deepseek/deepseek-v4-pro",
+        "thinking": "xhigh",
+        "fallbackModels": ["kimi-coder/kimi-k2.6"]
+      },
+      "delegate": {
+        "model": "deepseek/deepseek-v4-flash",
+        "thinking": "low",
+        "fallbackModels": ["deepseek/deepseek-v4-pro"]
+      }
+    }
+  }
+}

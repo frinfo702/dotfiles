@@ -1,0 +1,41 @@
+{
+  "runId": "f0e4b9e7",
+  "agent": "cursor-team-kit.thermo-nuclear-code-quality-review",
+  "task": "",
+  "exitCode": 143,
+  "usage": {
+    "input": 21665,
+    "output": 1808,
+    "cacheRead": 118272,
+    "cacheWrite": 0,
+    "cost": 0.011425971000000002,
+    "turns": 6
+  },
+  "model": "deepseek/deepseek-v4-pro:xhigh",
+  "attemptedModels": [
+    "deepseek/deepseek-v4-pro"
+  ],
+  "modelAttempts": [
+    {
+      "model": "deepseek/deepseek-v4-pro",
+      "success": false,
+      "exitCode": 143,
+      "error": "[pi-agent-flow] Unknown frontmatter key \"package\" in \"/Users/ken702/.pi/agent/agents/ci-watcher.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"is_background\" in \"/Users/ken702/.pi/agent/agents/ci-watcher.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"package\" in \"/Users/ken702/.pi/agent/agents/thermo-nuclear-code-quality-review.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"fallbackModels\" in \"/Users/ken702/.pi/agent/agents/thermo-nuclear-code-quality-review.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"skills\" in \"/Users/ken702/.pi/agent/agents/thermo-nuclear-code-quality-review.md\". This field will be ignored.",
+      "usage": {
+        "input": 21665,
+        "output": 1808,
+        "cacheRead": 118272,
+        "cacheWrite": 0,
+        "cost": 0.011425971000000002,
+        "turns": 6
+      }
+    }
+  ],
+  "durationMs": 42333,
+  "toolCount": 19,
+  "error": "[pi-agent-flow] Unknown frontmatter key \"package\" in \"/Users/ken702/.pi/agent/agents/ci-watcher.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"is_background\" in \"/Users/ken702/.pi/agent/agents/ci-watcher.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"package\" in \"/Users/ken702/.pi/agent/agents/thermo-nuclear-code-quality-review.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"fallbackModels\" in \"/Users/ken702/.pi/agent/agents/thermo-nuclear-code-quality-review.md\". This field will be ignored.\n[pi-agent-flow] Unknown frontmatter key \"skills\" in \"/Users/ken702/.pi/agent/agents/thermo-nuclear-code-quality-review.md\". This field will be ignored.",
+  "skills": [
+    "thermo-nuclear-code-quality-review"
+  ],
+  "timestamp": 1779773478190
+}

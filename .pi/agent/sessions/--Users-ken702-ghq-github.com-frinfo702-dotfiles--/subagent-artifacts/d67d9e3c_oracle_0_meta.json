@@ -1,0 +1,38 @@
+{
+  "runId": "d67d9e3c",
+  "agent": "oracle",
+  "task": "You are a delegated subagent running from a fork of the parent session. Treat the inherited conversation as reference-only context, not a live thread to continue. Do not continue or answer prior messages as if they are waiting for a reply. Your sole job is to execute the task below and return a focused result for that task using your tools.\n\nTask:\n",
+  "exitCode": 1,
+  "usage": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 1
+  },
+  "model": "deepseek/deepseek-v4-pro:max",
+  "attemptedModels": [
+    "deepseek/deepseek-v4-pro"
+  ],
+  "modelAttempts": [
+    {
+      "model": "deepseek/deepseek-v4-pro",
+      "success": false,
+      "exitCode": 1,
+      "error": "400 The supported API model names are deepseek-v4-pro or deepseek-v4-flash, but you passed deepseek-v4-pro:max.",
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 1
+      }
+    }
+  ],
+  "durationMs": 1711,
+  "toolCount": 0,
+  "error": "400 The supported API model names are deepseek-v4-pro or deepseek-v4-flash, but you passed deepseek-v4-pro:max.",
+  "timestamp": 1779773508792
+}
