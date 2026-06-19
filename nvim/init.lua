@@ -8,3 +8,6 @@ end
 require("config.options")
 require("config.keymaps")
 require("config.lazy")
+
+-- Apply the droid-black colorscheme after all dependencies are loaded.
+require("config.colorscheme").setup()

@@ -10,4 +10,5 @@ return {
   { "folke/tokyonight.nvim", priority = 1000 },
   { "rebelot/kanagawa.nvim", priority = 1000 },
   { "Mofiqul/vscode.nvim", priority = 1000 },
+
 }
