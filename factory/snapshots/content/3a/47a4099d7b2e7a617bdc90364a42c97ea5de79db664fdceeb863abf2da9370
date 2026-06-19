@@ -1,0 +1,512 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
+// 3D diffusion model visualization powered by jax-js.
+//
+// Cycles through the generative diffusion process:
+//   1. FORWARD (encode): particles sampled from an image silhouette are
+//      progressively noised toward a pure N(0,1) Gaussian (standard normal),
+//      following a variance-preserving (VP) stochastic differential equation.
+//   2. REVERSE (sample/denoise): the noise is progressively denoised back
+//      toward the image silhouette via the reverse-time SDE.
+//
+// Particles live in 3D: x/y encode silhouette position, z encodes the
+// brightness-driven "elevation". During forward diffusion the VP-SDE
+//
+//   dx = -0.5 * beta(t) * (x - mean) * dt + sqrt(beta(t) * dt) * N(0,1)
+//
+// pulls each particle toward a standard normal distribution, so the structured
+// cloud collapses into an isotropic 3D Gaussian ball. The reverse pass uses
+// the exact ancestral sampler with the score approximated by the known
+// forward marginal mean. All vectorized ops run on jax-js (Wasm backend).
+
+const TAU = Math.PI * 2;
+const N_PARTICLES = 1800;
+const GRID = 70; // sample grid resolution for the silhouette
+const CYCLE_SECONDS = 8; // full forward+reverse cycle duration
+const FORWARD_FRAC = 0.5; // fraction of cycle spent on forward pass
+const ROT_SPEED = 0.12; // camera rotation speed (rad/s)
+
+// VP-SDE schedule: beta(t) = beta_min + (beta_max - beta_min) * t.
+const BETA_MIN = 0.05;
+const BETA_MAX = 2.0;
+
+// Colors.
+const COL_CORE = "hsl(205, 34%, 68%)";
+const COL_HALO = "hsl(205, 26%, 50%)";
+const COL_HOT = "hsl(198, 46%, 80%)";
+const COL_NOISE = "hsl(250, 30%, 70%)";
+
+type JaxArray = import("@jax-js/jax").Array;
+type JaxModule = typeof import("@jax-js/jax");
+
+// Particle target positions sampled from the silhouette (filled into a
+// Float32Array of length N_PARTICLES*3 by the caller).
+async function sampleSilhouettePositions(
+  imgSrc: string,
+  n: number,
+): Promise<Float32Array> {
+  // Load image and rasterize to a small alpha grid.
+  const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+    const im = new Image();
+    im.crossOrigin = "anonymous";
+    im.onload = () => resolve(im);
+    im.onerror = reject;
+    im.src = imgSrc;
+  });
+  const iw = img.naturalWidth || img.width;
+  const ih = img.naturalHeight || img.height;
+  const off = document.createElement("canvas");
+  const ow = GRID;
+  const oh = Math.max(1, Math.round((GRID * ih) / iw));
+  off.width = ow;
+  off.height = oh;
+  const octx = off.getContext("2d", { willReadFrequently: true });
+  if (!octx) throw new Error("no 2d ctx");
+  octx.drawImage(img, 0, 0, ow, oh);
+  const px = octx.getImageData(0, 0, ow, oh).data;
+
+  // Collect filled cells (non-transparent / dark pixels = silhouette).
+  const cells: Array<{ x: number; y: number; w: number }> = [];
+  let totalW = 0;
+  for (let y = 0; y < oh; y++) {
+    for (let x = 0; x < ow; x++) {
+      const idx = (y * ow + x) * 4;
+      const a = px[idx + 3];
+      // silhouette.png is a dark silhouette; treat dark+opaque as filled.
+      const lum = 0.299 * px[idx] + 0.587 * px[idx + 1] + 0.114 * px[idx + 2];
+      const filled = a > 40 && lum < 200;
+      if (filled) {
+        const w = 1 + (200 - lum) / 200; // brighter edges get slightly higher weight
+        cells.push({ x, y, w });
+        totalW += w;
+      }
+    }
+  }
+  if (cells.length === 0) {
+    // Fallback: ring of points.
+    const out = new Float32Array(n * 3);
+    for (let i = 0; i < n; i++) {
+      const ang = (i / n) * TAU;
+      out[i * 3] = Math.cos(ang) * 3;
+      out[i * 3 + 1] = Math.sin(ang) * 3;
+      out[i * 3 + 2] = 0;
+    }
+    return out;
+  }
+
+  // Weighted sampling without replacement (approximate by rejection).
+  const out = new Float32Array(n * 3);
+  const aspect = ih / iw;
+  const scaleX = 8 / ow;
+  const scaleY = (8 * aspect) / oh;
+  for (let i = 0; i < n; i++) {
+    let r = Math.random() * totalW;
+    let chosen = cells[0];
+    for (const c of cells) {
+      r -= c.w;
+      if (r <= 0) {
+        chosen = c;
+        break;
+      }
+    }
+    // Map cell to centered coordinates with slight jitter.
+    const cx = (chosen.x + (Math.random() - 0.5)) * scaleX - 4;
+    const cy = (chosen.y + (Math.random() - 0.5)) * scaleY - 4 * aspect;
+    // z elevation: proportional to edge weight (brightness contrast).
+    const z = (chosen.w - 1) * 1.6 + (Math.random() - 0.5) * 0.3;
+    out[i * 3] = cx;
+    out[i * 3 + 1] = cy;
+    out[i * 3 + 2] = z;
+  }
+  return out;
+}
+
+export default function DiffusionField() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d", { alpha: true });
+    if (!ctx) return;
+
+    let animationId = 0;
+    let disposed = false;
+    let width = 0;
+    let height = 0;
+    let dpr = 1;
+    let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+
+    let jax: JaxModule | null = null;
+    let key: JaxArray | null = null;
+    let X: JaxArray | null = null;
+    let mu0: JaxArray | null = null; // silhouette target positions [N,3]
+    let forwardJit: ((x: JaxArray, mu: JaxArray, noise: JaxArray, beta: number, dt: number) => JaxArray) | null = null;
+    let reverseJit: ((x: JaxArray, mu: JaxArray, noise: JaxArray, beta: number, dt: number) => JaxArray) | null = null;
+    let cycleStart = 0;
+    let phase: "forward" | "reverse" = "forward";
+    let prevScreen: Float32Array | null = null;
+    let frameCount = 0;
+
+    const resize = () => {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = window.innerWidth;
+      height = Math.min(440, Math.max(300, Math.floor(window.innerHeight * 0.44)));
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.fillStyle = "#000000";
+      ctx.fillRect(0, 0, width, height);
+      prevScreen = null;
+    };
+
+    const debouncedResize = () => {
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resize, 180);
+    };
+
+    const betaAt = (t01: number) => BETA_MIN + (BETA_MAX - BETA_MIN) * t01;
+
+    const setupJax = async () => {
+      jax = await import("@jax-js/jax");
+      const np = jax.numpy;
+      const random = jax.random;
+
+      // Use Wasm backend for reliability. WebGPU can produce NaN with
+      // certain operations in headless/automated browsers.
+      // jax.init("webgpu") is intentionally NOT called.
+
+      // Sample silhouette target positions and upload to jax-js.
+      const target = await sampleSilhouettePositions("/silhouette.png", N_PARTICLES);
+      mu0 = np.array(Array.from(target), { dtype: np.float32 }).reshape([N_PARTICLES, 3]);
+
+      key = random.key(20260618);
+      const [k0, k1] = random.split(key, 2);
+      key = k0;
+      // Start from the silhouette (t=0 of forward pass).
+      X = mu0.ref.add(random.normal(k1, [N_PARTICLES, 3]).mul(0.02));
+
+      cycleStart = performance.now();
+
+      // Forward VP-SDE step (toward standard normal).
+      //   dx = -0.5 * beta * (x - 0) * dt + sqrt(beta * dt) * noise
+      // (mean target is 0 = standard normal)
+      // Using raw ops without jit() to avoid move-semantics pitfalls.
+      forwardJit = function fwd(
+        x: JaxArray,
+        _mu: JaxArray,
+        noise: JaxArray,
+        beta: number,
+        dt: number,
+      ): JaxArray {
+        _mu.dispose();
+        const drift = x.ref.neg().mul(0.5 * beta);
+        const diff = Math.sqrt(beta * dt);
+        const dx = drift.mul(dt).add(noise.mul(diff));
+        return x.add(dx);
+      };
+
+      // Reverse-time ancestral sampling step (toward silhouette mean).
+      //   x_{t-dt} = x_t - (x_t - mu) * 0.5 * beta * dt + sqrt(beta*dt) * noise
+      reverseJit = function rev(
+        x: JaxArray,
+        mu: JaxArray,
+        noise: JaxArray,
+        beta: number,
+        dt: number,
+      ): JaxArray {
+        const diff = x.ref.sub(mu);
+        const drift = diff.mul(0.5 * beta);
+        const diffCoeff = Math.sqrt(beta * dt);
+        const dx = drift.mul(dt).add(noise.mul(diffCoeff));
+        return x.sub(dx);
+      };
+    };
+
+    const project = (
+      wx: number,
+      wy: number,
+      wz: number,
+      cosY: number,
+      sinY: number,
+      cosT: number,
+      sinT: number,
+      cx: number,
+      cy: number,
+      scaleBase: number,
+    ) => {
+      const rx = wx * cosY - wz * sinY;
+      const rz = wx * sinY + wz * cosY;
+      const ty = wy * cosT - rz * sinT;
+      const tz = wy * sinT + rz * cosT;
+      const denom = 14 + tz;
+      const scale = scaleBase / (denom > 0.1 ? denom : 0.1);
+      return { sx: cx + rx * scale, sy: cy + ty * scale, depth: tz, scale };
+    };
+
+    const draw = async () => {
+      if (!jax || !X || !key || !mu0 || !forwardJit || !reverseJit) {
+        if (!disposed) animationId = requestAnimationFrame(draw);
+        return;
+      }
+
+      const now = performance.now();
+      let cycT = ((now - cycleStart) / 1000) / CYCLE_SECONDS; // 0..1 within cycle
+      let newPhase: "forward" | "reverse";
+      let t01: number; // 0..1 progress within current phase
+      if (cycT < FORWARD_FRAC) {
+        newPhase = "forward";
+        t01 = cycT / FORWARD_FRAC;
+      } else {
+        newPhase = "reverse";
+        t01 = (cycT - FORWARD_FRAC) / (1 - FORWARD_FRAC);
+      }
+
+      // On phase transition, re-sync state.
+      if (newPhase !== phase) {
+        phase = newPhase;
+        if (phase === "forward") {
+          // Restart from silhouette for a clean forward pass.
+          try { X?.dispose(); } catch { /* ignore */ }
+          const [k0, k1] = jax.random.split(key, 2);
+          key = k0;
+          X = mu0.ref.add(jax.random.normal(k1, [N_PARTICLES, 3]).mul(0.02));
+          cycleStart = now;
+          cycT = 0;
+          t01 = 0;
+        } else {
+          // On entering reverse, snap to a clean pure-noise state so the
+          // denoising visually starts from an isotropic Gaussian.
+          try { X?.dispose(); } catch { /* ignore */ }
+          const [k0, k1] = jax.random.split(key, 2);
+          key = k0;
+          X = jax.random.normal(k1, [N_PARTICLES, 3]);
+          t01 = 0;
+        }
+      }
+
+      // Clamp t01 to [0,1].
+      t01 = Math.max(0, Math.min(1, t01));
+
+      // Number of sub-steps this frame for faster visible diffusion.
+      const SUB = 4;
+      const dtFrame = 1 / (CYCLE_SECONDS * 60 * (phase === "forward" ? FORWARD_FRAC : 1 - FORWARD_FRAC));
+      const beta = betaAt(t01);
+      let ok = true;
+      try {
+        for (let s = 0; s < SUB; s++) {
+          // Generate noise outside jit (random ops inside jit can NaN on WebGPU).
+          const [k1, k2] = jax.random.split(key, 2);
+          key = k1;
+          const noise = jax.random.normal(k2, [N_PARTICLES, 3]);
+          if (phase === "forward") {
+            X = forwardJit(X, mu0.ref, noise, beta, dtFrame);
+          } else {
+            X = reverseJit(X, mu0.ref, noise, beta, dtFrame);
+          }
+        }
+      } catch {
+        ok = false;
+      }
+      if (!ok) {
+        if (!disposed) animationId = requestAnimationFrame(draw);
+        return;
+      }
+
+      const data = await X.data();
+      const pos = data as Float32Array;
+      frameCount++;
+      if (frameCount % 30 === 0) {
+        console.log("[DF] frame", frameCount, "phase", phase, "t01", t01.toFixed(3), "pos[0]", pos[0].toFixed(3), pos[1].toFixed(3), pos[2].toFixed(3));
+      }
+
+      // Fade prior frame for motion trails (stronger fade = less ghosting).
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "rgba(0, 0, 0, 0.55)";
+      ctx.fillRect(0, 0, width, height);
+
+      const cx = width / 2;
+      const cy = height / 2;
+      const rotY = now * 0.001 * ROT_SPEED * TAU + 0.4;
+      const cosY = Math.cos(rotY);
+      const sinY = Math.sin(rotY);
+      const tilt = -0.32;
+      const cosT = Math.cos(tilt);
+      const sinT = Math.sin(tilt);
+      const scaleBase = Math.min(width, height * 1.8) * 0.11;
+
+      // Noise factor: 0 at silhouette, 1 at pure gaussian.
+      const noiseFactor = phase === "forward" ? t01 : 1 - t01;
+
+      type Item = {
+        sx: number;
+        sy: number;
+        r: number;
+        a: number;
+        depth: number;
+        psx: number;
+        psy: number;
+        hot: boolean;
+      };
+      const items: Item[] = [];
+      const prev = prevScreen;
+
+      for (let i = 0; i < N_PARTICLES; i++) {
+        const p = project(
+          pos[i * 3],
+          pos[i * 3 + 1],
+          pos[i * 3 + 2],
+          cosY,
+          sinY,
+          cosT,
+          sinT,
+          cx,
+          cy,
+          scaleBase,
+        );
+        const depthFade = 1 - Math.min(1, Math.max(0, (p.depth - 2) / 12)) * 0.6;
+        const r = Math.max(0.45, 1.1 + p.scale * 0.04);
+        items.push({
+          sx: p.sx,
+          sy: p.sy,
+          r,
+          a: depthFade,
+          depth: p.depth,
+          psx: prev ? prev[i * 2] : p.sx,
+          psy: prev ? prev[i * 2 + 1] : p.sy,
+          hot: (i * 7 + Math.floor(now / 200)) % 31 === 0,
+        });
+      }
+
+      // Sort back-to-front by depth.
+      items.sort((a, b) => b.depth - a.depth);
+
+      const coreCol = noiseFactor > 0.55 ? COL_NOISE : COL_CORE;
+      for (const it of items) {
+        // Streak from previous to current position.
+        if (prev && (Math.abs(it.sx - it.psx) > 0.3 || Math.abs(it.sy - it.psy) > 0.3)) {
+          ctx.globalAlpha = it.a * 0.3;
+          ctx.strokeStyle = COL_HALO;
+          ctx.lineWidth = it.r * 0.8;
+          ctx.beginPath();
+          ctx.moveTo(it.psx, it.psy);
+          ctx.lineTo(it.sx, it.sy);
+          ctx.stroke();
+        }
+        // Halo.
+        ctx.globalAlpha = it.a * 0.16;
+        ctx.fillStyle = COL_HALO;
+        ctx.beginPath();
+        ctx.arc(it.sx, it.sy, it.r * 2.6, 0, TAU);
+        ctx.fill();
+        // Core.
+        ctx.globalAlpha = it.a * 0.85;
+        ctx.fillStyle = coreCol;
+        ctx.beginPath();
+        ctx.arc(it.sx, it.sy, it.r, 0, TAU);
+        ctx.fill();
+        // Hot sparkle.
+        if (it.hot) {
+          ctx.globalAlpha = it.a * 0.7;
+          ctx.fillStyle = COL_HOT;
+          ctx.beginPath();
+          ctx.arc(it.sx, it.sy, it.r * 0.65, 0, TAU);
+          ctx.fill();
+        }
+      }
+
+      // Phase label (subtle, top-left).
+      ctx.globalAlpha = 0.5;
+      ctx.fillStyle = "#737373";
+      ctx.font = "11px ui-monospace, monospace";
+      ctx.textBaseline = "top";
+      const label =
+        phase === "forward"
+          ? `forward  q(x_t | x_0)   t=${t01.toFixed(2)}`
+          : `reverse  p(x_{t-Δ} | x_t)  t=${(1 - t01).toFixed(2)}`;
+      ctx.fillText(label, 16, 14);
+      // Progress bar.
+      ctx.globalAlpha = 0.4;
+      ctx.fillStyle = "#525252";
+      ctx.fillRect(16, 32, 120, 2);
+      ctx.globalAlpha = 0.8;
+      ctx.fillStyle = phase === "forward" ? COL_CORE : COL_HOT;
+      ctx.fillRect(16, 32, Math.round(120 * t01), 2);
+
+      // Store projected positions for next frame's streaks (index order).
+      if (!prevScreen || prevScreen.length !== N_PARTICLES * 2) {
+        prevScreen = new Float32Array(N_PARTICLES * 2);
+      }
+      for (let i = 0; i < N_PARTICLES; i++) {
+        const p = project(
+          pos[i * 3],
+          pos[i * 3 + 1],
+          pos[i * 3 + 2],
+          cosY,
+          sinY,
+          cosT,
+          sinT,
+          cx,
+          cy,
+          scaleBase,
+        );
+        prevScreen[i * 2] = p.sx;
+        prevScreen[i * 2 + 1] = p.sy;
+      }
+
+      ctx.globalAlpha = 1;
+      if (!disposed) animationId = requestAnimationFrame(draw);
+    };
+
+    resize();
+    window.addEventListener("resize", debouncedResize);
+
+    setupJax()
+      .then(() => {
+        if (!disposed) animationId = requestAnimationFrame(draw);
+      })
+      .catch((err) => {
+        console.warn("DiffusionField: jax-js init failed, rendering fallback.", err);
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, width, height);
+        const g = ctx.createRadialGradient(
+          width / 2,
+          height / 2,
+          0,
+          width / 2,
+          height / 2,
+          Math.max(width, height) * 0.7,
+        );
+        g.addColorStop(0, "rgba(40, 70, 110, 0.45)");
+        g.addColorStop(1, "rgba(0, 0, 0, 0)");
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, width, height);
+      });
+
+    return () => {
+      disposed = true;
+      window.removeEventListener("resize", debouncedResize);
+      if (resizeTimer) clearTimeout(resizeTimer);
+      cancelAnimationFrame(animationId);
+      try {
+        X?.dispose();
+        key?.dispose();
+        mu0?.dispose();
+      } catch {
+        // ignore
+      }
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      aria-hidden="true"
+      className="pointer-events-none fixed inset-x-0 top-0 z-0 block"
+    />
+  );
+}

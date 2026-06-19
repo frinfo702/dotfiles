@@ -1,0 +1,28 @@
+{
+  "assistantActiveTimeMs": 0,
+  "model": "custom:OpenCode-Go---DeepSeek-V4-Pro-9",
+  "reasoningEffort": "max",
+  "interactionMode": "auto",
+  "autonomyLevel": "high",
+  "autonomyMode": "auto-high",
+  "specModeModel": "custom:OpenCode-Go---DeepSeek-V4-Pro-9",
+  "specModeReasoningEffort": "max",
+  "compactionThresholdCheckEnabled": true,
+  "tokenUsage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 0,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "childInclusiveTokenUsageBySessionId": {},
+  "inclusiveTokenUsage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 0,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  }
+}

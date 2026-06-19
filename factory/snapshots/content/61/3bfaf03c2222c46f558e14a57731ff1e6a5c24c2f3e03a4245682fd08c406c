@@ -1,0 +1,55 @@
+{
+  "paragraph": "The water cycle describes the continuous movement of water throughout Earth's systems. Water evaporates from oceans and lakes, rises into the atmosphere, and condenses into cloud formations. Precipitation returns water to the surface, where it flows across the land or filters underground. This endless circulation is essential for sustaining both aquatic and terrestrial ecosystems.",
+  "items": [
+    {
+      "index": 0,
+      "hint": "con",
+      "answer": "continuous"
+    },
+    {
+      "index": 1,
+      "hint": "thro",
+      "answer": "throughout"
+    },
+    {
+      "index": 2,
+      "hint": "eva",
+      "answer": "evaporates"
+    },
+    {
+      "index": 3,
+      "hint": "atmo",
+      "answer": "atmosphere"
+    },
+    {
+      "index": 4,
+      "hint": "con",
+      "answer": "condenses"
+    },
+    {
+      "index": 5,
+      "hint": "Pre",
+      "answer": "Precipitation"
+    },
+    {
+      "index": 6,
+      "hint": "fil",
+      "answer": "filters"
+    },
+    {
+      "index": 7,
+      "hint": "cir",
+      "answer": "circulation"
+    },
+    {
+      "index": 8,
+      "hint": "sus",
+      "answer": "sustaining"
+    },
+    {
+      "index": 9,
+      "hint": "aqu",
+      "answer": "aquatic"
+    }
+  ]
+}

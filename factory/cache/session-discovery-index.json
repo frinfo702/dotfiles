@@ -1,0 +1,431 @@
+{
+  "version": 1,
+  "sessionsDir": "/Users/ken702/.factory/sessions",
+  "updatedAt": 1781770599558,
+  "projectDirectories": [],
+  "directories": {},
+  "entries": {
+    "9b3c1e02-1553-4784-b85b-93b8192c7a7c": {
+      "id": "9b3c1e02-1553-4784-b85b-93b8192c7a7c",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702/9b3c1e02-1553-4784-b85b-93b8192c7a7c.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702",
+      "title": "hi",
+      "sessionTitle": "User says hello",
+      "owner": "ken702",
+      "messageCount": 3,
+      "modifiedTimeMs": 1781686099637,
+      "createdTimeMs": 1781685359658,
+      "cwd": "/Users/ken702",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781686099637,
+        "size": 16564
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781686099593,
+        "size": 832
+      }
+    },
+    "b36761fe-0210-4b42-832a-f45ec8f41bbe": {
+      "id": "b36761fe-0210-4b42-832a-f45ec8f41bbe",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702/b36761fe-0210-4b42-832a-f45ec8f41bbe.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702",
+      "title": "hi",
+      "sessionTitle": "Initial Greeting and Assistance Request",
+      "owner": "ken702",
+      "messageCount": 2,
+      "modifiedTimeMs": 1781686132084,
+      "createdTimeMs": 1781686091206,
+      "cwd": "/Users/ken702",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781686132084,
+        "size": 15781
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781686132044,
+        "size": 805
+      }
+    },
+    "49c3e61f-10d4-4e00-9011-e2e64679d7f0": {
+      "id": "49c3e61f-10d4-4e00-9011-e2e64679d7f0",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702/49c3e61f-10d4-4e00-9011-e2e64679d7f0.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702",
+      "title": "ひ",
+      "sessionTitle": "Single hiragana character input",
+      "owner": "ken702",
+      "messageCount": 6,
+      "modifiedTimeMs": 1781686424871,
+      "createdTimeMs": 1781686130701,
+      "cwd": "/Users/ken702",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781686424871,
+        "size": 19021
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781686424832,
+        "size": 816
+      }
+    },
+    "c8b466ba-dbbb-43a9-bfc2-92bee0a17359": {
+      "id": "c8b466ba-dbbb-43a9-bfc2-92bee0a17359",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702/c8b466ba-dbbb-43a9-bfc2-92bee0a17359.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702",
+      "title": "uyu",
+      "sessionTitle": "General software engineering assistance",
+      "owner": "ken702",
+      "messageCount": 6,
+      "modifiedTimeMs": 1781687345238,
+      "createdTimeMs": 1781686399657,
+      "cwd": "/Users/ken702",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781687345238,
+        "size": 18707
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781687345198,
+        "size": 810
+      }
+    },
+    "218dd382-f444-40e6-a9a2-71865a2f7aec": {
+      "id": "218dd382-f444-40e6-a9a2-71865a2f7aec",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-mizushi-zensical/218dd382-f444-40e6-a9a2-71865a2f7aec.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-mizushi-zensical",
+      "title": "死んでいるドキュメントを探して。AIに書かせたので不要な情報が多すぎると思っている",
+      "sessionTitle": "Find dead AI-generated documentation",
+      "owner": "ken702",
+      "messageCount": 5,
+      "modifiedTimeMs": 1781688323717,
+      "createdTimeMs": 1781688262849,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/mizushi-zensical",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781688323717,
+        "size": 23048
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781688323679,
+        "size": 852
+      }
+    },
+    "8e598119-5a0a-4d10-b83d-82d060f6c3e3": {
+      "id": "8e598119-5a0a-4d10-b83d-82d060f6c3e3",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-english-test-generator/8e598119-5a0a-4d10-b83d-82d060f6c3e3.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-english-test-generator",
+      "title": "Skill \"wiki\" activated",
+      "sessionTitle": "Wiki skill activated",
+      "owner": "ken702",
+      "messageCount": 81,
+      "modifiedTimeMs": 1781698672957,
+      "createdTimeMs": 1781698149455,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781698672957,
+        "size": 376665
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781698672916,
+        "size": 1804
+      }
+    },
+    "52002308-599b-4ce1-a216-ceb90d140ac0": {
+      "id": "52002308-599b-4ce1-a216-ceb90d140ac0",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-mizushi-zensical/52002308-599b-4ce1-a216-ceb90d140ac0.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-mizushi-zensical",
+      "title": "docs/ 直下のフォルダのそれぞれについて、README.mdに、zensical docのcard gridを使って、その配下のフォルダやファイルが分かるようにして。アイコンも適切なやつを探して選んで",
+      "sessionTitle": "Update docs READMEs with Zensical card grids",
+      "owner": "ken702",
+      "messageCount": 6,
+      "modifiedTimeMs": 1781706641446,
+      "createdTimeMs": 1781706534222,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/mizushi-zensical",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781706641446,
+        "size": 76523
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781706641408,
+        "size": 856
+      }
+    },
+    "0a1920ad-7979-4189-9b22-8257993ef91f": {
+      "id": "0a1920ad-7979-4189-9b22-8257993ef91f",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-english-test-generator/0a1920ad-7979-4189-9b22-8257993ef91f.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-english-test-generator",
+      "title": "https://github.com/frinfo702/english-test-generator/actions/runs/27696223461/job/81920022524 なんか落ちているんだけど、なぜですか？",
+      "sessionTitle": "Debug failed GitHub Actions workflow",
+      "owner": "ken702",
+      "messageCount": 4,
+      "modifiedTimeMs": 1781707946448,
+      "createdTimeMs": 1781706972209,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781707946448,
+        "size": 55364
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781707946409,
+        "size": 844
+      }
+    },
+    "62855f22-9767-4c44-968a-590fe9084265": {
+      "id": "62855f22-9767-4c44-968a-590fe9084265",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-english-test-generator/62855f22-9767-4c44-968a-590fe9084265.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-english-test-generator",
+      "title": "speakingのrepeatで、採点後音声を再生するとそれが終了後再度再生したり、時間を戻したりできないバグがあるので、解消してPRを作成しておいてください",
+      "sessionTitle": "Fix speaking repeat playback bug",
+      "owner": "ken702",
+      "messageCount": 8,
+      "modifiedTimeMs": 1781709052663,
+      "createdTimeMs": 1781707941210,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781709052663,
+        "size": 98418
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781709052628,
+        "size": 856
+      }
+    },
+    "1c8efe9a-d725-4463-9a02-16ad1760ab85": {
+      "id": "1c8efe9a-d725-4463-9a02-16ad1760ab85",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/1c8efe9a-d725-4463-9a02-16ad1760ab85.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "linkedinや個人サイトらしく、セクション別に分けて実績を書くようにして。 メッセージみたいなのは本当に少しでいいや",
+      "sessionTitle": "Format portfolio achievements into sections",
+      "owner": "ken702",
+      "messageCount": 6,
+      "modifiedTimeMs": 1781747891995,
+      "createdTimeMs": 1781747866458,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781747891995,
+        "size": 29009
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781747891981,
+        "size": 856
+      }
+    },
+    "b751f374-4fa6-4e6a-94e9-3123c4a03b56": {
+      "id": "b751f374-4fa6-4e6a-94e9-3123c4a03b56",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/b751f374-4fa6-4e6a-94e9-3123c4a03b56.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "hi",
+      "sessionTitle": "General greeting",
+      "owner": "ken702",
+      "messageCount": 2,
+      "modifiedTimeMs": 1781750129387,
+      "createdTimeMs": 1781750124172,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781750129387,
+        "size": 37337
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781750129326,
+        "size": 836
+      }
+    },
+    "96099dca-7c39-430c-a997-11a23e6515c7": {
+      "id": "96099dca-7c39-430c-a997-11a23e6515c7",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/96099dca-7c39-430c-a997-11a23e6515c7.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "build&cd actions failed. i already set secrets. detect problems and fix them with new pr",
+      "sessionTitle": "Fix failed build and CD actions",
+      "owner": "ken702",
+      "messageCount": 2,
+      "modifiedTimeMs": 1781751398955,
+      "createdTimeMs": 1781750266848,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781751398955,
+        "size": 37525
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781751398898,
+        "size": 836
+      }
+    },
+    "f0c366a1-1ee4-4155-819d-b821cfb1179a": {
+      "id": "f0c366a1-1ee4-4155-819d-b821cfb1179a",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/f0c366a1-1ee4-4155-819d-b821cfb1179a.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "linkedinや個人サイトらしく、セクション別に分けて実績を書くようにして。 メッセージみたいなのは本当に少しでいいや",
+      "sessionTitle": "LinkedIn風のセクション別実績レイアウト",
+      "owner": "ken702",
+      "messageCount": 9,
+      "modifiedTimeMs": 1781752752107,
+      "createdTimeMs": 1781751396329,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781752752107,
+        "size": 51860
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781752752059,
+        "size": 850
+      }
+    },
+    "ff8bb71c-ac13-488f-a4e7-79370865f371": {
+      "id": "ff8bb71c-ac13-488f-a4e7-79370865f371",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/ff8bb71c-ac13-488f-a4e7-79370865f371.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "点群を触れる機能を無くしていいので、もっと洗練されてすごい点群アニメーションにして背景に設置して",
+      "sessionTitle": "Refined point cloud background animation",
+      "owner": "ken702",
+      "messageCount": 2,
+      "modifiedTimeMs": 1781755018221,
+      "createdTimeMs": 1781754995080,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781755018221,
+        "size": 37687
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781755018170,
+        "size": 838
+      }
+    },
+    "80bac8b3-b985-4f0b-9d72-e9fa3c2f9ea0": {
+      "id": "80bac8b3-b985-4f0b-9d72-e9fa3c2f9ea0",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/80bac8b3-b985-4f0b-9d72-e9fa3c2f9ea0.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "点群アニメーションを変更してほしい。ニューラルネットワークが学習される様子を背景にアニメーションで描画するようにして。ネットワーク自体はMLPより多少複雑で、別に成立したものでなくてもいい。見た目重視",
+      "sessionTitle": "Neural network learning point cloud animation",
+      "owner": "ken702",
+      "messageCount": 2,
+      "modifiedTimeMs": 1781758229974,
+      "createdTimeMs": 1781758157048,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781758229974,
+        "size": 38175
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781758229912,
+        "size": 836
+      }
+    },
+    "2d289a8b-fb97-426c-941d-cd94bacb2b19": {
+      "id": "2d289a8b-fb97-426c-941d-cd94bacb2b19",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/2d289a8b-fb97-426c-941d-cd94bacb2b19.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "neural networkのアニメーションが動きが速い上に色がギラギラしすぎているので、改善してほしい。",
+      "sessionTitle": "Neural network animation speed and color adjustment",
+      "owner": "ken702",
+      "messageCount": 2,
+      "modifiedTimeMs": 1781760033743,
+      "createdTimeMs": 1781760003555,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781760033743,
+        "size": 37694
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781760033698,
+        "size": 836
+      }
+    },
+    "16364a2e-002e-4802-974e-810015803ce9": {
+      "id": "16364a2e-002e-4802-974e-810015803ce9",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/16364a2e-002e-4802-974e-810015803ce9.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "点群アニメーションの変更です。1. カメラを動かさなくていいので、斜めから見て3Dであることがわかるようにする。VLMのネットワーク学習様子にして。今は単なるニューラルネットワークなので",
+      "sessionTitle": "3D point cloud VLM network visualization",
+      "owner": "ken702",
+      "messageCount": 5,
+      "modifiedTimeMs": 1781761167257,
+      "createdTimeMs": 1781761093381,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781761167257,
+        "size": 63602
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781761167205,
+        "size": 846
+      }
+    },
+    "a1ec1d9f-7adf-436e-b5e7-e861945fd5d8": {
+      "id": "a1ec1d9f-7adf-436e-b5e7-e861945fd5d8",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/a1ec1d9f-7adf-436e-b5e7-e861945fd5d8.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "点群アニメーションを消してください。代わりにjax-jsとか使って、3D diffusionのリッチ3Dアニメーションを作成してください",
+      "sessionTitle": "Remove point cloud animation and create rich 3D diffusion animation with jax-js",
+      "owner": "ken702",
+      "messageCount": 2,
+      "modifiedTimeMs": 1781762070760,
+      "createdTimeMs": 1781762009350,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781762070760,
+        "size": 37788
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781762070720,
+        "size": 836
+      }
+    },
+    "287d1696-bf4c-4531-ab46-c886c979df91": {
+      "id": "287d1696-bf4c-4531-ab46-c886c979df91",
+      "sessionPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio/287d1696-bf4c-4531-ab46-c886c979df91.jsonl",
+      "directoryPath": "/Users/ken702/.factory/sessions/-Users-ken702-ghq-github.com-frinfo702-portfolio",
+      "title": "奨学金などachievements欄を追加して",
+      "sessionTitle": "Add achievements section for scholarships",
+      "owner": "ken702",
+      "messageCount": 4,
+      "modifiedTimeMs": 1781770599557,
+      "createdTimeMs": 1781770462640,
+      "cwd": "/Users/ken702/ghq/github.com/frinfo702/portfolio",
+      "isExec": false,
+      "isBtwFork": false,
+      "sessionFingerprint": {
+        "mtimeMs": 1781770599557,
+        "size": 45519
+      },
+      "settingsFingerprint": {
+        "mtimeMs": 1781770599509,
+        "size": 846
+      }
+    }
+  },
+  "favorites": {
+    "exists": false,
+    "sessionIds": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "sessionId": "96099dca-7c39-430c-a997-11a23e6515c7",
+  "version": 1,
+  "createdAt": 1781750266868,
+  "lastAccessedAt": 1781751663030,
+  "boundaries": [
+    {
+      "messageId": "b054db4a-3493-4310-a5c4-ab8b90391558",
+      "messageIndex": 1,
+      "timestamp": 1781751663006,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/.github/workflows/deploy-cloudflare.yml",
+          "contentHash": "14b2c9bf29feacdeb1ae58c5c4a0ff41bfafaa08f40484f6558731dc87ea78a1",
+          "size": 1477,
+          "capturedAt": 1781751663006,
+          "toolCallId": "chatcmpl-tool-a4ce24ef434eda91"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1477
+    }
+  ],
+  "oldestAvailableBoundaryIndex": 0,
+  "evictedBoundaryCount": 0
+}

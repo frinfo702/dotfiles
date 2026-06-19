@@ -1,0 +1,344 @@
+[
+  {
+    "command": "exit",
+    "timestamp": "2026-01-17T03:44:00.129Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "hey",
+    "timestamp": "2026-01-17T03:45:11.029Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "@abc442/src/bin/a.rs",
+    "timestamp": "2026-01-24T12:10:10.040Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "コードレビューして",
+    "timestamp": "2026-06-17T09:12:31.910Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "/plugins",
+    "timestamp": "2026-06-17T11:57:59.185Z",
+    "type": "slash_command",
+    "mode": "chat"
+  },
+  {
+    "command": "docs/ 直下のフォルダのそれぞれについて、README.mdに、zensical docのcard gridを使って、その配下のフォルダやファイルが分かるようにして。アイコンも適切なやつを探して選んで",
+    "timestamp": "2026-06-17T14:30:18.402Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "models/ などフォルダだけのパスにアクセスするときは、そのフォルダにREADMEがないと404になるっぽいので追加して",
+    "timestamp": "2026-06-17T14:35:21.336Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "scriptに、markdown formatスクリプトを追加して",
+    "timestamp": "2026-06-17T14:39:19.383Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "prettierとかの方がいいかも",
+    "timestamp": "2026-06-17T14:42:12.755Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "点群アニメーションを、3Dメビウスリングに変えて、かつ少し小さくして色を淡くして、もう少し右上に配置してください",
+    "timestamp": "2026-06-18T04:41:08.789Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "表示されてる？アニメーションが見えないんだけど",
+    "timestamp": "2026-06-18T04:46:27.113Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "点群アニメーションを変更してほしい。ニューラルネットワークが学習される様子を背景にアニメーションで描画するようにして。ネットワーク自体はMLPより多少複雑で、別に成立したものでなくてもいい。見た目重視",
+    "timestamp": "2026-06-18T04:50:24.416Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "faviconを @app/ham.jpeg にしたい",
+    "timestamp": "2026-06-18T05:06:18.179Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "/skills",
+    "timestamp": "2026-06-18T05:06:29.168Z",
+    "type": "slash_command",
+    "mode": "chat"
+  },
+  {
+    "command": "lossの表示とかはいらない。あと、ギラギラしすぎているので、simplifyして。",
+    "timestamp": "2026-06-18T05:11:11.116Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "neural networkのアニメーションが動きが速い上に色がギラギラしすぎているので、改善してほしい。",
+    "timestamp": "2026-06-18T05:20:30.593Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "また、現在はMLPだけど、transformerとかもう少し複雑なアニメーションにしてほしい。色はそう何色も使わなくていい。また、もっと淡い色で背景になんとなくある程度でいい",
+    "timestamp": "2026-06-18T05:21:18.830Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "3Dにして",
+    "timestamp": "2026-06-18T05:25:49.138Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "ネットワーク自体を3Dにして",
+    "timestamp": "2026-06-18T05:31:16.104Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "点群アニメーションの変更です。1. カメラを動かさなくていいので、斜めから見て3Dであることがわかるようにする。VLMのネットワーク学習様子にして。今は単なるニューラルネットワークなので",
+    "timestamp": "2026-06-18T05:39:14.233Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "点群アニメーションを消してください。代わりにjax-jsとか使って、3D diffusionのリッチ3Dアニメーションを作成してください",
+    "timestamp": "2026-06-18T05:54:28.202Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "アニメーションにして 画像が正規分布に圧縮された後、拡散されて戻る様子",
+    "timestamp": "2026-06-18T06:39:23.221Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "continue",
+    "timestamp": "2026-06-18T06:58:21.720Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "アニメーションに見えない。画像に見えるんだけど",
+    "timestamp": "2026-06-18T07:11:04.679Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "奨学金などachievements欄を追加して",
+    "timestamp": "2026-06-18T08:16:28.817Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "金額部分を太字にして",
+    "timestamp": "2026-06-18T08:20:59.078Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "Expericenなどのセクションタイトルより、Software Engineerなどの小タイトルの方が文字サイズが大きくなってしまっているので整合性があるようにして",
+    "timestamp": "2026-06-18T08:24:15.128Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "skillsの欄は箇条書きになるようにして",
+    "timestamp": "2026-06-18T08:27:21.286Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "deeplearning, ML systemなどがそれぞれ箇条書きで書くようにして",
+    "timestamp": "2026-06-18T08:30:35.885Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "distributed systemを消して、言語とかフレームワークごとに分けて、go, scala, python, pytorch, git, docker, mysql, postgresql, sqlite, shell, linux, などを追加して",
+    "timestamp": "2026-06-18T08:32:26.635Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "programming languagesみたいにミニセクションタイトルをおいて欲しい",
+    "timestamp": "2026-06-18T08:33:26.500Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "gcp, awsも追加して",
+    "timestamp": "2026-06-18T08:36:06.837Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "set copyright statement for Kenichiro Goto",
+    "timestamp": "2026-06-18T08:38:27.405Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "delete message on top",
+    "timestamp": "2026-06-18T08:42:08.063Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "<h1 className=\"text-base font-semibold text-white\">Kenichiro Goto </h1>",
+    "timestamp": "2026-06-18T08:42:59.217Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "The space between \"kenichiro's portfolio\" and Experience, so please make narrower",
+    "timestamp": "2026-06-18T08:49:07.949Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "背景に淡色、モダン、スタイリッシュなニューラルネットワークアニメーションを作成してください。 three.jsとか、技術選定は任せます",
+    "timestamp": "2026-06-18T08:50:47.731Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "黒ベースに戻してよ。しかもアニメーション見えないし",
+    "timestamp": "2026-06-18T08:58:15.539Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "アニメーションはマウスに反応する必要ないです。また、動いている点はいらない。線だけでいい",
+    "timestamp": "2026-06-18T09:16:59.634Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "ノードの点をもっと小さくして。そして、線が表示される間だけ点も表示されるようにして",
+    "timestamp": "2026-06-18T09:28:28.775Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "背景のアニメーションの線が、レイヤーごとに光るんだけど、この移り変わりがもっと滑らかになるようにしておいて",
+    "timestamp": "2026-06-18T12:19:18.533Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "背面のネットワークアニメーションについて変更。今の画面サイズに応じて相対的にサイズを変える感じだとスマホですごい小さくなってしまうので、サイズは固定でいい。スマホだとはみ出してしまっていい。また、点滅のアニメーションがぎこちないのでもっと流れるようにスムーズになるようにして",
+    "timestamp": "2026-06-19T01:52:34.834Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "いや、移動する点などはいらないので元の実装を維持して。点が動いていると全面の文字が見にくいので、線が徐々に明るくなって暗くなって、NNの学習の様子がわかるようにしてくれればいい。ノードの点も前の実装と同じにして",
+    "timestamp": "2026-06-19T01:57:13.372Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "なんか点滅しているように見える。グラデーションが欲しい",
+    "timestamp": "2026-06-19T02:35:58.759Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "three.jsを使って、背面を流体力学アニメーションに変えて",
+    "timestamp": "2026-06-19T02:41:27.897Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "超高精細",
+    "timestamp": "2026-06-19T02:41:35.335Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "文字と同化して見にくいので、黒い液体にして。墨にする感じ",
+    "timestamp": "2026-06-19T02:49:33.143Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "なんか茶色いのでもっと黒くていい",
+    "timestamp": "2026-06-19T02:50:43.732Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "なんか黒い部分と白い部分が逆にしてほしい",
+    "timestamp": "2026-06-19T02:52:10.778Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "何も見えなくなった",
+    "timestamp": "2026-06-19T02:52:53.669Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "blenderみたいに、超リアルな岩などを配置して水が当たった時のリアルな物理シミュレーションも追加して",
+    "timestamp": "2026-06-19T02:55:20.492Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "水を消してください",
+    "timestamp": "2026-06-19T02:57:44.694Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "/thermo-nuclear-code-quality-review and fix surplus part if there is",
+    "timestamp": "2026-06-19T03:00:47.614Z",
+    "type": "slash_command",
+    "mode": "chat"
+  },
+  {
+    "command": "背景アニメーションを削除して",
+    "timestamp": "2026-06-19T03:30:18.630Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "ファイルごと削除していい",
+    "timestamp": "2026-06-19T03:31:15.423Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "名前の右あたりの空いたスペースに、ニューラルネットワークが学習する様子のアニメーションを作成して",
+    "timestamp": "2026-06-19T03:32:17.889Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "ニューラルネットワークはもっと正方形に領域を取るようにして。縦幅が足りないので圧縮されたように見える",
+    "timestamp": "2026-06-19T03:35:16.001Z",
+    "type": "message",
+    "mode": "chat"
+  }
+]

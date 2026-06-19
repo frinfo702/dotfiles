@@ -1,0 +1,1 @@
+{"cliVersion":"0.150.1","entry":{"version":"v0.150.0","date":"June 16","features":["npm plugin sources - Plugin marketplace definitions can now reference plugins published as npm packages","Quit confirmation - Desktop now asks for confirmation before quitting or closing would interrupt an active Droid session (app)"]},"viewCount":1}

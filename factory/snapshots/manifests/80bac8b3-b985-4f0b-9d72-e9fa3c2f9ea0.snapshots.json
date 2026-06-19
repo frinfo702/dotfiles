@@ -1,0 +1,44 @@
+{
+  "sessionId": "80bac8b3-b985-4f0b-9d72-e9fa3c2f9ea0",
+  "version": 1,
+  "createdAt": 1781758158776,
+  "lastAccessedAt": 1781759741260,
+  "boundaries": [
+    {
+      "messageId": "682ecb5c-bafe-4098-8a2c-98ad2c3995eb",
+      "messageIndex": 1,
+      "timestamp": 1781758794724,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/ParticleField.tsx",
+          "contentHash": "dfebb7337e6b428e22df4935e8ad577583e910f203d1826f5eefbd777402ab58",
+          "size": 8136,
+          "capturedAt": 1781758794724,
+          "toolCallId": "chatcmpl-tool-9c483e00a9198913"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 8136
+    },
+    {
+      "messageId": "240c4c01-fe18-4a79-9e4b-86d56eea1378",
+      "messageIndex": 64,
+      "timestamp": 1781759741240,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/ParticleField.tsx",
+          "contentHash": "a97e71dc81911f63cfb19b6344494945f104f2587d6d3b3ee33569631672a3e0",
+          "size": 12776,
+          "capturedAt": 1781759741240,
+          "toolCallId": "chatcmpl-tool-9635fd7612f0bd06"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 12776
+    }
+  ],
+  "oldestAvailableBoundaryIndex": 0,
+  "evictedBoundaryCount": 0
+}

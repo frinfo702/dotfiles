@@ -1,0 +1,30 @@
+{
+  "assistantActiveTimeMs": 808,
+  "model": "custom:DeepSeek-V4-Pro-0",
+  "reasoningEffort": "high",
+  "interactionMode": "auto",
+  "autonomyLevel": "off",
+  "autonomyMode": "normal",
+  "compactionThresholdCheckEnabled": true,
+  "tokenUsage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 0,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "childInclusiveTokenUsageBySessionId": {},
+  "inclusiveTokenUsage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 0,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "specModeModel": "custom:DeepSeek-V4-Pro-0",
+  "providerLock": "anthropic",
+  "providerLockTimestamp": "2026-06-17T04:37:46.194Z",
+  "specModeReasoningEffort": "high"
+}

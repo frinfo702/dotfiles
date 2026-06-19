@@ -1,0 +1,320 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
+interface NetNode {
+  layer: number;
+  idx: number;
+  x: number;
+  y: number;
+  act: number;
+  grad: number;
+  pat: number;
+}
+
+interface NetEdge {
+  a: NetNode;
+  b: NetNode;
+  w: number;
+  tw: number;
+  skip: boolean;
+}
+
+// ResMLP: two residual blocks. Slightly more complex than a plain MLP,
+// with skip connections drawn as arced dashed links.
+const LAYER_SIZES = [5, 7, 7, 7, 5, 3];
+const NUM_LAYERS = LAYER_SIZES.length;
+const SKIPS: Array<[number, number]> = [
+  [0, 2],
+  [2, 4],
+];
+
+// Solid colors (alpha controlled via ctx.globalAlpha) — avoids per-frame
+// hsla string allocations in the hot draw loop.
+const C = {
+  fwd: "hsl(198, 30%, 48%)",
+  bwd: "hsl(322, 30%, 48%)",
+  skip: "hsl(168, 26%, 48%)",
+  neg: "hsl(16, 30%, 48%)",
+  nodeFwd: "hsl(196, 28%, 54%)",
+  nodeBwd: "hsl(322, 28%, 54%)",
+  pulseFwd: "hsl(190, 38%, 60%)",
+  pulseBwd: "hsl(322, 38%, 60%)",
+  pulseSkip: "hsl(168, 38%, 60%)",
+};
+const DASH = [3, 4];
+const TAU = Math.PI * 2;
+
+export default function ParticleField() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d", { alpha: true });
+    if (!ctx) return;
+
+    let animationId = 0;
+    let width = 0;
+    let height = 0;
+    let dpr = 1;
+    let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+
+    let nodes: NetNode[][] = [];
+    let edges: NetEdge[] = [];
+    let runStart = performance.now();
+    let nextReset = 26 + Math.random() * 12;
+    let cycle = 0;
+
+    const FORWARD_DUR = 1.8;
+    const BACKWARD_DUR = 1.8;
+    const UPDATE_DUR = 0.7;
+    const CYCLE_DUR = FORWARD_DUR + BACKWARD_DUR + UPDATE_DUR;
+
+    const randn = () =>
+      (Math.random() + Math.random() + Math.random() - 1.5) * 0.5;
+
+    const buildNetwork = () => {
+      nodes = [];
+      edges = [];
+
+      const marginX = Math.max(140, Math.min(220, width * 0.08));
+      const availW = width - marginX * 2;
+      const spacingX = availW / (NUM_LAYERS - 1);
+
+      const cy = height * 0.47;
+      const availH = height * 0.8;
+      const maxNodes = Math.max(...LAYER_SIZES);
+      const spacingY = Math.min(26, availH / (maxNodes - 1));
+
+      for (let l = 0; l < NUM_LAYERS; l++) {
+        const n = LAYER_SIZES[l];
+        const layerNodes: NetNode[] = [];
+        const x = marginX + l * spacingX;
+        for (let i = 0; i < n; i++) {
+          const y = cy - ((n - 1) / 2) * spacingY + i * spacingY;
+          layerNodes.push({ layer: l, idx: i, x, y, act: 0, grad: 0, pat: 0 });
+        }
+        nodes.push(layerNodes);
+      }
+
+      const addEdges = (from: number, to: number, scale: number, skip: boolean) => {
+        for (const a of nodes[from]) {
+          for (const b of nodes[to]) {
+            const w = randn() * scale;
+            edges.push({ a, b, w, tw: w, skip });
+          }
+        }
+      };
+
+      for (let l = 0; l < NUM_LAYERS - 1; l++) addEdges(l, l + 1, 0.5, false);
+      for (const [from, to] of SKIPS) addEdges(from, to, 0.35, true);
+    };
+
+    const resetRun = () => {
+      for (const e of edges) e.tw = randn() * (e.skip ? 0.35 : 0.5);
+      runStart = performance.now();
+      nextReset = 26 + Math.random() * 12;
+      cycle = 0;
+    };
+
+    const resize = () => {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = window.innerWidth;
+      height = Math.min(300, Math.max(200, Math.floor(window.innerHeight * 0.32)));
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.fillStyle = "#000000";
+      ctx.fillRect(0, 0, width, height);
+      buildNetwork();
+    };
+
+    const debouncedResize = () => {
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resize, 180);
+    };
+
+    const fillCircle = (x: number, y: number, r: number, color: string, alpha: number) => {
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, TAU);
+      ctx.fill();
+    };
+
+    const draw = (now: number) => {
+      const rt = (now - runStart) * 0.001;
+      if (rt > nextReset) resetRun();
+
+      const cycleTime = rt % CYCLE_DUR;
+      let phase: "fwd" | "bwd" | "upd" = "fwd";
+      let phaseT = 0;
+      if (cycleTime < FORWARD_DUR) {
+        phase = "fwd";
+        phaseT = cycleTime / FORWARD_DUR;
+      } else if (cycleTime < FORWARD_DUR + BACKWARD_DUR) {
+        phase = "bwd";
+        phaseT = (cycleTime - FORWARD_DUR) / BACKWARD_DUR;
+      } else {
+        phase = "upd";
+        phaseT = (cycleTime - FORWARD_DUR - BACKWARD_DUR) / UPDATE_DUR;
+      }
+
+      const curCycle = Math.floor(rt / CYCLE_DUR);
+      if (curCycle !== cycle) {
+        cycle = curCycle;
+        for (const e of edges) e.tw += (Math.random() - 0.5) * (e.skip ? 0.03 : 0.04);
+        for (const n of nodes[0]) n.pat = Math.random() < 0.55 ? 1 : 0.25;
+      }
+
+      const updateRate = phase === "upd" ? 0.09 : 0.012;
+      for (const e of edges) e.w += (e.tw - e.w) * updateRate;
+
+      let sweepPos = 0;
+      if (phase === "fwd") sweepPos = phaseT * (NUM_LAYERS - 1);
+      else if (phase === "bwd") sweepPos = (1 - phaseT) * (NUM_LAYERS - 1);
+
+      const updateGlow = phase === "upd" ? Math.sin(phaseT * Math.PI) : 0;
+
+      for (let l = 0; l < NUM_LAYERS; l++) {
+        const dist = Math.abs(sweepPos - l);
+        const bump = Math.exp(-(dist * dist) / 0.42);
+        for (const n of nodes[l]) {
+          if (phase === "fwd") {
+            n.act = Math.max(n.act * 0.82, bump);
+            n.grad *= 0.82;
+          } else if (phase === "bwd") {
+            n.grad = Math.max(n.grad * 0.82, bump);
+            n.act *= 0.82;
+          } else {
+            n.act *= 0.78;
+            n.grad *= 0.78;
+          }
+        }
+      }
+
+      // fade previous frame
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "rgba(0, 0, 0, 0.32)";
+      ctx.fillRect(0, 0, width, height);
+
+      const isSweeping = phase === "fwd" || phase === "bwd";
+      const pulseColor = phase === "fwd" ? C.pulseFwd : C.pulseBwd;
+
+      // sequential (non-skip) edges
+      ctx.setLineDash([]);
+      for (const e of edges) {
+        if (e.skip) continue;
+        const a = e.a;
+        const b = e.b;
+        const lo = a.layer;
+        const hi = b.layer;
+        const mag = Math.abs(e.w);
+        const sweeping = isSweeping && sweepPos >= lo - 0.1 && sweepPos <= hi + 0.1;
+
+        let alpha = 0.03 + mag * 0.1 + updateGlow * 0.07;
+        if (sweeping) {
+          const edgeProgress = Math.max(0, Math.min(1, sweepPos - lo));
+          const prox = Math.sin(
+            Math.min(1, Math.max(0, 1 - Math.abs(edgeProgress - 0.5) * 2)) * Math.PI * 0.5,
+          );
+          alpha += prox * 0.16;
+        }
+
+        ctx.globalAlpha = alpha;
+        ctx.strokeStyle = sweeping && phase === "bwd" ? C.bwd : e.w >= 0 ? C.fwd : C.neg;
+        ctx.lineWidth = 0.4 + mag * 0.8;
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.stroke();
+
+        if (sweeping) {
+          const edgeProgress = Math.max(0, Math.min(1, sweepPos - lo));
+          const p = phase === "fwd" ? edgeProgress : 1 - edgeProgress;
+          fillCircle(a.x + (b.x - a.x) * p, a.y + (b.y - a.y) * p, 1.2, pulseColor, 0.45);
+        }
+      }
+
+      // skip (residual) edges as arced dashed links
+      ctx.setLineDash(DASH);
+      for (const e of edges) {
+        if (!e.skip) continue;
+        const a = e.a;
+        const b = e.b;
+        const lo = a.layer;
+        const hi = b.layer;
+        const mag = Math.abs(e.w);
+        const sweeping = isSweeping && sweepPos >= lo - 0.1 && sweepPos <= hi + 0.1;
+
+        let alpha = 0.04 + mag * 0.09 + updateGlow * 0.05;
+        if (sweeping) alpha += 0.1;
+
+        const midX = (a.x + b.x) / 2;
+        const arcH = 30 + Math.abs(a.idx - b.idx) * 2.5;
+        const ctrlX = midX;
+        const ctrlY = Math.min(a.y, b.y) - arcH;
+
+        ctx.globalAlpha = alpha;
+        ctx.strokeStyle = C.skip;
+        ctx.lineWidth = 0.45 + mag * 0.8;
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.quadraticCurveTo(ctrlX, ctrlY, b.x, b.y);
+        ctx.stroke();
+
+        if (sweeping) {
+          const span = hi - lo;
+          const edgeProgress = Math.max(0, Math.min(1, (sweepPos - lo) / span));
+          const p = phase === "fwd" ? edgeProgress : 1 - edgeProgress;
+          const px = (1 - p) * (1 - p) * a.x + 2 * (1 - p) * p * ctrlX + p * p * b.x;
+          const py = (1 - p) * (1 - p) * a.y + 2 * (1 - p) * p * ctrlY + p * p * b.y;
+          fillCircle(px, py, 1.3, C.pulseSkip, 0.6);
+        }
+      }
+      ctx.setLineDash([]);
+
+      // nodes — single soft halo + core, no stacked highlights
+      for (let l = 0; l < NUM_LAYERS; l++) {
+        for (const n of nodes[l]) {
+          const isEdgeLayer = l === 0 || l === NUM_LAYERS - 1;
+          const baseR = isEdgeLayer ? 3.0 : 2.4;
+          const inputBoost = l === 0 ? n.pat * 0.4 : 0;
+          const glow = Math.max(n.act, n.grad, inputBoost);
+          const r = baseR + glow * 1.8;
+          const nodeColor = n.grad > n.act ? C.nodeBwd : C.nodeFwd;
+
+          if (glow > 0.05) {
+            fillCircle(n.x, n.y, r * 2.2, nodeColor, glow * 0.12);
+          }
+          fillCircle(n.x, n.y, r, nodeColor, 0.5 + glow * 0.3);
+        }
+      }
+
+      ctx.globalAlpha = 1;
+      animationId = requestAnimationFrame(draw);
+    };
+
+    resize();
+    resetRun();
+    window.addEventListener("resize", debouncedResize);
+    animationId = requestAnimationFrame(draw);
+
+    return () => {
+      window.removeEventListener("resize", debouncedResize);
+      if (resizeTimer) clearTimeout(resizeTimer);
+      cancelAnimationFrame(animationId);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      aria-hidden="true"
+      className="pointer-events-none fixed inset-x-0 top-0 z-0 block"
+    />
+  );
+}

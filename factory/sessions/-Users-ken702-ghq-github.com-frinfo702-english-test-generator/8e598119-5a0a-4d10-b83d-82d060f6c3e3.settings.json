@@ -1,0 +1,64 @@
+{
+  "assistantActiveTimeMs": 622886,
+  "model": "custom:OpenCode-Zen---DeepSeek-V4-Flash-Free-19",
+  "reasoningEffort": "none",
+  "interactionMode": "auto",
+  "autonomyLevel": "high",
+  "autonomyMode": "auto-high",
+  "compactionThresholdCheckEnabled": true,
+  "tokenUsage": {
+    "inputTokens": 317684,
+    "outputTokens": 39137,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 4089728,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "childInclusiveTokenUsageBySessionId": {
+    "66da6652-de23-4857-a59a-aaf9cbfb187a": {
+      "inputTokens": 50250,
+      "outputTokens": 12302,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 640384,
+      "thinkingTokens": 0,
+      "factoryCredits": 0
+    },
+    "15812cd6-00a5-47fc-b5d6-c02bfd2726b7": {
+      "inputTokens": 62802,
+      "outputTokens": 16026,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 954496,
+      "thinkingTokens": 0,
+      "factoryCredits": 0
+    },
+    "d801d777-9ab2-4be7-a9ac-d197409c6a48": {
+      "inputTokens": 85772,
+      "outputTokens": 15665,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1444992,
+      "thinkingTokens": 0,
+      "factoryCredits": 0
+    },
+    "14729410-464c-4527-be95-a084337e2318": {
+      "inputTokens": 45138,
+      "outputTokens": 11581,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1510784,
+      "thinkingTokens": 0,
+      "factoryCredits": 0
+    }
+  },
+  "inclusiveTokenUsage": {
+    "inputTokens": 561646,
+    "outputTokens": 94711,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 8640384,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "providerLock": "generic-chat-completion-api",
+  "providerLockTimestamp": "2026-06-17T12:09:22.555Z",
+  "enabledToolIds": [
+    "store_agent_readiness_report"
+  ]
+}

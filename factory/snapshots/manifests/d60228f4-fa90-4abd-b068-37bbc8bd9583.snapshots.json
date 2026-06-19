@@ -1,0 +1,95 @@
+{
+  "sessionId": "d60228f4-fa90-4abd-b068-37bbc8bd9583",
+  "version": 1,
+  "createdAt": 1781771654053,
+  "lastAccessedAt": 1781771996698,
+  "boundaries": [
+    {
+      "messageId": "e0558db1-2b72-495c-9603-e6ab9307a142",
+      "messageIndex": 1,
+      "timestamp": 1781771966320,
+      "files": [
+        {
+          "filePath": "/tmp/cursor-plugins-factory/ralph-loop/hooks/stop-hook.sh",
+          "contentHash": "4ae2529aa75db7258e6b5ba9e01a8ca888489018199603ae9d6e1434867fdcc0",
+          "size": 2858,
+          "capturedAt": 1781771966320,
+          "toolCallId": "call_00_PQtgn61sdQB9rql6hrUn8946"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 2858
+    },
+    {
+      "messageId": "e0558db1-2b72-495c-9603-e6ab9307a142",
+      "messageIndex": 1,
+      "timestamp": 1781771970500,
+      "files": [
+        {
+          "filePath": "/tmp/cursor-plugins-factory/ralph-loop/hooks/stop-hook.sh",
+          "contentHash": "5d6dc4c896c8d9e99967b0e5302ff0d760d88d3473ddb5b15c8b78a30dd48577",
+          "size": 2878,
+          "capturedAt": 1781771970500,
+          "toolCallId": "call_00_RZP9lggmzmR7HB0WV54c2312"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 2878
+    },
+    {
+      "messageId": "e0558db1-2b72-495c-9603-e6ab9307a142",
+      "messageIndex": 1,
+      "timestamp": 1781771979125,
+      "files": [
+        {
+          "filePath": "/tmp/cursor-plugins-factory/ralph-loop/hooks/capture-response.sh",
+          "contentHash": "1ed2e9be8dfad78d1391ef635610b9202e3a9715074c1c23058b0d11dcdb9b1f",
+          "size": 1397,
+          "capturedAt": 1781771979125,
+          "toolCallId": "call_00_AbTCyTUePxGkDR7Vds232705"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1397
+    },
+    {
+      "messageId": "e0558db1-2b72-495c-9603-e6ab9307a142",
+      "messageIndex": 1,
+      "timestamp": 1781771989793,
+      "files": [
+        {
+          "filePath": "/tmp/cursor-plugins-factory/ralph-loop/skills/cancel-ralph/SKILL.md",
+          "contentHash": "330008c40b2e28feb879fabe60393d07a7f28d1f1424111e594db5ab418b8ccb",
+          "size": 734,
+          "capturedAt": 1781771989793,
+          "toolCallId": "call_00_3laoIVZT28YEWyHpQQt41128"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 734
+    },
+    {
+      "messageId": "e0558db1-2b72-495c-9603-e6ab9307a142",
+      "messageIndex": 1,
+      "timestamp": 1781771996691,
+      "files": [
+        {
+          "filePath": "/tmp/cursor-plugins-factory/agent-compatibility/.factory-plugin/plugin.json",
+          "contentHash": "1b04b03aee5bb7bd767ab390bf6b9020796a0b22987fc5e2a30601ea7c3b0240",
+          "size": 420,
+          "capturedAt": 1781771996691,
+          "toolCallId": "call_00_ET_btyc0WSMWcWg2JmpOQqG5521"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 420
+    }
+  ],
+  "oldestAvailableBoundaryIndex": 0,
+  "evictedBoundaryCount": 0
+}

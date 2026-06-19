@@ -1,0 +1,55 @@
+{
+  "paragraph": "Earthquakes occur when stress accumulated along fault lines is suddenly released as seismic waves. These geological events vary tremendously in magnitude, with minor tremors happening almost daily while major quakes remain relatively rare. Scientists measure earthquake strength using the Richter scale and moment magnitude scale. Modern early warning systems can provide crucial seconds of advance notice before destructive shaking reaches populated areas.",
+  "items": [
+    {
+      "index": 0,
+      "hint": "acc",
+      "answer": "accumulated"
+    },
+    {
+      "index": 1,
+      "hint": "sei",
+      "answer": "seismic"
+    },
+    {
+      "index": 2,
+      "hint": "geo",
+      "answer": "geological"
+    },
+    {
+      "index": 3,
+      "hint": "tre",
+      "answer": "tremendously"
+    },
+    {
+      "index": 4,
+      "hint": "mag",
+      "answer": "magnitude"
+    },
+    {
+      "index": 5,
+      "hint": "mi",
+      "answer": "minor"
+    },
+    {
+      "index": 6,
+      "hint": "ma",
+      "answer": "major"
+    },
+    {
+      "index": 7,
+      "hint": "mo",
+      "answer": "moment"
+    },
+    {
+      "index": 8,
+      "hint": "cru",
+      "answer": "crucial"
+    },
+    {
+      "index": 9,
+      "hint": "des",
+      "answer": "destructive"
+    }
+  ]
+}

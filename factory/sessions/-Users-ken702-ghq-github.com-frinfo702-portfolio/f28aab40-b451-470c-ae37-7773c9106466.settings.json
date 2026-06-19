@@ -1,0 +1,30 @@
+{
+  "assistantActiveTimeMs": 145271,
+  "model": "custom:OpenCode-Go---DeepSeek-V4-Pro-9",
+  "reasoningEffort": "max",
+  "interactionMode": "auto",
+  "autonomyLevel": "high",
+  "autonomyMode": "auto-high",
+  "specModeModel": "custom:OpenCode-Go---DeepSeek-V4-Pro-9",
+  "specModeReasoningEffort": "max",
+  "compactionThresholdCheckEnabled": true,
+  "tokenUsage": {
+    "inputTokens": 14362,
+    "outputTokens": 10262,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 1070208,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "childInclusiveTokenUsageBySessionId": {},
+  "inclusiveTokenUsage": {
+    "inputTokens": 14362,
+    "outputTokens": 10262,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 1070208,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "providerLock": "generic-chat-completion-api",
+  "providerLockTimestamp": "2026-06-19T03:30:18.668Z"
+}

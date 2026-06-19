@@ -1,0 +1,38 @@
+{
+  "assistantActiveTimeMs": 53584,
+  "model": "custom:OpenCode-Go---GLM-5.2-0",
+  "reasoningEffort": "none",
+  "interactionMode": "auto",
+  "autonomyLevel": "high",
+  "autonomyMode": "auto-high",
+  "specModeModel": "custom:OpenCode-Go---GLM-5.2-0",
+  "specModeReasoningEffort": "none",
+  "compactionThresholdCheckEnabled": true,
+  "tags": [
+    {
+      "name": "exec"
+    },
+    {
+      "name": "subagent"
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 41110,
+    "outputTokens": 2718,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 220197,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "childInclusiveTokenUsageBySessionId": {},
+  "inclusiveTokenUsage": {
+    "inputTokens": 41110,
+    "outputTokens": 2718,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 220197,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "providerLock": "generic-chat-completion-api",
+  "providerLockTimestamp": "2026-06-18T05:11:53.803Z"
+}

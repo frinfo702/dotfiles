@@ -1,0 +1,229 @@
+{
+  "sessionId": "f28aab40-b451-470c-ae37-7773c9106466",
+  "version": 1,
+  "createdAt": 1781839811959,
+  "lastAccessedAt": 1781840178251,
+  "boundaries": [
+    {
+      "messageId": "bfe2a103-954c-41f8-ac70-acff0124f867",
+      "messageIndex": 1,
+      "timestamp": 1781839833200,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/page.tsx",
+          "contentHash": "29164068006cba1eaf019e29db6cc00028362852ffab09e6981e84a7fb3db1f2",
+          "size": 7511,
+          "capturedAt": 1781839833200,
+          "toolCallId": "call_00_ZJENgUTPSlTVpOtU8vJz3883"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 7511
+    },
+    {
+      "messageId": "f267cf36-dbfa-43c2-9de9-8b353a583ed1",
+      "messageIndex": 15,
+      "timestamp": 1781839963944,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "createdAt": 1781839963944,
+          "toolCallId": "call_00_iA2HfCGkS4yNN7WDrfLj1729"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "f267cf36-dbfa-43c2-9de9-8b353a583ed1",
+      "messageIndex": 15,
+      "timestamp": 1781839967474,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/page.tsx",
+          "contentHash": "fb77bc5d0e0137be64e828a9f51f4675a926912974ec4dfad1965b9e4421bc2a",
+          "size": 7440,
+          "capturedAt": 1781839967474,
+          "toolCallId": "call_01_dnkSwDdVjHqYdyPWgkb20831"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 7440
+    },
+    {
+      "messageId": "f267cf36-dbfa-43c2-9de9-8b353a583ed1",
+      "messageIndex": 15,
+      "timestamp": 1781839970613,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/page.tsx",
+          "contentHash": "66111e5b7aaff37248869b9b73c20deba7c13321ebfc18ca28d8630a60523c5c",
+          "size": 7504,
+          "capturedAt": 1781839970613,
+          "toolCallId": "call_00_zrNssVxKx8s95XOOudhK7343"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 7504
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840125934,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "b5c46097152b9d3eaaf086357fec7d242e357b58be323369923cc093392bf42f",
+          "size": 4879,
+          "capturedAt": 1781840125934,
+          "toolCallId": "call_00_BAYuonQUeqTvazzwTqVe3884"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4879
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840130672,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "26ef3e1e1d72d413a95808317bd702d559267815163d1274f28ea08a406de2c3",
+          "size": 4880,
+          "capturedAt": 1781840130672,
+          "toolCallId": "call_00_vTprTrL6DPu3hybN2FQ41586"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4880
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840134156,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "a3e0dde73928410fb6ac7554683896b1a2869537aa343c9a8c1bfe5a541c0f32",
+          "size": 4880,
+          "capturedAt": 1781840134156,
+          "toolCallId": "call_00_8Llr0W55zOG1fkxeAkYy2372"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4880
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840136697,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "f1440ae668acf875bfb5e5eb729b7c0f67a84ab00cb1d8410c39e687f182cc63",
+          "size": 4881,
+          "capturedAt": 1781840136697,
+          "toolCallId": "call_00_WjMHfR4GwuM7uahw2fWM1906"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4881
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840139526,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "32b4975294053b3392f24904a5220098ff2f6590a3b3f8885ea991a734de9349",
+          "size": 4881,
+          "capturedAt": 1781840139526,
+          "toolCallId": "call_00_UI52MqPIG1OKcG13WBHm0895"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4881
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840149669,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "9510d40ae3a2a7ef7b8d364dcddb69d58b749e3c5a9b8bfe2a2f109c3e67d456",
+          "size": 4881,
+          "capturedAt": 1781840149669,
+          "toolCallId": "call_00_gMEy9g5BiPdFE2vTFlKk5902"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4881
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840154004,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "6c15b77739d639191498000aa07a23d352fb92123152f80b2e2fc9a2ab6c232a",
+          "size": 4889,
+          "capturedAt": 1781840154004,
+          "toolCallId": "call_00_l09Ukdluu4qqEI6JnTch3447"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4889
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840159603,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "b8105a2db0f99c2eb7a9a1c733dc68438b0cff4add08e4833bea3754c40107f1",
+          "size": 4803,
+          "capturedAt": 1781840159603,
+          "toolCallId": "call_00_EOrKMyNolwvo6oSrAqza6743"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4803
+    },
+    {
+      "messageId": "65992321-512a-4e80-9f61-6c5bdc3e50c1",
+      "messageIndex": 33,
+      "timestamp": 1781840178238,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/NeuralNetworkMini.tsx",
+          "contentHash": "262b6f2f9921d6265f9f2538f8564fb414465b9010fe52c5fe5d67b4f005edbc",
+          "size": 4783,
+          "capturedAt": 1781840178238,
+          "toolCallId": "call_00_7DXvaTIczeLaTusJ2qL80640"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4783
+    }
+  ],
+  "oldestAvailableBoundaryIndex": 0,
+  "evictedBoundaryCount": 0
+}

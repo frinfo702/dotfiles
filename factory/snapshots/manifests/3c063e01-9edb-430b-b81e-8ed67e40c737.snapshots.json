@@ -1,0 +1,1341 @@
+{
+  "sessionId": "3c063e01-9edb-430b-b81e-8ed67e40c737",
+  "version": 1,
+  "createdAt": 1781702426215,
+  "lastAccessedAt": 1781704923529,
+  "boundaries": [
+    {
+      "messageId": "06d020f0-f6a0-4860-9e65-78dfb68c4ee5",
+      "messageIndex": 1,
+      "timestamp": 1781702543995,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/011.json",
+          "createdAt": 1781702543995,
+          "toolCallId": "call_00_e5s9U1vDcHeKyKEqWbnW8899"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "06d020f0-f6a0-4860-9e65-78dfb68c4ee5",
+      "messageIndex": 1,
+      "timestamp": 1781702547505,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/index.json",
+          "contentHash": "96a83b2df3ce998616be6c9b9a904a1ad1f389869e90d188734120a07b90ac15",
+          "size": 180,
+          "capturedAt": 1781702547505,
+          "toolCallId": "call_00_QTR0a3gPryj8sFo5UJEK5293"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 180
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702877646,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/012.json",
+          "contentHash": "b09ca9a59987c4059ed8c1eee54a42264acf05a02179a39a54e18470c22b956a",
+          "size": 3131,
+          "capturedAt": 1781702877646,
+          "toolCallId": "call_00_fOw6LkRGCf1J3a1CTRBl6693"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3131
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702877657,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/013.json",
+          "contentHash": "c7974b9d6bf9028d5a9faea54f3d1f710ec3ad5fffdb0cc4fb8bbbaeb5d21191",
+          "size": 3977,
+          "capturedAt": 1781702877657,
+          "toolCallId": "call_01_rdl9nN2j0F8T82PIybsg4867"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3977
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702877663,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/014.json",
+          "contentHash": "3916dc57d0d2dadccfa753e20b28f30f2cb85d6a6ddc767779907f8731a824a0",
+          "size": 3952,
+          "capturedAt": 1781702877663,
+          "toolCallId": "call_02_oP5jmBEYUMoHk8WnxNUM5369"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3952
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702877669,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/015.json",
+          "contentHash": "f885c6683d3e650c5c7f2f0cf72474bb0f9b545d1266c677848141894218c481",
+          "size": 4277,
+          "capturedAt": 1781702877669,
+          "toolCallId": "call_03_5I9TNGkNwbF0MWnNGbcF7392"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4277
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702938011,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/016.json",
+          "contentHash": "f623565aa2bd1b2deab385ad405d75f7b08bf3f4ec2bbed8c94b417e7d29a761",
+          "size": 3270,
+          "capturedAt": 1781702938011,
+          "toolCallId": "call_00_NhMoDqbYBytrcGQJOwS38700"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3270
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702938017,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/017.json",
+          "createdAt": 1781702938017,
+          "toolCallId": "call_01_4Bx8GwlEl8qKxgtA0uK48521"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702938022,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/018.json",
+          "createdAt": 1781702938022,
+          "toolCallId": "call_02_2ZN0KSlj9dM2f5aPXeEF2920"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702938031,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/019.json",
+          "createdAt": 1781702938031,
+          "toolCallId": "call_03_gQwVolYDX4QboCKzPJJI3195"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702938038,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/020.json",
+          "createdAt": 1781702938038,
+          "toolCallId": "call_04_bNjTY1F1WyeUZW5WcRKQ8015"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "45ef56cd-348b-476e-9b67-7a7bcbd2b2e9",
+      "messageIndex": 27,
+      "timestamp": 1781702941746,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/index.json",
+          "contentHash": "51062e36b9402b06fefaba12b6c7c45901e3c00c37eb056f387aa3936c324440",
+          "size": 196,
+          "capturedAt": 1781702941746,
+          "toolCallId": "call_00_WLp529oBMz5JFZgg1Pnp6253"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 196
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703158658,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-daily-life.test.ts",
+          "contentHash": "f08ff22cca9d2f991a0d1194147bad455d42543c69f523956ef4e7bc1f761fe8",
+          "size": 4464,
+          "capturedAt": 1781703158658,
+          "toolCallId": "call_00_UY5cYDSkFYmJ38YSmOQO4321"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4464
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703164753,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-daily-life.test.ts",
+          "contentHash": "637a08431d6c46b96e7da82a6ad45ad4ea4c1261e7dcc7ede8edda0593be8696",
+          "size": 4564,
+          "capturedAt": 1781703164753,
+          "toolCallId": "call_00_FJiMatu0lDYQj76iQWkd8288"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4564
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703169725,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-daily-life.test.ts",
+          "contentHash": "3c29c40ab6a812d8cb6b4aeb9c158d65aa986a39e48e8cdac6c282780b44e5ee",
+          "size": 5688,
+          "capturedAt": 1781703169725,
+          "toolCallId": "call_00_McVAVM5puYTUYtvMeYXN2167"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 5688
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703187414,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/013.json",
+          "contentHash": "277fedda9db20ff4f26107579403cb5ed53ebf308040497c86be3b205c17712f",
+          "size": 6309,
+          "capturedAt": 1781703187414,
+          "toolCallId": "call_00_BtVFsF9zDWzpJJNRQOT83658"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 6309
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703187420,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/014.json",
+          "contentHash": "9a8029c4d1d4a30b161c575050df9c73f3a8f5aabfe3a3129c5b1a2979cf6a7b",
+          "size": 4551,
+          "capturedAt": 1781703187420,
+          "toolCallId": "call_01_vVv5qPrOJCGnsFCzX1Xo3941"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4551
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703187426,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/015.json",
+          "contentHash": "bbd0f28b5ba6b8dae887acc6d3f777738015f9d10d24bfa580b721f8e0f46a02",
+          "size": 4748,
+          "capturedAt": 1781703187426,
+          "toolCallId": "call_02_7221tgUH6OzgUmVa2XIF4928"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4748
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703187436,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/016.json",
+          "contentHash": "578e9e76cc00497712c4cdfbd929b84a79a7a4e23d59c8c2d54136703272da4d",
+          "size": 4432,
+          "capturedAt": 1781703187436,
+          "toolCallId": "call_03_NWzAlFt5VLHAW8Y5RtFs7593"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4432
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703187442,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/017.json",
+          "contentHash": "9ffbe9728f7bae1a236933520aa26b15adb80cf958273f754a9e67982e0339a9",
+          "size": 4672,
+          "capturedAt": 1781703187442,
+          "toolCallId": "call_04_OKmiP8hLLKh9yLdCBoxb4836"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4672
+    },
+    {
+      "messageId": "922b58c7-c7a0-42e5-9e93-4c2b9374a162",
+      "messageIndex": 41,
+      "timestamp": 1781703191913,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/017.json",
+          "contentHash": "62639219974690ba2a2c5078e3211392b75ce0e69d38d6a607f720dd9e327156",
+          "size": 4662,
+          "capturedAt": 1781703191913,
+          "toolCallId": "call_00_eIRO551xFyPWatDtm7Sk3903"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4662
+    },
+    {
+      "messageId": "48533213-e011-4162-a372-ee4aa979561f",
+      "messageIndex": 65,
+      "timestamp": 1781703275453,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-daily-life.test.ts",
+          "contentHash": "8d10cabe54ef1488377bfc154a63da9355d4e2369f4f3a98de8e7309fb1c8bd8",
+          "size": 5665,
+          "capturedAt": 1781703275453,
+          "toolCallId": "call_00_0nCikTlNco2Qv93ULxHN2368"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 5665
+    },
+    {
+      "messageId": "48533213-e011-4162-a372-ee4aa979561f",
+      "messageIndex": 65,
+      "timestamp": 1781703305141,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/007.json",
+          "contentHash": "feed270fe4231f7c68e372399105bb446d7bde3468682d8e858ea1f29a412c0e",
+          "size": 3640,
+          "capturedAt": 1781703305141,
+          "toolCallId": "call_00_fhSnn56R5R3VWl9NYhNd1536"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3640
+    },
+    {
+      "messageId": "48533213-e011-4162-a372-ee4aa979561f",
+      "messageIndex": 65,
+      "timestamp": 1781703305148,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/015.json",
+          "contentHash": "f5b88c6368dd13811f09e4019ecd8033d4f031fd724cceec104f4f75aa8b3df6",
+          "size": 4740,
+          "capturedAt": 1781703305148,
+          "toolCallId": "call_01_oJhVsktCnK9nPx6aAe4w2614"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4740
+    },
+    {
+      "messageId": "48533213-e011-4162-a372-ee4aa979561f",
+      "messageIndex": 65,
+      "timestamp": 1781703305154,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/daily-life/018.json",
+          "contentHash": "e6941bb9ccc9f395b4e8deba6b23c2a2d0f3300121494f3ecde3947ed4117e92",
+          "size": 4558,
+          "capturedAt": 1781703305154,
+          "toolCallId": "call_02_NOdTr4Kv4HMxS1pxnO3R3290"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4558
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703377958,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/016.json",
+          "createdAt": 1781703377958,
+          "toolCallId": "call_00_cTpdrVCZnCqA2SbeIeTK9970"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703377964,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/017.json",
+          "createdAt": 1781703377964,
+          "toolCallId": "call_01_ea0x2dU5qMhXzGAicIRt2532"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703377970,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/018.json",
+          "createdAt": 1781703377970,
+          "toolCallId": "call_02_kAualz9MY8aYrRMYDz6t5851"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703377974,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "createdAt": 1781703377974,
+          "toolCallId": "call_03_5s7hLIZjY4oHZaa17GIU8890"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703377983,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "createdAt": 1781703377983,
+          "toolCallId": "call_04_M4Y0c2uGhoQQjVAzVKXv5831"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703424900,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/academic/016.json",
+          "createdAt": 1781703424900,
+          "toolCallId": "call_00_Sf6PS068cwZYRUx4c8BL6805"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703424909,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/academic/017.json",
+          "createdAt": 1781703424909,
+          "toolCallId": "call_01_R0cYzpFKQv8hOYkER79u4231"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703424921,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/academic/018.json",
+          "createdAt": 1781703424921,
+          "toolCallId": "call_02_Wt7PpLwvSvUOcURIJYLH9991"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703424936,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/academic/019.json",
+          "createdAt": 1781703424936,
+          "toolCallId": "call_03_8suKjrIPbiaKflEJ7d4T3222"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703424945,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/academic/020.json",
+          "createdAt": 1781703424945,
+          "toolCallId": "call_04_ZGo8FbPQOReB2qsgUZzq5308"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703430363,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/index.json",
+          "contentHash": "aaa98585c0adc7817999912405c9d6225bb71b1c9167ee486cedecf6b9489f2a",
+          "size": 260,
+          "capturedAt": 1781703430363,
+          "toolCallId": "call_00_j2Zl7PkReEW9rbSezf7Z5976"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 260
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703430370,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/academic/index.json",
+          "contentHash": "aaa98585c0adc7817999912405c9d6225bb71b1c9167ee486cedecf6b9489f2a",
+          "size": 260,
+          "capturedAt": 1781703430370,
+          "toolCallId": "call_01_ixffXke7Jz6vqmeccd6t3953"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 260
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703458924,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/016.json",
+          "contentHash": "613bfaf03c2222c46f558e14a57731ff1e6a5c24c2f3e03a4245682fd08c406c",
+          "size": 1231,
+          "capturedAt": 1781703458924,
+          "toolCallId": "call_00_6yvAmcaHPjwzIyTyvrME8585"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1231
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703458930,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/017.json",
+          "contentHash": "839331c9ff64f9e396bce7aeac4f87a8f8cd81952f73669b90574d7fd0626301",
+          "size": 1251,
+          "capturedAt": 1781703458930,
+          "toolCallId": "call_01_2nhvQfZ1TdtWsYvup9dO1763"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1251
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703458936,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/018.json",
+          "contentHash": "9489a5b6f1aba7eeceab5e4459758095609498e03448493e42138fb1d6a7b659",
+          "size": 1295,
+          "capturedAt": 1781703458936,
+          "toolCallId": "call_02_pt7l3iHRjovLKer3eKoA1748"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1295
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703458946,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "069679aef5353474102a697d8e7397fb8ffae112c7f3a462f39a6a8eaa999827",
+          "size": 1286,
+          "capturedAt": 1781703458946,
+          "toolCallId": "call_03_YgRMzPeTbCNU6tUQu50R2250"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1286
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703458952,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "f96d01e411ae86a0596dff71bbd2b7e2c5ae4a425a5871ec5fa0357557ff036c",
+          "size": 1305,
+          "capturedAt": 1781703458952,
+          "toolCallId": "call_04_pkbp9WQPuKd1IREvDN1L7957"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1305
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703480854,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/016.json",
+          "contentHash": "5c660a467ad51f0162709e895f2eece6cead7951477dd3c996e699873b28c2cb",
+          "size": 1340,
+          "capturedAt": 1781703480854,
+          "toolCallId": "call_00_kcmOQerV6Men4jiMuHl82208"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1340
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703480861,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/018.json",
+          "contentHash": "aeed888b03ceeb846cfa6274e63be7fced7fadba5a89cc6e7d45427c2d1a6ee5",
+          "size": 1352,
+          "capturedAt": 1781703480861,
+          "toolCallId": "call_01_v34CQLtRI4t3Lb9LXF2k3912"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1352
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703480866,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "209cbb8ea22e4823b4d60f11e7412f75295ba6729f8eaa65fe09f56f8bd29d87",
+          "size": 1365,
+          "capturedAt": 1781703480866,
+          "toolCallId": "call_02_kPGcC0UvS2RvmBHW1hbp2609"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1365
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703480875,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "eb0e328d935602d33680bb01582f1d147f2bbba7b69b9c024d84d9d78792bba7",
+          "size": 1317,
+          "capturedAt": 1781703480875,
+          "toolCallId": "call_03_UzcCiYMoYV8KcnaebPMI5821"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1317
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703507785,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/016.json",
+          "contentHash": "c13865a5c27218e9a6a89c0965b22f8c180a80f64ee9eed11cbe55eee700a4f4",
+          "size": 1260,
+          "capturedAt": 1781703507785,
+          "toolCallId": "call_00_YrMykzyBXK7P3LulPUXe7156"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1260
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703507791,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/018.json",
+          "contentHash": "b9ed7d5c9e09f041350afa10cce300cc682120b17680bd2b72d7632eb9ebfab0",
+          "size": 1356,
+          "capturedAt": 1781703507791,
+          "toolCallId": "call_01_gvQ3p7EYkIw262Gq5Hz13061"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1356
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703507797,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "95339b69c6f2c54a2f356bf2fc4ded8ffd96a01dc5acbffd6877c8e5203dab37",
+          "size": 1362,
+          "capturedAt": 1781703507797,
+          "toolCallId": "call_02_N6Q550zRk7sBV755p32R6328"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1362
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703507801,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "0498a49af777629e7fbdb485f621fef0027b87a5fb7062b959664ab1407c5042",
+          "size": 1319,
+          "capturedAt": 1781703507801,
+          "toolCallId": "call_03_YvhgDqxJbDBNWoN5jiaE2194"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1319
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703514264,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "beee5cde138df9e9a6ead7a8ef56f0d99e68704450a8fb116d7376beb41ac435",
+          "size": 1336,
+          "capturedAt": 1781703514264,
+          "toolCallId": "call_00_h8fVcuRbwAHl8NdTxgcv7480"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1336
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703522144,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "c8858bcb4606487f199ea57da69258e6d4e5b8885f55a329b8b7c97fd0e2bce6",
+          "size": 1355,
+          "capturedAt": 1781703522144,
+          "toolCallId": "call_00_Ihv0POHHaXeUOkd3GJ8R0145"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1355
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703528048,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "49f9c4f879029a4d510957b6af5228d918299ebb47c0a3bf8e7806cfbc40dcf1",
+          "size": 1349,
+          "capturedAt": 1781703528048,
+          "toolCallId": "call_00_B5vblXHS9IyUjt4OtbEl4587"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1349
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703536000,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "c75d46acc5f216503d55f09b7079e0b19bae5f9753630e87a8a1568798cea82a",
+          "size": 1352,
+          "capturedAt": 1781703536000,
+          "toolCallId": "call_00_TlonJLVpg7jKzvGwsi760129"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1352
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703551795,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "d675e5cdf927bedafcde135a2ddc22cc91cd7d5b708ee6045028fcb39fde5590",
+          "size": 1352,
+          "capturedAt": 1781703551795,
+          "toolCallId": "call_00_9ybltGsepOtz7IljZJq75645"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1352
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703579182,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/016.json",
+          "contentHash": "ab4fdd0fe409c91e8d5741cd794b25da9d7dbc65228241d1f3fd5d7774c72ecd",
+          "size": 1318,
+          "capturedAt": 1781703579182,
+          "toolCallId": "call_00_e4qUTisXfLvi8dekYvKV5922"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1318
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703579188,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "07d982c8755334932d7e969153d8d002b33366669a7e3da3f2812adbc580e312",
+          "size": 1398,
+          "capturedAt": 1781703579188,
+          "toolCallId": "call_01_9K4CMY9M58hOK61sSdVo0425"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1398
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703579193,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "d105463e98539ed14cfe9f9834835f6a0fc5d8318cf261810cb39e92460ca7d1",
+          "size": 1284,
+          "capturedAt": 1781703579193,
+          "toolCallId": "call_02_uG9veU1BxtxGwaNs1M5O7496"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1284
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703601239,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "7b3934ee473a828804f8e80d4326a1dc00ce85cbc6c38bc3c650bcfc978b29fd",
+          "size": 1375,
+          "capturedAt": 1781703601239,
+          "toolCallId": "call_00_BeYS9MlBHKMM9ZAMTZrZ9086"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1375
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703601245,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "a90aa4d492045ac51b9740a4b536b405ce5a4041fac005d9cdac63ce4c2b8926",
+          "size": 1363,
+          "capturedAt": 1781703601245,
+          "toolCallId": "call_01_STDCKnPcxontKByZRRrL0635"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1363
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703614400,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "8ae0e3cce7a0a19956ef9f784bd65562830cd5661bfa5aede07156a67129e0ea",
+          "size": 1370,
+          "capturedAt": 1781703614400,
+          "toolCallId": "call_00_3ML2SEVGisCAgELCnwQQ1318"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1370
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703624325,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "622dd8723700c629639f78514ef2afd2fbe87c1f65ab359d0b73395e7f930e70",
+          "size": 1359,
+          "capturedAt": 1781703624325,
+          "toolCallId": "call_00_xVts2Z4vNVRtzwO4JXWv6778"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1359
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703642082,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "450d5e792b84ce46a03f6cdfbf90c59368e98a8e7b551078053813bd65db7995",
+          "size": 1329,
+          "capturedAt": 1781703642082,
+          "toolCallId": "call_00_EPP2Mlt4Oh4Io9b2ysvM1327"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1329
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703642087,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/020.json",
+          "contentHash": "ff5c8462564f2a5aed15ee83e8cf82ebf89233f88d38c506fb46f943c33cd4d2",
+          "size": 1336,
+          "capturedAt": 1781703642087,
+          "toolCallId": "call_01_OdmfA7eDXKPosu7vi1IF2668"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1336
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703661441,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/public/questions/toefl/reading/complete-words/019.json",
+          "contentHash": "c0d3958980eb35a58b571dbfb750f97c27430ecb54e816c8227acbf7e6a5e2b6",
+          "size": 1382,
+          "capturedAt": 1781703661441,
+          "toolCallId": "call_00_RzhpE3ktlXau5RX6vGea9515"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 1382
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703689755,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-complete-words.test.ts",
+          "createdAt": 1781703689755,
+          "toolCallId": "call_00_3bMAh4qicsHNihjFoQIc8678"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703689761,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-academic.test.ts",
+          "createdAt": 1781703689761,
+          "toolCallId": "call_01_1xRlrRrvJjnpOgZNsBMW4108"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703699915,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-academic.test.ts",
+          "contentHash": "b1f7f6b35090f7cdcdc2aa4391d56c6703af4fb8b4170db6958a2ac1e72087c2",
+          "size": 4187,
+          "capturedAt": 1781703699915,
+          "toolCallId": "call_00_jmJVIottMQ5VFb7VCG2K4174"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4187
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703718131,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-complete-words.test.ts",
+          "contentHash": "ed089789aefaf714256c3a292520bdb7941bc50eb6023c15c9fadfcde155ca2a",
+          "size": 2916,
+          "capturedAt": 1781703718131,
+          "toolCallId": "call_00_ndCUqbr1dgOfdyPDLhjT7740"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 2916
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703741000,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-complete-words.test.ts",
+          "contentHash": "d4d228be99077008178608e2e3a9fab06252d5887385648fa22c24ab4cb3f25b",
+          "size": 3168,
+          "capturedAt": 1781703741000,
+          "toolCallId": "call_00_IigKdzaH9mnECoGd1wUw7832"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3168
+    },
+    {
+      "messageId": "e1dd558b-c694-438d-bf66-f0c0073dd207",
+      "messageIndex": 79,
+      "timestamp": 1781703747292,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-reading-complete-words.test.ts",
+          "contentHash": "bdbea41210710a494afb2d78df4a6c6b01d0c3ef5dd62bb84439017adceee302",
+          "size": 3230,
+          "capturedAt": 1781703747292,
+          "toolCallId": "call_00_uNxSZU8h6uQ32vlNjqcr6605"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3230
+    },
+    {
+      "messageId": "43b01382-4351-4103-bc01-d6278044185e",
+      "messageIndex": 167,
+      "timestamp": 1781703962690,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-listening-response.test.ts",
+          "createdAt": 1781703962690,
+          "toolCallId": "call_00_89iW9YyIxA91he4YEvU69359"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "43b01382-4351-4103-bc01-d6278044185e",
+      "messageIndex": 167,
+      "timestamp": 1781703962699,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-listening-conversation.test.ts",
+          "createdAt": 1781703962699,
+          "toolCallId": "call_01_eiVu5JgZaJA2sOxTjC2P4291"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "43b01382-4351-4103-bc01-d6278044185e",
+      "messageIndex": 167,
+      "timestamp": 1781703962706,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-listening-announcement.test.ts",
+          "createdAt": 1781703962706,
+          "toolCallId": "call_02_ue4UIGX6UfiLCqoNNGfv2900"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "43b01382-4351-4103-bc01-d6278044185e",
+      "messageIndex": 167,
+      "timestamp": 1781703962712,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-listening-lecture.test.ts",
+          "createdAt": 1781703962712,
+          "toolCallId": "call_03_golg9n5wenPmHEEJs5lH8623"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "43b01382-4351-4103-bc01-d6278044185e",
+      "messageIndex": 167,
+      "timestamp": 1781703985031,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-listening-announcement.test.ts",
+          "contentHash": "d249f506df7cce2dec8c3485a2cedc55137b4b81199ccafd5cd128a0c763977e",
+          "size": 3820,
+          "capturedAt": 1781703985031,
+          "toolCallId": "call_00_8xcgEzL9KICSQf5bfGZ98317"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 3820
+    },
+    {
+      "messageId": "43b01382-4351-4103-bc01-d6278044185e",
+      "messageIndex": 167,
+      "timestamp": 1781703985041,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-listening-conversation.test.ts",
+          "contentHash": "12f0dd46a24c94a724e6563b3df327eaf5994fc647f24e2fd7d80d8ce18a9023",
+          "size": 4559,
+          "capturedAt": 1781703985041,
+          "toolCallId": "call_01_rsEYvN0d1Iwtto73Zo5I2456"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4559
+    },
+    {
+      "messageId": "43b01382-4351-4103-bc01-d6278044185e",
+      "messageIndex": 167,
+      "timestamp": 1781703985047,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-listening-lecture.test.ts",
+          "contentHash": "d347e7dff2ca7c2aba5f3f812fba82f6b5681d7ca75b5bb648d41681ab62698d",
+          "size": 4460,
+          "capturedAt": 1781703985047,
+          "toolCallId": "call_02_vNjqwF3IbYDDYJiEq3Q20164"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 4460
+    },
+    {
+      "messageId": "dd0dad1b-1542-4551-98a8-929076dc2bda",
+      "messageIndex": 195,
+      "timestamp": 1781704894925,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-speaking-listen-repeat.test.ts",
+          "createdAt": 1781704894925,
+          "toolCallId": "call_00_tUQA22TKjKnj7DXieveT4805"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "dd0dad1b-1542-4551-98a8-929076dc2bda",
+      "messageIndex": 195,
+      "timestamp": 1781704894934,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-speaking-interview.test.ts",
+          "createdAt": 1781704894934,
+          "toolCallId": "call_01_S95fUyqCncn99toqQpns1829"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "dd0dad1b-1542-4551-98a8-929076dc2bda",
+      "messageIndex": 195,
+      "timestamp": 1781704923482,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/english-test-generator/src/lib/toefl-speaking-listen-repeat.test.ts",
+          "contentHash": "db566de00813a53e01e7c67811f732ef03a93bcebf43f07614d3dba1f50f9312",
+          "size": 2404,
+          "capturedAt": 1781704923482,
+          "toolCallId": "call_00_OpJzqbrRjKkK17DGkbug1440"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 2404
+    }
+  ],
+  "oldestAvailableBoundaryIndex": 0,
+  "evictedBoundaryCount": 0
+}

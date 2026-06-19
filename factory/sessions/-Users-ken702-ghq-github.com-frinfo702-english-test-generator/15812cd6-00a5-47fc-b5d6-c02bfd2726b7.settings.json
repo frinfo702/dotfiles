@@ -1,0 +1,36 @@
+{
+  "assistantActiveTimeMs": 159473,
+  "model": "custom:OpenCode-Zen---DeepSeek-V4-Flash-Free-19",
+  "reasoningEffort": "none",
+  "interactionMode": "auto",
+  "autonomyLevel": "high",
+  "autonomyMode": "auto-high",
+  "compactionThresholdCheckEnabled": true,
+  "tags": [
+    {
+      "name": "exec"
+    },
+    {
+      "name": "subagent"
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 62802,
+    "outputTokens": 16026,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 954496,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "childInclusiveTokenUsageBySessionId": {},
+  "inclusiveTokenUsage": {
+    "inputTokens": 62802,
+    "outputTokens": 16026,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 954496,
+    "thinkingTokens": 0,
+    "factoryCredits": 0
+  },
+  "providerLock": "generic-chat-completion-api",
+  "providerLockTimestamp": "2026-06-17T12:12:24.107Z"
+}

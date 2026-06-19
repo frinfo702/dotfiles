@@ -1,0 +1,552 @@
+{
+  "sessionId": "a1ec1d9f-7adf-436e-b5e7-e861945fd5d8",
+  "version": 1,
+  "createdAt": 1781762011044,
+  "lastAccessedAt": 1781766885868,
+  "boundaries": [
+    {
+      "messageId": "04892ede-9dba-403f-bd74-5aa8257a49dc",
+      "messageIndex": 1,
+      "timestamp": 1781762916131,
+      "files": [],
+      "deletions": [],
+      "creations": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "createdAt": 1781762916131,
+          "toolCallId": "chatcmpl-tool-a93439f0d4f3c449"
+        }
+      ],
+      "totalSize": 0
+    },
+    {
+      "messageId": "04892ede-9dba-403f-bd74-5aa8257a49dc",
+      "messageIndex": 1,
+      "timestamp": 1781762918685,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/page.tsx",
+          "contentHash": "ea8aa8d02de64bd231ff3dbd477a7dcb68f136c8cdf4fc9610e8fd94263c5c1b",
+          "size": 5577,
+          "capturedAt": 1781762918685,
+          "toolCallId": "chatcmpl-tool-9e7bba0947a2e951"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 5577
+    },
+    {
+      "messageId": "04892ede-9dba-403f-bd74-5aa8257a49dc",
+      "messageIndex": 1,
+      "timestamp": 1781763098304,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "c18f0af8783d2e05d65d5c39699f4484e180209921e4559d672e82c5827b5be0",
+          "size": 10739,
+          "capturedAt": 1781763098304,
+          "toolCallId": "chatcmpl-tool-8308c9369f21295a"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 10739
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765181148,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "7a333dee093b4c03f6cfea3b00d2d59b056b60b0a8db59fe1f41238a352abd9d",
+          "size": 9424,
+          "capturedAt": 1781765181148,
+          "toolCallId": "chatcmpl-tool-aaa13000d239f91f"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 9424
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765193279,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "6749cf81b624986a8bcc0ed855230f481af91663c42019ab868805986e2e3281",
+          "size": 16856,
+          "capturedAt": 1781765193279,
+          "toolCallId": "chatcmpl-tool-be5cb9f1d4acb1bf"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16856
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765221754,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "94697154cfe820f681c997129d2bd6afe5823c3da7837a5dbd5977e909831d56",
+          "size": 16868,
+          "capturedAt": 1781765221754,
+          "toolCallId": "chatcmpl-tool-963c8715d273280a"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16868
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765357803,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "c7863b5ef88cc704254266575082ec95a1e5e08875842c36259837f833373a6d",
+          "size": 16894,
+          "capturedAt": 1781765357803,
+          "toolCallId": "chatcmpl-tool-87184d1d362d7ea1"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16894
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765402124,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "8a0181608d4a3dab537afbfce7a702a2e560fccd4be37ccc6e5d43dd03f34cf6",
+          "size": 17236,
+          "capturedAt": 1781765402124,
+          "toolCallId": "chatcmpl-tool-bdc83d8ef5d97471"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17236
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765431517,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "4cb61ab3bf793ab9d1c5c848ffee356370499b0806c38bc500ab356d8830e340",
+          "size": 17736,
+          "capturedAt": 1781765431517,
+          "toolCallId": "chatcmpl-tool-9732b715257d717e"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17736
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765434174,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "596200f800403c3486784417862e05cf1adbe4920c249a1dc9f0ddb65d24c34a",
+          "size": 17925,
+          "capturedAt": 1781765434174,
+          "toolCallId": "chatcmpl-tool-803f6f173499c3bc"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17925
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765443806,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "0de51fc2540f28543ad4beae003ee25bad6ee0295f349431a86d57d8c0bc4839",
+          "size": 17958,
+          "capturedAt": 1781765443806,
+          "toolCallId": "chatcmpl-tool-bc2b193f93727165"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17958
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765447849,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "8f9fde99fbc15003e72f5f4a84e400c4c8fd7366568f132cd6787587cce510a8",
+          "size": 18119,
+          "capturedAt": 1781765447849,
+          "toolCallId": "chatcmpl-tool-9195c0073ab1e21c"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 18119
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765475692,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "d8995d0abb57300fea10621be8e4fdd84bb4bc4b8f843322cec4f621fb0797ea",
+          "size": 18230,
+          "capturedAt": 1781765475692,
+          "toolCallId": "chatcmpl-tool-a3ce6291261f1797"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 18230
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765488760,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "ab73553637762869cefb8c13309545686a6aa034f153361457e4f4a03343cc59",
+          "size": 18238,
+          "capturedAt": 1781765488760,
+          "toolCallId": "chatcmpl-tool-af0d47512673a4f3"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 18238
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765538145,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "0475eb3a506604a2c3abfc07fb35fb0af89d7a757e35bac56058e297bd2dcae0",
+          "size": 18243,
+          "capturedAt": 1781765538145,
+          "toolCallId": "chatcmpl-tool-a53625879d387ce7"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 18243
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765541802,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "3ee4e3bcc196fa4722304f720ea25a100883cdf8cee342a669432ab58656862c",
+          "size": 17881,
+          "capturedAt": 1781765541802,
+          "toolCallId": "chatcmpl-tool-80dff96aa3c8d734"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17881
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765547661,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "92a08f40978bd5bb6ca8c5d0d62b798ec32c7c184f97198aceac2659527b1277",
+          "size": 17865,
+          "capturedAt": 1781765547661,
+          "toolCallId": "chatcmpl-tool-bff8bc864652b51d"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17865
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765579550,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "53c8aaec328b2e32e62af321ca6efbfed7108a5e36c136aac276e96b1f7220ee",
+          "size": 17986,
+          "capturedAt": 1781765579550,
+          "toolCallId": "chatcmpl-tool-b187c0bc759637fc"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17986
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765612370,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "17b3814441d668a292a319d736af160fec0fc0b425e1131a91aa12b59b71777e",
+          "size": 17520,
+          "capturedAt": 1781765612370,
+          "toolCallId": "chatcmpl-tool-8576417bf8201dc2"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17520
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765668331,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "98eb3aa73cc2992292466e1974e79cd8e878ccf8c216144c6a96b66b8f5a2b34",
+          "size": 17462,
+          "capturedAt": 1781765668331,
+          "toolCallId": "chatcmpl-tool-a4fa50b573d5fd29"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17462
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765673386,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "f96500e3eb8e7dbb59e9ad86a59684bd0fe984015a0d2812e9b80ac9afe4ed77",
+          "size": 17056,
+          "capturedAt": 1781765673386,
+          "toolCallId": "chatcmpl-tool-979448e45596d1cc"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17056
+    },
+    {
+      "messageId": "93b8fbf6-eca0-4d5e-b91e-97d253e2c567",
+      "messageIndex": 114,
+      "timestamp": 1781765675752,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "6870b69e1722b76a604439221d8fa489a9396a819ce16d4277b690864bca1001",
+          "size": 17023,
+          "capturedAt": 1781765675752,
+          "toolCallId": "chatcmpl-tool-931d43e59c982c60"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 17023
+    },
+    {
+      "messageId": "2e0e0a4f-a060-4f0a-abee-d1f83c34d3b9",
+      "messageIndex": 323,
+      "timestamp": 1781765909433,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "34d2e74b358fe54bf4377ce6f3e7eb8e3a2d2b73256f29a6bcdf0a2df177c06d",
+          "size": 16834,
+          "capturedAt": 1781765909433,
+          "toolCallId": "chatcmpl-tool-bc076fa280fe5149"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16834
+    },
+    {
+      "messageId": "2e0e0a4f-a060-4f0a-abee-d1f83c34d3b9",
+      "messageIndex": 323,
+      "timestamp": 1781765918221,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "a5d61905576e29aff19f2357d944a9be12c62f0416ca7199fd532a34ced6e1f7",
+          "size": 16673,
+          "capturedAt": 1781765918221,
+          "toolCallId": "chatcmpl-tool-8f80497b974e2950"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16673
+    },
+    {
+      "messageId": "2e0e0a4f-a060-4f0a-abee-d1f83c34d3b9",
+      "messageIndex": 323,
+      "timestamp": 1781765934196,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "51d7d5e1017ae440354f4a674660904e9b0beab19166abf25fc32b4f34c922ac",
+          "size": 16562,
+          "capturedAt": 1781765934196,
+          "toolCallId": "chatcmpl-tool-9e5d539f75bce1b7"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16562
+    },
+    {
+      "messageId": "54c1ed63-8f64-45f7-ae22-3f58a283d0a3",
+      "messageIndex": 361,
+      "timestamp": 1781766693694,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "709a2fc7969efc3d4d5542f5607681daf7b0fa2d900a5d5c60d3d145a206b0a2",
+          "size": 16522,
+          "capturedAt": 1781766693694,
+          "toolCallId": "chatcmpl-tool-9618b275e8770ae5"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16522
+    },
+    {
+      "messageId": "54c1ed63-8f64-45f7-ae22-3f58a283d0a3",
+      "messageIndex": 361,
+      "timestamp": 1781766701276,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "c9c4326c34fc96a8b229d059a2c28e524deb9019a6bbd6a72e446b2b84ac290f",
+          "size": 16578,
+          "capturedAt": 1781766701276,
+          "toolCallId": "chatcmpl-tool-9bc149f8f6560cd8"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16578
+    },
+    {
+      "messageId": "54c1ed63-8f64-45f7-ae22-3f58a283d0a3",
+      "messageIndex": 361,
+      "timestamp": 1781766717703,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "6e58bb640f13bb6965dfc0900ac5952b01c6126c1c289477a9504555bf739dc8",
+          "size": 16588,
+          "capturedAt": 1781766717703,
+          "toolCallId": "chatcmpl-tool-ab33f6b19f465d9c"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16588
+    },
+    {
+      "messageId": "54c1ed63-8f64-45f7-ae22-3f58a283d0a3",
+      "messageIndex": 361,
+      "timestamp": 1781766721079,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "630cc04d35db21410ce4c197985e494f4462c0629fd5f2959c76869255b65ec1",
+          "size": 16602,
+          "capturedAt": 1781766721079,
+          "toolCallId": "chatcmpl-tool-aa701ffdc94b5171"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16602
+    },
+    {
+      "messageId": "54c1ed63-8f64-45f7-ae22-3f58a283d0a3",
+      "messageIndex": 361,
+      "timestamp": 1781766799669,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "84bd3bd75241af8703a5e60dfa2f1aaa1733429fd73ef87c0fc92eb44be2fc57",
+          "size": 16635,
+          "capturedAt": 1781766799669,
+          "toolCallId": "chatcmpl-tool-8ca980083600467e"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16635
+    },
+    {
+      "messageId": "54c1ed63-8f64-45f7-ae22-3f58a283d0a3",
+      "messageIndex": 361,
+      "timestamp": 1781766804533,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "a7a8f89902e9f01cfa0405cc7b88643304516849a1cf46042331ee2eb9843827",
+          "size": 16659,
+          "capturedAt": 1781766804533,
+          "toolCallId": "chatcmpl-tool-9ef4ae7884633a29"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16659
+    },
+    {
+      "messageId": "54c1ed63-8f64-45f7-ae22-3f58a283d0a3",
+      "messageIndex": 361,
+      "timestamp": 1781766885827,
+      "files": [
+        {
+          "filePath": "/Users/ken702/ghq/github.com/frinfo702/portfolio/app/components/DiffusionField.tsx",
+          "contentHash": "3a47a4099d7b2e7a617bdc90364a42c97ea5de79db664fdceeb863abf2da9370",
+          "size": 16875,
+          "capturedAt": 1781766885827,
+          "toolCallId": "chatcmpl-tool-994bfba9a4f482c1"
+        }
+      ],
+      "deletions": [],
+      "creations": [],
+      "totalSize": 16875
+    }
+  ],
+  "oldestAvailableBoundaryIndex": 0,
+  "evictedBoundaryCount": 0
+}

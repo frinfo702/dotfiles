@@ -1,0 +1,55 @@
+{
+  "paragraph": "Human memory is not a perfect recording of past events but rather a constructive process that can introduce errors over time. Each time we recall a memory, we actively rebuild it, making it vulnerable to subtle changes and small alterations over many years. This phenomenon has significant implications for eyewitness testimony in legal proceedings, where inaccurate recollections can lead to serious miscarriages of justice. Researchers continue investigating techniques to improve memory reliability in forensic contexts.",
+  "items": [
+    {
+      "index": 0,
+      "hint": "per",
+      "answer": "perfect"
+    },
+    {
+      "index": 1,
+      "hint": "re",
+      "answer": "recording"
+    },
+    {
+      "index": 2,
+      "hint": "con",
+      "answer": "constructive"
+    },
+    {
+      "index": 3,
+      "hint": "in",
+      "answer": "introduce"
+    },
+    {
+      "index": 4,
+      "hint": "er",
+      "answer": "errors"
+    },
+    {
+      "index": 5,
+      "hint": "rec",
+      "answer": "recall"
+    },
+    {
+      "index": 6,
+      "hint": "reb",
+      "answer": "rebuild"
+    },
+    {
+      "index": 7,
+      "hint": "vul",
+      "answer": "vulnerable"
+    },
+    {
+      "index": 8,
+      "hint": "tes",
+      "answer": "testimony"
+    },
+    {
+      "index": 9,
+      "hint": "for",
+      "answer": "forensic"
+    }
+  ]
+}
