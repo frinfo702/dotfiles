@@ -20,7 +20,7 @@ return {
           "go",
         },
         highlight = { enable = true }, -- enable highlighting
-        indent = { enable = true }, -- enable event
+        indent = { enable = true }, -- enable indent
       })
     end,
   },

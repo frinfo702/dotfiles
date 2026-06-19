@@ -5,7 +5,7 @@ return {
       "nvim-lua/plenary.nvim",
       "mfussenegger/nvim-dap",
     },
-    ft = { "scala", "sbt", "java" }, -- Load when .scala file are opend
+    ft = { "scala", "sbt", "java" }, -- Load when .scala file are opened
     config = function()
       local metals_config = require("metals").bare_config()
 
