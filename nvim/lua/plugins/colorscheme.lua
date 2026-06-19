@@ -1,8 +1,13 @@
 return {
-  { "Mofiqul/vscode.nvim", name = "vscode" },
-  { "rose-pine/neovim", name = "rose-pine" },
-  { "rebelot/kanagawa.nvim", name = "kanagawa" },
-  { "tiesen243/vercel.nvim", name = "vercel" },
-  { "alexanderbluhm/black.nvim", name = "black" },
-  { "datsfilipe/vesper.nvim", name = "vesper" }
+  {
+    "sainnhe/gruvbox-material",
+    priority = 1000,
+    config = function()
+      vim.g.gruvbox_material_background = "hard"
+      vim.g.gruvbox_material_foreground = "material"
+    end,
+  },
+  { "folke/tokyonight.nvim", priority = 1000 },
+  { "rebelot/kanagawa.nvim", priority = 1000 },
+  { "Mofiqul/vscode.nvim", priority = 1000 },
 }

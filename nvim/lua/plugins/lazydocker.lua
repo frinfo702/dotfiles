@@ -5,9 +5,7 @@ return {
     opts = {
       size = 20,
       direction = "float",
-      float_opts = {
-        border = "rounded",
-      },
+      float_opts = { border = "rounded" },
     },
     config = function(_, opts)
       require("toggleterm").setup(opts)
@@ -19,16 +17,9 @@ return {
         direction = "float",
       })
 
-      function _LAZYDOCKER_TOGGLE()
+      vim.keymap.set("n", "<leader>do", function()
         lazydocker:toggle()
-      end
-
-      vim.keymap.set(
-        "n",
-        "<leader>do",
-        "<cmd>lua _LAZYDOCKER_TOGGLE()<CR>",
-        { noremap = true, silent = true, desc = "LazyDocker" }
-      )
+      end, { desc = "LazyDocker" })
     end,
   },
 }

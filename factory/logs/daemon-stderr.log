@@ -1,8 +1,0 @@
-[daemon-bootstrap] loadShellEnvironment starting (2026-06-19T04:47:55.900Z)
-[daemon-bootstrap] loadShellEnvironment completed (891ms) (2026-06-19T04:47:56.791Z)
-[daemon-bootstrap] readHostIdentity starting (2026-06-19T04:47:56.791Z)
-[daemon-bootstrap] readHostIdentity completed (1ms) (2026-06-19T04:47:56.792Z)
-[daemon-bootstrap] initCliTracing starting (2026-06-19T04:47:56.792Z)
-[daemon-bootstrap] initCliTracing completed (2ms) (2026-06-19T04:47:56.794Z)
-[daemon-bootstrap] daemon.start() calling (2026-06-19T04:47:56.794Z)
-[daemon-bootstrap] daemon.start() completed -- ipc transport ready (2026-06-19T04:47:57.006Z)

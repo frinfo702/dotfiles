@@ -3,31 +3,28 @@ return {
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {
-      plugins = {
-        spelling = {
-          enabled = true,
-          suggestions = 20,
-        },
-      },
-      window = {
+      win = {
         border = "rounded",
         padding = { 2, 2, 2, 2 },
       },
       layout = {
         spacing = 6,
       },
+      icons = {
+        group = "",
+      },
     },
     config = function(_, opts)
       local wk = require("which-key")
       wk.setup(opts)
 
-      wk.register({
-        ["<leader>c"] = { name = "Code" },
-        ["<leader>d"] = { name = "Debug" },
-        ["<leader>g"] = { name = "Git" },
-        ["<leader>t"] = { name = "Test" },
-        ["<leader>s"] = { name = "Search" },
-      }, { mode = "n" })
+      wk.add({
+        { "<leader>c", group = "Code", mode = "n" },
+        { "<leader>d", group = "Debug", mode = "n" },
+        { "<leader>g", group = "Git", mode = "n" },
+        { "<leader>t", group = "Test", mode = "n" },
+        { "<leader>s", group = "Search", mode = "n" },
+      })
     end,
   },
 }

@@ -6,7 +6,7 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    dependencies = { "mason.nvim", "nvim-lspconfig" },
+    dependencies = { "mason.nvim", "neovim/nvim-lspconfig" },
     opts = {
       ensure_installed = {
         "lua_ls",
@@ -17,7 +17,10 @@ return {
       automatic_installation = true,
       handlers = {
         function(server_name)
-          require("lspconfig")[server_name].setup({})
+          local servers_skip = { "lua_ls" }
+          if not vim.tbl_contains(servers_skip, server_name) then
+            require("lspconfig")[server_name].setup({})
+          end
         end,
         ["lua_ls"] = function()
           require("lspconfig").lua_ls.setup({
@@ -33,7 +36,6 @@ return {
       },
     },
   },
-
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -51,13 +53,18 @@ return {
       })
     end,
   },
-
   {
     "Saghen/blink.cmp",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    build = function()
+      require("blink.cmp").build():pwait()
+    end,
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "saghen/blink.lib",
+    },
     opts = {
       keymap = { preset = "default" },
-      appearance = { use_nvim_cmp_as_default = true, nerd_font_variant = "mono" },
+      appearance = { nerd_font_variant = "mono" },
       completion = {
         menu = { auto_show = true, border = "rounded", winhighlight = "Normal:NormalFloat" },
         documentation = { auto_show = true, auto_show_delay_ms = 200 },

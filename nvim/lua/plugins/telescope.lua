@@ -10,8 +10,6 @@ return {
       { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
       { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
       { "<leader>th", "<cmd>Telescope colorscheme<cr>", desc = "Switch Theme" },
-      { "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Search Grep" },
-      { "<leader>sf", "<cmd>Telescope find_files<cr>", desc = "Search Files" },
     },
     opts = {
       defaults = {
