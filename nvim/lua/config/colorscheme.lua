@@ -166,7 +166,7 @@ local function setup_editor_ui()
   hl("QuickFixLine",  { bg = c.bg_highlight })
 
   -- Float / Border
-  hl("FloatBorder",   { fg = c.border, bg = c.bg_float })
+  hl("FloatBorder",   { fg = c.orange, bg = c.bg_float })
   hl("FloatTitle",    { fg = c.orange, bold = true })
 
   -- Help
