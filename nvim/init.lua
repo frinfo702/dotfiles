@@ -11,3 +11,9 @@ require("config.lazy")
 
 -- Apply the droid-black colorscheme after all dependencies are loaded.
 require("config.colorscheme").setup()
+
+-- :Nigga command - お祭り絵文字が飛び出る
+require("config.nigga-party")
+
+-- :Manko command - パチンコ確定演出
+require("config.manko")
