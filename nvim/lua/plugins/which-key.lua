@@ -21,6 +21,7 @@ return {
       wk.add({
         { "<leader>c", group = "Code", mode = "n" },
         { "<leader>d", group = "Debug", mode = "n" },
+        { "<leader>e", group = "File Tree", mode = "n" },
         { "<leader>g", group = "Git", mode = "n" },
         { "<leader>t", group = "Test", mode = "n" },
         { "<leader>s", group = "Search", mode = "n" },
