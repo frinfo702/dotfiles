@@ -6,28 +6,20 @@ return {
     config = function()
       local dashboard = require("alpha.themes.dashboard")
 
-      dashboard.section.header.val = {
-        [[                                     _           ]],
-        [[ _ __ ___   __ _ _ __   ___ ___   __| | ___ _ __ ]],
-        [[| '_ ` _ \ / _` | '_ \ / __/ _ \ / _` |/ _ \ '__|]],
-        [[| | | | | | (_| | | | | (_| (_) | (_| |  __/ |   ]],
-        [[|_| |_| |_|\__,_|_| |_|\___\___/ \__,_|\___|_|   ]],
-        [[                                                 ]],
-      }
+      dashboard.section.header.val = { "" }
 
       dashboard.section.buttons.val = {
-        dashboard.button("n", "  New file", "<cmd>ene <BAR> startinsert <CR>"),
-        dashboard.button("f", "  Find file", "<cmd>Telescope find_files<CR>"),
-        dashboard.button("g", "  Live Grep", "<cmd>Telescope live_grep<CR>"),
-        dashboard.button("r", "  Recent", "<cmd>Telescope oldfiles<CR>"),
-        dashboard.button("c", "  Config", "<cmd>e $MYVIMRC <CR>"),
-        dashboard.button("q", "  Quit", "<cmd>qa<CR>"),
+        dashboard.button("n", " NEW FILE", "<cmd>ene <BAR> startinsert <CR>"),
+        dashboard.button("f", " FIND FILE", "<cmd>Telescope find_files<CR>"),
+        dashboard.button("g", " LIVE GREP", "<cmd>Telescope live_grep<CR>"),
+        dashboard.button("r", " RECENT", "<cmd>Telescope oldfiles<CR>"),
+        dashboard.button("c", " CONFIG", "<cmd>e $MYVIMRC <CR>"),
+        dashboard.button("q", " QUIT", "<cmd>qa<CR>"),
       }
 
-      -- レイアウト設定
       dashboard.section.header.opts.hl = "AlphaHeader"
       dashboard.section.buttons.opts.hl = "AlphaButtons"
-      dashboard.opts.layout[1].val = 5 -- 上の余白
+      dashboard.opts.layout[1].val = 3
 
       require("alpha").setup(dashboard.config)
     end,
