@@ -137,9 +137,18 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
+    "[scala]": {
+        "editor.defaultFormatter": "scalameta.metals",
+        "editor.formatOnSave": true,
+        "editor.suggestSelection": "first"
+    },
+    "metals.checkForUpdates": true,
+    "metals.serverVersion": "latest",
+    "metals.sbtScript": "sbt",
     "files.watcherExclude": {
         "**/.bloop": true,
-        "**/.metals": true
+        "**/.metals": true,
+        "**/.ammonite": true
     },
     "explorer.confirmPasteNative": false,
     "editor.lineNumbers": "relative",
