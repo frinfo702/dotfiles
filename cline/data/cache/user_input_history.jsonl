@@ -1,3 +1,0 @@
-{"prompt":"[> ls -l ~/.cline total 0 lrwxr-xr-x@ 1 ken702 st... Pasted +6 lines]\n\nseemingly i mistook creating simbolic link. ideally, there isn't cline in cline/ (which is doubled!). so fix this link","ts":1782480155662}
-{"prompt":"symbolic link successfully created?\n[> ls -l ~/.cline total 0 drwxr-xr-x@ 2 ken702 st... Pasted +5 lines]\nif so, move exsisting setting like cron, plugin to ./cline","ts":1782480155662}
-{"prompt":"何が行けなかった？正しくはどうすればよかった？","ts":1782480155662}
