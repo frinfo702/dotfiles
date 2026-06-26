@@ -1,0 +1,13 @@
+{
+  "name": "goal",
+  "private": true,
+  "cline": {
+    "plugins": [
+      {
+        "paths": [
+          "./package/index.ts"
+        ]
+      }
+    ]
+  }
+}

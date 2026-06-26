@@ -1,0 +1,13 @@
+{
+  "name": "background-terminal",
+  "private": true,
+  "cline": {
+    "plugins": [
+      {
+        "paths": [
+          "./package/index.ts"
+        ]
+      }
+    ]
+  }
+}

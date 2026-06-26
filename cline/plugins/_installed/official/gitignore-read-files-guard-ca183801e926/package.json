@@ -1,0 +1,13 @@
+{
+  "name": "gitignore-read-files-guard",
+  "private": true,
+  "cline": {
+    "plugins": [
+      {
+        "paths": [
+          "./package/index.ts"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "linear",
+  "private": true,
+  "cline": {
+    "plugins": [
+      {
+        "paths": [
+          "./package/index.ts"
+        ]
+      }
+    ]
+  }
+}

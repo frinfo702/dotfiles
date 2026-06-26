@@ -1,0 +1,13 @@
+{
+  "name": "web-search",
+  "private": true,
+  "cline": {
+    "plugins": [
+      {
+        "paths": [
+          "./package/index.ts"
+        ]
+      }
+    ]
+  }
+}
