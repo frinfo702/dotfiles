@@ -9,8 +9,8 @@ require("config.options")
 require("config.keymaps")
 require("config.lazy")
 
--- Apply the droid-black colorscheme after all dependencies are loaded.
-require("config.colorscheme").setup()
+-- Apply droid-black (black background only, everything else default).
+require("config.droid-black").setup()
 
 -- :Nigga command - お祭り絵文字が飛び出る
 require("config.nigga-party")

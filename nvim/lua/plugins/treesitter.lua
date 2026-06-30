@@ -23,7 +23,8 @@ return {
     init = function()
       -- Install any missing parsers on startup.
       local installed = require("nvim-treesitter.config").get_installed()
-      local to_install = vim.iter(ensure_parsers)
+      local to_install = vim
+        .iter(ensure_parsers)
         :filter(function(p)
           return not vim.tbl_contains(installed, p)
         end)

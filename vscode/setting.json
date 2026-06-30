@@ -132,7 +132,6 @@
         "random": false
     },
     "background.enabled": false,
-    "workbench.colorTheme": "Monokai",
     "python.languageServer": "None",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1

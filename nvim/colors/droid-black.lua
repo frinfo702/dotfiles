@@ -1,3 +1,3 @@
--- droid-black ─ black & white Neovim colorscheme with orange accents.
+-- droid-black ─ Neovim colorscheme with emerald green accents.
 -- Entry point loaded via `:colorscheme droid-black`.
-require("config.colorscheme").setup()
+require("config.droid-black").setup()

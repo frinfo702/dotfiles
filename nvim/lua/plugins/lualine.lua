@@ -6,7 +6,7 @@ return {
     opts = function()
       local theme = {
         normal = {
-          a = { fg = "#0c0c0c", bg = "#ff7700", gui = "bold" },
+          a = { fg = "#0c0c0c", bg = "#2EAA7B", gui = "bold" },
           b = { fg = "#e8e8e8", bg = "#1a1a1a" },
           c = { fg = "#e8e8e8", bg = "#0c0c0c" },
         },
@@ -21,7 +21,7 @@ return {
           c = { fg = "#e8e8e8", bg = "#0c0c0c" },
         },
         command = {
-          a = { fg = "#0c0c0c", bg = "#eebb00", gui = "bold" },
+          a = { fg = "#0c0c0c", bg = "#2EAA7B", gui = "bold" },
           b = { fg = "#e8e8e8", bg = "#1a1a1a" },
           c = { fg = "#e8e8e8", bg = "#0c0c0c" },
         },
@@ -116,7 +116,7 @@ return {
               "tabs",
               mode = 1,
               tabs_color = {
-                active = { fg = "#0c0c0c", bg = "#ff7700", gui = "bold" },
+                active = { fg = "#0c0c0c", bg = "#2EAA7B", gui = "bold" },
                 inactive = { fg = "#888888", bg = "#141414" },
               },
             },
