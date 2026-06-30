@@ -1,0 +1,7 @@
+{
+  "autoUpdateEnabled": true,
+  "telemetryOptOut": false,
+  "disabledPlugins": [
+    "/Users/ken702/.cline/plugins/_installed/official/background-terminal-6c6f0b95621b/package/index.ts"
+  ]
+}

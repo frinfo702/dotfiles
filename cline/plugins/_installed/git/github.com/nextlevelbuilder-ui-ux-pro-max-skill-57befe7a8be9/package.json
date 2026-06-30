@@ -1,0 +1,23 @@
+{
+  "name": "ui-ux-pro-max-skill",
+  "private": true,
+  "cline": {
+    "plugins": [
+      {
+        "paths": [
+          "./package/cli/src/commands/init.ts",
+          "./package/cli/src/commands/uninstall.ts",
+          "./package/cli/src/commands/update.ts",
+          "./package/cli/src/commands/versions.ts",
+          "./package/cli/src/index.ts",
+          "./package/cli/src/types/index.ts",
+          "./package/cli/src/utils/detect.ts",
+          "./package/cli/src/utils/extract.ts",
+          "./package/cli/src/utils/github.ts",
+          "./package/cli/src/utils/logger.ts",
+          "./package/cli/src/utils/template.ts"
+        ]
+      }
+    ]
+  }
+}

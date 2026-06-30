@@ -1,1 +1,70 @@
 /factory/
+
+# ============================================
+# History / Log / Cache - conflict-prone files
+# ============================================
+
+# Shell history
+*.history
+.zsh_history
+.bash_history
+
+# Log files
+*.log
+
+# JSONL history files
+*.jsonl
+
+# Cache directories
+**/cache/
+**/__pycache__/
+
+# Session data (machine-specific paths, changes constantly)
+**/sessions/
+
+# Database files (binary, machine-specific)
+*.db
+*.db-wal
+*.db-shm
+
+# Lock files
+**/locks/
+
+# --------------------------------------------
+# .pi/agent - runtime caches & history
+# --------------------------------------------
+.pi/agent/auth.json
+.pi/agent/run-history.jsonl
+.pi/agent/mcp-cache.json
+.pi/agent/mcp-npx-cache.json
+.pi/agent/sessions/
+
+# .pi/pi-acp - session mapping
+.pi/pi-acp/
+
+# --------------------------------------------
+# cline/data - runtime data (caches, DBs, logs, sessions)
+# --------------------------------------------
+cline/data/cache/
+cline/data/db/
+cline/data/locks/
+cline/data/logs/
+cline/data/sessions/
+cline/data/settings/providers.json
+cline/data/settings/cli-notices.json
+
+# --------------------------------------------
+# .cursor - state files
+# --------------------------------------------
+.cursor/hooks/state/
+
+# --------------------------------------------
+# opencode - generated artifacts
+# --------------------------------------------
+opencode/skills/skill-creator/scripts/__pycache__/
+
+# --------------------------------------------
+# nvim - lock/state (changes frequently)
+# --------------------------------------------
+nvim/lazy-lock.json
+nvim/lazyvim.json
