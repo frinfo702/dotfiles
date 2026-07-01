@@ -1,0 +1,7 @@
+command = ~/.config/ghostty/tmux-launch.sh
+
+keybind = cmd+t=text:\x01c
+keybind = cmd+w=text:\x01x
+keybind = cmd+d=text:\x01%
+keybind = cmd+shift+d=text:\x01"
+keybind = cmd+d=unbind
