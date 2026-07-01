@@ -1,7 +1,11 @@
 command = ~/.config/ghostty/tmux-launch.sh
 
-keybind = cmd+t=text:\x01c
-keybind = cmd+w=text:\x01x
-keybind = cmd+d=text:\x01%
-keybind = cmd+shift+d=text:\x01"
-keybind = cmd+d=unbind
+# Ghostty のデフォルトキーバインドを先に無効化（競合防止）
+keybind = cmd+t=unbind
+keybind = cmd+w=unbind
+
+# tmux 操作に置き換え（prefix が Ctrl+b の場合）
+keybind = cmd+t=text:\x02c
+keybind = cmd+w=text:\x02x
+keybind = cmd+d=text:\x02%
+keybind = cmd+shift+d=text:\x02"
