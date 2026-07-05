@@ -9,8 +9,6 @@ cursorcolumn = false
 cursorline = true
 line-number = "relative"
 mouse = true
-evil = false
-
 
 [editor.whitespace.characters]
 space = "·"
