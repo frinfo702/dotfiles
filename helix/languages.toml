@@ -32,6 +32,8 @@ name = "rust"
 
 [[language]]
 name = "go"
+auto-format = true
+formatter = { command = "gofmt", args = [] }
 language-servers = ["gopls", "golangci-lint"]
 
 [[language]]
@@ -39,8 +41,103 @@ name = "yaml"
 formatter = { command = "prettier", args = ["--parser", "yaml"] }
 
 ################################
-# scala
+# Dockerfile / Docker Compose
 ################################
+[[language]]
+name = "dockerfile"
+auto-format = true
+# LSP: docker-langserver (npm i -g dockerfile-language-server-nodejs)
+# フォーマッター: LSP (docker-langserver) 経由でフォーマット
+
+[[language]]
+name = "docker-compose"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+# LSP: docker-compose-langserver (npm i -g @microsoft/compose-language-service)
+
+################################
+# TypeScript / JavaScript
+################################
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "tsx"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "javascript"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+
+[[language]]
+name = "jsx"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+
+################################
+# C / C++
+################################
+[[language]]
+name = "c"
+auto-format = true
+formatter = { command = "clang-format", args = ["--style=file", "--assume-filename={buffer_path}"] }
+
+[[language]]
+name = "cpp"
+auto-format = true
+formatter = { command = "clang-format", args = ["--style=file", "--assume-filename={buffer_path}"] }
+
+################################
+# Lua
+################################
+[[language]]
+name = "lua"
+auto-format = true
+formatter = { command = "stylua", args = ["--search-parent-directories", "--stdin-filepath", "{buffer_path}", "-"] }
+
+################################
+# Shell
+################################
+[[language]]
+name = "bash"
+auto-format = true
+formatter = { command = "shfmt", args = ["-i", "2", "-ci", "-"] }
+
+################################
+# Terraform / HCL
+################################
+[[language]]
+name = "hcl"
+auto-format = true
+formatter = { command = "terraform", args = ["fmt", "-"] }
+
+################################
+# HTML / CSS
+################################
+[[language]]
+name = "html"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"] }
+
+[[language]]
+name = "css"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "css"] }
+
+################################
+# Typst
+################################
+[[language]]
+name = "typst"
+auto-format = true
+# LSP: tinymist (brew install tinymist)
+# formatter: tinymist の LSP 経由でフォーマットされる
+
+
 [[language]]
 name = "scala"
 indent = { tab-width = 2, unit = "  " }
