@@ -1,0 +1,215 @@
+# ghostty-dark-pro — Helix theme converted from the Zed "Ghostty Dark Inspired Theme".
+# Author: Kenichiro Goto
+# Description: ghostty dark pro — pure black background, inspired by Ghostty Dark.
+# Accents: Gold #FFD700 / Purple #DA70D6 / Blue #179FFF
+
+# ── Editor / surfaces ────────────────────────────────────────────────
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "border" }
+"ui.window" = { fg = "border" }
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg" }
+
+# ── Text ─────────────────────────────────────────────────────────────
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "fg_bright", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "ignored" }
+"ui.text.info" = { fg = "fg_bright" }
+"ui.text.directory" = { fg = "link" }
+
+# ── Cursor & selection ───────────────────────────────────────────────
+"ui.cursor" = { fg = "bg", bg = "cursor" }
+"ui.cursor.primary" = { fg = "bg", bg = "cursor" }
+"ui.cursor.insert" = { fg = "bg", bg = "cursor" }
+"ui.cursor.select" = { fg = "bg", bg = "cursor" }
+"ui.cursor.match" = { fg = "bracket", modifiers = ["bold"] }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.highlight" = { bg = "hover" }
+"ui.highlight.frameline" = { bg = "accent_blue" }
+
+# ── Line numbers & cursorline ────────────────────────────────────────
+"ui.cursorline.primary" = { bg = "active_line" }
+"ui.cursorline.secondary" = { bg = "active_line" }
+"ui.cursorcolumn.primary" = { bg = "active_line" }
+"ui.cursorcolumn.secondary" = { bg = "active_line" }
+"ui.linenr" = { fg = "linenr" }
+"ui.linenr.selected" = { fg = "fg_bright" }
+
+# ── Statusline ───────────────────────────────────────────────────────
+"ui.statusline" = { fg = "fg_bright", bg = "bg_alt" }
+"ui.statusline.inactive" = { fg = "linenr", bg = "bg_alt" }
+"ui.statusline.normal" = { fg = "bg_alt", bg = "accent_blue" }
+"ui.statusline.insert" = { fg = "bg_alt", bg = "keyword" }
+"ui.statusline.select" = { fg = "bg_alt", bg = "accent_purple" }
+"ui.statusline.separator" = { fg = "border" }
+
+# ── Bufferline (tabs) ────────────────────────────────────────────────
+"ui.bufferline" = { fg = "linenr", bg = "bg_alt" }
+"ui.bufferline.active" = { fg = "fg_bright", bg = "bg" }
+"ui.bufferline.background" = { bg = "bg" }
+
+# ── Popups, menus, help, pickers ─────────────────────────────────────
+"ui.popup" = { bg = "bg_alt" }
+"ui.popup.info" = { bg = "bg_alt" }
+"ui.menu" = { fg = "fg_bright", bg = "bg_alt" }
+"ui.menu.selected" = { fg = "fg_bright", bg = "hover" }
+"ui.menu.scroll" = { fg = "linenr", bg = "bg_alt" }
+"ui.help" = { fg = "fg_bright", bg = "bg_alt" }
+"ui.picker.header" = { fg = "fg_bright", bg = "bg_alt" }
+"ui.picker.header.column" = { fg = "linenr" }
+"ui.picker.header.column.active" = { fg = "accent_blue", modifiers = ["bold"] }
+
+# ── Virtual (whitespace, indent guides, inlay hints, wrap, ruler) ─────
+"ui.virtual.whitespace" = { fg = "indent" }
+"ui.virtual.indent-guide" = { fg = "indent" }
+"ui.virtual.wrap" = { fg = "wrap" }
+"ui.virtual.ruler" = { bg = "active_line" }
+"ui.virtual.inlay-hint" = { fg = "hint_fg" }
+"ui.virtual.inlay-hint.parameter" = { fg = "param" }
+"ui.virtual.inlay-hint.type" = { fg = "type" }
+"ui.virtual.jump-label" = { fg = "accent_gold", modifiers = ["bold"] }
+
+# ── Diagnostics ──────────────────────────────────────────────────────
+"error" = { fg = "error" }
+"warning" = { fg = "warning" }
+"info" = { fg = "info" }
+"hint" = { fg = "hint_fg" }
+"diagnostic" = { underline = { color = "info", style = "curl" } }
+"diagnostic.error" = { underline = { color = "error", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "warning", style = "curl" } }
+"diagnostic.info" = { underline = { color = "info", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "hint_fg", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ── Diff / VCS ───────────────────────────────────────────────────────
+"diff.plus" = { fg = "added" }
+"diff.minus" = { fg = "deleted" }
+"diff.delta" = { fg = "modified" }
+"diff.delta.moved" = { fg = "accent_blue" }
+
+# ── Syntax ───────────────────────────────────────────────────────────
+"attribute" = "fg_bright"
+"type" = "type"
+"type.builtin" = "type"
+"type.enum.variant" = "type"
+"constructor" = "fg_bright"
+"constant" = "fg_bright"
+"constant.builtin" = "boolean"
+"constant.builtin.boolean" = "boolean"
+"constant.character" = "string"
+"constant.character.escape" = "escape"
+"constant.numeric" = "number"
+"string" = "string"
+"string.regexp" = "regex"
+"string.special" = "regex"
+"string.special.path" = "regex"
+"string.special.url" = "link"
+"string.special.symbol" = "regex"
+"comment" = "comment"
+"comment.line" = "comment"
+"comment.block" = "comment"
+"comment.documentation" = "comment"
+"variable" = "variable"
+"variable.builtin" = "var_special"
+"variable.parameter" = "param"
+"variable.other" = "variable"
+"variable.other.member" = "fg_bright"
+"label" = "boolean"
+"keyword" = "keyword"
+"keyword.control" = "keyword_control"
+"keyword.control.conditional" = "keyword_control"
+"keyword.control.repeat" = "keyword_control"
+"keyword.control.import" = "keyword_control"
+"keyword.control.return" = "keyword_control"
+"keyword.control.exception" = "keyword_control"
+"keyword.directive" = "boolean"
+"keyword.function" = "keyword"
+"keyword.operator" = "operator"
+"operator" = "operator"
+"function" = "fg_bright"
+"function.builtin" = "fg_bright"
+"function.macro" = "fg_bright"
+"function.method" = "fg_bright"
+"tag" = "boolean"
+"tag.attribute" = "fg_bright"
+"namespace" = "fg_bright"
+"module" = "embedded"
+"special" = "regex"
+"punctuation" = "punct"
+"punctuation.bracket" = "bracket"
+"punctuation.delimiter" = "punct"
+"punctuation.special" = "bracket"
+
+# ── Markup ───────────────────────────────────────────────────────────
+"markup.heading" = { fg = "boolean", modifiers = ["bold"] }
+"markup.heading.marker" = "bracket"
+"markup.bold" = { fg = "boolean", modifiers = ["bold"] }
+"markup.italic" = { fg = "boolean", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "link", modifiers = ["underlined"] }
+"markup.link.text" = "literal"
+"markup.link.label" = "boolean"
+"markup.raw" = "literal"
+"markup.raw.block" = "literal"
+"markup.list" = "bracket"
+"markup.quote" = "comment"
+
+# ── Palette ──────────────────────────────────────────────────────────
+[palette]
+# surfaces
+bg = "#000000"
+bg_alt = "#181A1F"
+active_line = "#1F2229"
+hover = "#23262E"
+selection = "#264F78"
+border = "#2E2E2E"
+indent = "#404040"
+wrap = "#2B2B2B"
+
+# foregrounds
+fg = "#CCCCCC"
+fg_bright = "#FFFFFF"
+linenr = "#6E7681"
+ignored = "#8C8C8C"
+
+# accents (Gold / Purple / Blue)
+accent_blue = "#0078D4"
+accent_gold = "#FFD700"
+accent_purple = "#DA70D6"
+accent_cyan = "#179FFF"
+link = "#4DAAFC"
+
+# cursor (player 0)
+cursor = "#AEAFAD"
+
+# syntax
+keyword = "#79FFA0"
+keyword_control = "#52CDFF"
+type = "#4EC9B0"
+variable = "#68CAB6"
+param = "#52CDFF"
+var_special = "#569CD6"
+boolean = "#569CD6"
+number = "#B5CEA8"
+operator = "#E0BA38"
+string = "#B581CF"
+escape = "#D7BA7D"
+regex = "#D16969"
+literal = "#CE9178"
+comment = "#60B5A1"
+punct = "#CCCCCC"
+bracket = "#FFCCCE"
+embedded = "#D4D4D4"
+
+# diagnostics
+error = "#F14C4C"
+warning = "#CCA700"
+info = "#BFBFBF"
+hint_fg = "#999999"
+
+# vcs
+added = "#2EA043"
+deleted = "#F85149"
+modified = "#E2C08D"

@@ -1,0 +1,57 @@
+theme = "ghostty-dark-pro"
+
+[editor]
+auto-save = true
+auto-format = true
+bufferline = "multiple"
+completion-replace = true
+cursorcolumn = false
+cursorline = true
+line-number = "relative"
+mouse = true
+evil = false
+
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "╎"
+skip-levels = 0
+
+[keys.normal]
+# Move line up/down using A-k, A-j
+"A-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before"
+]
+"A-j" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_down",
+  "paste_before"
+]
+
+# Remove vscode "training wheels"
+# Comment this to enable arrow navigation in insert mode
+[keys.insert]
+# VSCode-like auto-completeion (pretty much all IDEs do it on C-space)
+"C-space" = "completion"

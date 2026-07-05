@@ -1,0 +1,82 @@
+# https://github.com/nametake/golangci-lint-langserver
+# [language-server.golangci-lint]
+# command = "golangci-lint-langserver"
+# config = { command = [
+#   "golangci-lint",
+#   "run",
+#   "--enable-all",
+#   "--disable",
+#   "lll",
+#   "--out-format",
+#   "json",
+#   "--issues-exit-code=1"
+# ] }
+# --------
+[[language]]
+name = "toml"
+auto-format = true
+# https://github.com/bd82/toml-tools/tree/master/packages/prettier-plugin-toml
+formatter = { command = "prettier", args = ["--parser", "toml"] }
+
+[[language]]
+name = "json"
+formatter = { command = "prettier", args = ["--parser", "json"] }
+
+[[language]]
+name = "markdown"
+# https://github.com/executablebooks/mdformat
+formatter = { command = "mdformat", args = ["-"] }
+
+[[language]]
+name = "rust"
+
+[[language]]
+name = "go"
+language-servers = ["gopls", "golangci-lint"]
+
+[[language]]
+name = "yaml"
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+
+################################
+# scala
+################################
+[[language]]
+name = "scala"
+indent = { tab-width = 2, unit = "  " }
+
+[language-server.metals]
+command = "metals"
+args = []
+
+
+#########################
+# python
+#########################
+[[language]]
+name = "python"
+auto-format = true
+formatter = { command = "ruff", args = ["format", "--stdin-filename", "{buffer_path}"] }
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.pyright.config]
+python.analysis.venvPath = "."
+python.analysis.venv = ".venv"
+python.analysis.lint = true
+python.analysis.inlayHint.enable = true
+python.analysis.autoSearchPaths = true
+python.analysis.diagnosticMode = "workspace"
+python.analysis.useLibraryCodeForType = true
+python.analysis.logLevel = "Error"
+python.analysis.typeCheckingMode = "off"
+python.analysis.autoImoprtCompletion = true
+python.analysis.reportOptionalSubscript = false
+python.analysis.reportOptionalMemberAccess = false
+
+[language-server.ruff]
+command = "ruff"
+args = ["server", "-q", "--preview"]
+
+
