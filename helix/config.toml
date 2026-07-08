@@ -3,6 +3,10 @@ theme = "ghostty-dark-pro"
 [editor]
 auto-save = true
 auto-format = true
+# 保存時に行末の空白と、最終行より後の余分な空行を削除する
+# (.editorconfigがあるリポジトリではそちらが優先される)
+trim-trailing-whitespace = true
+trim-final-newlines = true
 bufferline = "multiple"
 completion-replace = true
 cursorcolumn = false
@@ -25,6 +29,7 @@ ignore = true
 
 [editor.lsp]
 display-messages = true
+display-progress-messages = true
 
 [editor.cursor-shape]
 insert = "bar"

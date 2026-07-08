@@ -16,9 +16,11 @@
 ####################
 font-family = JetBrains Mono
 font-family = Zed Sans
-font-family = "Hiragino Kaku Gothic ProN"
 font-feature = -calt, -liga, -dlig
 font-size = 14
+background-image = "./wallpaper/igris.jpg"
+background-image-opacity = 0.3
+background-image-fit = "cover"
 background-opacity = 0.95
 cursor-color = #da7757
 
