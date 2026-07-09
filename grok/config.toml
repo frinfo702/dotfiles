@@ -1,0 +1,28 @@
+[cli]
+installer = "internal"
+auto_update = true
+
+[ui]
+max_thoughts_width = 120
+fork_secondary_model = "grok-build"
+yolo = false
+compact_mode = false
+permission_mode = "always-approve"
+
+[skills]
+paths = []
+ignore = []
+disabled = ["toefl-2026-practice"]
+server_skill_dirs = []
+bundled_skill_dirs = []
+
+[models]
+default = "grok-4.5"
+default_reasoning_effort = "high"
+
+[marketplace]
+official_marketplace_auto_installed = true
+
+[[marketplace.sources]]
+name = "xAI Official"
+git = "https://github.com/xai-org/plugin-marketplace.git"

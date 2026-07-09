@@ -47,7 +47,7 @@ formatter = { command = "prettier", args = ["--parser", "yaml"] }
 name = "dockerfile"
 auto-format = true
 # LSP: docker-langserver (npm i -g dockerfile-language-server-nodejs)
-# フォーマッター: LSP (docker-langserver) 経由でフォーマット
+# Formatter: via LSP (docker-langserver)
 
 [[language]]
 name = "docker-compose"
@@ -135,7 +135,7 @@ formatter = { command = "prettier", args = ["--parser", "css"] }
 name = "typst"
 auto-format = true
 # LSP: tinymist (brew install tinymist)
-# formatter: tinymist の LSP 経由でフォーマットされる
+# Formatter: via tinymist LSP
 
 
 [[language]]
@@ -144,7 +144,7 @@ indent = { tab-width = 2, unit = "  " }
 
 [language-server.metals]
 command = "metals"
-# metals v2のJavaインデクサーがJDK内部APIを使うため --add-exports が必要
+# metals v2 Java indexer uses JDK internal APIs, so --add-exports is required
 args = [
   "-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED",
   "-J--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED",
@@ -159,7 +159,7 @@ args = [
   "-J--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED",
 ]
 
-# Bloop(ビルドサーバー)のヒープを増やす。デフォルトだと大規模リポジトリでOOMになる
+# Increase Bloop (build server) heap; default can OOM on large repos
 [language-server.metals.config.metals]
 bloopJvmProperties = ["-Xmx6G", "-Xss4m", "-XX:+UseZGC", "-XX:ZUncommitDelay=30", "-XX:ZCollectionInterval=5"]
 
@@ -192,5 +192,3 @@ python.analysis.reportOptionalMemberAccess = false
 [language-server.ruff]
 command = "ruff"
 args = ["server", "-q", "--preview"]
-
-

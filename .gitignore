@@ -68,3 +68,19 @@ opencode/skills/skill-creator/scripts/__pycache__/
 # --------------------------------------------
 nvim/lazy-lock.json
 nvim/lazyvim.json
+
+# --------------------------------------------
+# Finder metadata
+# --------------------------------------------
+.DS_Store
+**/.DS_Store
+
+# --------------------------------------------
+# grok - allowlist only (config.toml + skills/)
+# Never force-add auth.json or other CLI state.
+# New top-level files from the CLI stay ignored by default.
+# --------------------------------------------
+grok/*
+!grok/config.toml
+!grok/skills/
+!grok/skills/**
