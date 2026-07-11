@@ -1,0 +1,4 @@
+prefix_rule(pattern=["python3", "/Users/ken702/.agents/skills/skill-creator/scripts/init_skill.py", "paper-lab-presentation", "--path", "/Users/ken702/.agents/skills"], decision="allow")
+prefix_rule(pattern=["rm", "-f", "/Users/ken702/.agents/skills/paper-lab-presentation/references/api_reference.md", "/Users/ken702/.agents/skills/paper-lab-presentation/scripts/example.py", "/Users/ken702/.agents/skills/paper-lab-presentation/assets/example_asset.txt"], decision="allow")
+prefix_rule(pattern=["curl", "-L"], decision="allow")
+prefix_rule(pattern=["screencapture", "-x"], decision="allow")

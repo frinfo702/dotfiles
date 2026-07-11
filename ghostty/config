@@ -37,6 +37,7 @@ theme = IR Black
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
+term = xterm-256color
 window-padding-balance = true 
 window-save-state = always
 macos-titlebar-style=transparent
