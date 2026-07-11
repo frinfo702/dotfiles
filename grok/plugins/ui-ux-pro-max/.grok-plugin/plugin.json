@@ -1,0 +1,24 @@
+{
+  "name": "ui-ux-pro-max",
+  "version": "2.6.2",
+  "description": "UI/UX design intelligence for AI coding. Searchable local database with 67+ UI styles, 161 color palettes, 57+ font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 17+ tech stacks. Ported from nextlevelbuilder/ui-ux-pro-max-skill for Grok.",
+  "author": {
+    "name": "NextLevelBuilder (ported for Grok)",
+    "url": "https://github.com/nextlevelbuilder"
+  },
+  "homepage": "https://uupm.cc",
+  "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "ux",
+    "design",
+    "design-system",
+    "styles",
+    "typography",
+    "color-palette",
+    "accessibility",
+    "charts",
+    "components"
+  ]
+}

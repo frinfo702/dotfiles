@@ -34,4 +34,7 @@ enabled = [
     "firecrawl",
     "ralph-loop",
     "cursor-team-kit",
+    "ui-ux-pro-max",
+    "create-plugin",
+    "leveling-up-tutor",
 ]

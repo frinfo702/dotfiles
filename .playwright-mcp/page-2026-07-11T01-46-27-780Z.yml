@@ -1,0 +1,71 @@
+- generic [ref=e3]:
+  - link "Skip to main content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link "English Test Practice Home" [ref=e7] [cursor=pointer]:
+        - /url: "#/"
+        - generic [ref=e8]: ET
+        - text: English Test Practice
+      - navigation "Main navigation" [ref=e9]:
+        - link "TOEFL 2026" [ref=e10] [cursor=pointer]:
+          - /url: "#/toefl"
+        - link "TOEIC L&R" [ref=e11] [cursor=pointer]:
+          - /url: "#/toeic"
+        - link "Shadowing" [ref=e13] [cursor=pointer]:
+          - /url: "#/shadowing"
+        - link "Dictation" [ref=e15] [cursor=pointer]:
+          - /url: "#/dictation"
+        - link "Dashboard" [ref=e17] [cursor=pointer]:
+          - /url: "#/dashboard"
+        - generic "Go to Dashboard" [ref=e18]:
+          - generic [ref=e19]: ⌘
+          - generic [ref=e20]: D
+        - button "Switch to dark mode" [ref=e21] [cursor=pointer]
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: Curated practice for TOEFL iBT 2026 & TOEIC L&R
+        - heading "English Test Practice" [level=1] [ref=e28]
+        - paragraph [ref=e29]: Focused drills for reading, writing, listening, and speaking. No sign-up required — pick a set and start.
+        - generic [ref=e30]:
+          - button "Start Practicing" [ref=e31] [cursor=pointer]
+          - button "View Dashboard" [ref=e32] [cursor=pointer]
+      - generic [ref=e33]:
+        - heading "Problem Sets 4 available" [level=2] [ref=e34]:
+          - text: Problem Sets
+          - generic [ref=e35]: 4 available
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: "#"
+            - generic [ref=e39]: Test
+          - link "1 TOEFL iBT 2026 Reading, Writing, Listening & Speaking — full practice" [ref=e40] [cursor=pointer]:
+            - /url: "#/toefl"
+            - generic [ref=e41]: "1"
+            - generic [ref=e43]:
+              - text: TOEFL iBT 2026
+              - generic [ref=e44]: Reading, Writing, Listening & Speaking — full practice
+          - link "2 TOEIC L&R Parts 2-7 — Listening & Reading practice" [ref=e45] [cursor=pointer]:
+            - /url: "#/toeic"
+            - generic [ref=e46]: "2"
+            - generic [ref=e48]:
+              - text: TOEIC L&R
+              - generic [ref=e49]: Parts 2-7 — Listening & Reading practice
+          - link "3 Shadowing Practice Listen and repeat — improve pronunciation & fluency" [ref=e50] [cursor=pointer]:
+            - /url: "#/shadowing"
+            - generic [ref=e51]: "3"
+            - generic [ref=e53]:
+              - text: Shadowing Practice
+              - generic [ref=e54]: Listen and repeat — improve pronunciation & fluency
+          - link "4 Dictation Practice Listen and arrange words — train your ear for detail" [ref=e55] [cursor=pointer]:
+            - /url: "#/dictation"
+            - generic [ref=e56]: "4"
+            - generic [ref=e58]:
+              - text: Dictation Practice
+              - generic [ref=e59]: Listen and arrange words — train your ear for detail
+      - paragraph [ref=e60]:
+        - text: Generate questions with an AI agent and save them under
+        - code [ref=e61]: public/questions/
+        - text: . Prompts in
+        - code [ref=e62]: public/prompts/
+        - text: .

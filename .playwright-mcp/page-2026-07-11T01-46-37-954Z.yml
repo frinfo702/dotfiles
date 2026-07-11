@@ -1,0 +1,116 @@
+- generic [ref=f2e3]:
+  - link "Skip to main content" [ref=f2e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f2e5]:
+    - generic [ref=f2e6]:
+      - link "English Test Practice Home" [ref=f2e7] [cursor=pointer]:
+        - /url: "#/"
+        - generic [ref=f2e8]: ET
+        - text: English Test Practice
+      - navigation "Main navigation" [ref=f2e9]:
+        - link "TOEFL 2026" [ref=f2e10] [cursor=pointer]:
+          - /url: "#/toefl"
+        - link "TOEIC L&R" [ref=f2e11] [cursor=pointer]:
+          - /url: "#/toeic"
+        - link "Shadowing" [ref=f2e13] [cursor=pointer]:
+          - /url: "#/shadowing"
+        - link "Dictation" [ref=f2e15] [cursor=pointer]:
+          - /url: "#/dictation"
+        - link "Dashboard" [ref=f2e17] [cursor=pointer]:
+          - /url: "#/dashboard"
+        - generic "Go to Dashboard" [ref=f2e18]:
+          - generic [ref=f2e19]: ⌘
+          - generic [ref=f2e20]: D
+        - button "Switch to light mode" [ref=f2e21] [cursor=pointer]
+  - main [ref=f2e25]:
+    - generic [ref=f2e64]:
+      - generic [ref=f2e66]:
+        - button "Go back" [ref=f2e67] [cursor=pointer]: ←
+        - generic [ref=f2e68]:
+          - heading "TOEFL iBT 2026" [level=1] [ref=f2e69]
+          - paragraph [ref=f2e70]: January 2026 format — select a section and task to practice
+      - generic [ref=f2e71]:
+        - generic [ref=f2e72]:
+          - generic [ref=f2e73]: Reading
+          - generic [ref=f2e75]:
+            - generic [ref=f2e76]:
+              - generic [ref=f2e77]: "#"
+              - generic [ref=f2e78]: Task
+            - button "1 Complete the Words Fill in missing words in an academic paragraph" [ref=f2e79] [cursor=pointer]:
+              - generic [ref=f2e80]: "1"
+              - generic [ref=f2e81]:
+                - text: Complete the Words
+                - generic [ref=f2e82]: Fill in missing words in an academic paragraph
+            - button "2 Read in Daily Life Answer questions about everyday texts" [ref=f2e83] [cursor=pointer]:
+              - generic [ref=f2e84]: "2"
+              - generic [ref=f2e85]:
+                - text: Read in Daily Life
+                - generic [ref=f2e86]: Answer questions about everyday texts
+            - button "3 Read an Academic Passage Answer questions about an academic passage" [ref=f2e87] [cursor=pointer]:
+              - generic [ref=f2e88]: "3"
+              - generic [ref=f2e89]:
+                - text: Read an Academic Passage
+                - generic [ref=f2e90]: Answer questions about an academic passage
+        - generic [ref=f2e91]:
+          - generic [ref=f2e92]: Writing
+          - generic [ref=f2e94]:
+            - generic [ref=f2e95]:
+              - generic [ref=f2e96]: "#"
+              - generic [ref=f2e97]: Task
+            - button "1 Build a Sentence Reorder chunks to build correct responses" [ref=f2e98] [cursor=pointer]:
+              - generic [ref=f2e99]: "1"
+              - generic [ref=f2e100]:
+                - text: Build a Sentence
+                - generic [ref=f2e101]: Reorder chunks to build correct responses
+            - button "2 Write an Email Compose an email based on a given scenario" [ref=f2e102] [cursor=pointer]:
+              - generic [ref=f2e103]: "2"
+              - generic [ref=f2e104]:
+                - text: Write an Email
+                - generic [ref=f2e105]: Compose an email based on a given scenario
+            - button "3 Academic Discussion Write your opinion on a professor's prompt" [ref=f2e106] [cursor=pointer]:
+              - generic [ref=f2e107]: "3"
+              - generic [ref=f2e108]:
+                - text: Academic Discussion
+                - generic [ref=f2e109]: Write your opinion on a professor's prompt
+        - generic [ref=f2e110]:
+          - generic [ref=f2e111]: Listening
+          - generic [ref=f2e113]:
+            - generic [ref=f2e114]:
+              - generic [ref=f2e115]: "#"
+              - generic [ref=f2e116]: Task
+            - button "1 Listen to a Conversation Campus conversation with questions" [ref=f2e117] [cursor=pointer]:
+              - generic [ref=f2e118]: "1"
+              - generic [ref=f2e119]:
+                - text: Listen to a Conversation
+                - generic [ref=f2e120]: Campus conversation with questions
+            - button "2 Listen to a Lecture Academic lecture with questions" [ref=f2e121] [cursor=pointer]:
+              - generic [ref=f2e122]: "2"
+              - generic [ref=f2e123]:
+                - text: Listen to a Lecture
+                - generic [ref=f2e124]: Academic lecture with questions
+            - button "3 Choose a Response Select the best response to utterances" [ref=f2e125] [cursor=pointer]:
+              - generic [ref=f2e126]: "3"
+              - generic [ref=f2e127]:
+                - text: Choose a Response
+                - generic [ref=f2e128]: Select the best response to utterances
+            - button "4 Listen to an Announcement Campus announcements with questions" [ref=f2e129] [cursor=pointer]:
+              - generic [ref=f2e130]: "4"
+              - generic [ref=f2e131]:
+                - text: Listen to an Announcement
+                - generic [ref=f2e132]: Campus announcements with questions
+        - generic [ref=f2e133]:
+          - generic [ref=f2e134]: Speaking
+          - generic [ref=f2e136]:
+            - generic [ref=f2e137]:
+              - generic [ref=f2e138]: "#"
+              - generic [ref=f2e139]: Task
+            - button "1 Listen and Repeat Memorize and reproduce sentences" [ref=f2e140] [cursor=pointer]:
+              - generic [ref=f2e141]: "1"
+              - generic [ref=f2e142]:
+                - text: Listen and Repeat
+                - generic [ref=f2e143]: Memorize and reproduce sentences
+            - button "2 Take an Interview Answer interview questions on the spot" [ref=f2e144] [cursor=pointer]:
+              - generic [ref=f2e145]: "2"
+              - generic [ref=f2e146]:
+                - text: Take an Interview
+                - generic [ref=f2e147]: Answer interview questions on the spot

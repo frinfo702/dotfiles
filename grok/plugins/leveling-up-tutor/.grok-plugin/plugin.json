@@ -1,0 +1,33 @@
+{
+  "name": "leveling-up-tutor",
+  "displayName": "Leveling Up Tutor",
+  "version": "1.0.0",
+  "description": "Educational plugin that raises coding, design, reading, and ML research ability without writing code for the learner. Tracks global XP, logarithmic levels, and a multi-track skill tree via hooks and /leveling-progress.",
+  "author": {
+    "name": "frinfo702"
+  },
+  "license": "MIT",
+  "keywords": [
+    "education",
+    "tutor",
+    "leveling",
+    "xp",
+    "skills",
+    "ml",
+    "socratic",
+    "deliberate-practice"
+  ],
+  "category": "education",
+  "tags": [
+    "learning",
+    "mentorship",
+    "progress",
+    "no-write"
+  ],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "agents": "./agents/",
+  "commands": "./commands/",
+  "hooks": "./hooks/hooks.json"
+}
+
