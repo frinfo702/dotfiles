@@ -171,6 +171,10 @@ bloopJvmProperties = ["-Xmx6G", "-Xss4m", "-XX:+UseZGC", "-XX:ZUncommitDelay=30"
 name = "python"
 auto-format = true
 formatter = { command = "ruff", args = ["format", "--stdin-filename", "{buffer_path}"] }
+# pyright: completions / hover / goto-def
+# ruff: diagnostics (and format via external formatter above)
+language-servers = ["pyright", "ruff"]
+
 [language-server.pyright]
 command = "pyright-langserver"
 args = ["--stdio"]
@@ -182,10 +186,10 @@ python.analysis.lint = true
 python.analysis.inlayHint.enable = true
 python.analysis.autoSearchPaths = true
 python.analysis.diagnosticMode = "workspace"
-python.analysis.useLibraryCodeForType = true
+python.analysis.useLibraryCodeForTypes = true
 python.analysis.logLevel = "Error"
 python.analysis.typeCheckingMode = "off"
-python.analysis.autoImoprtCompletion = true
+python.analysis.autoImportCompletions = true
 python.analysis.reportOptionalSubscript = false
 python.analysis.reportOptionalMemberAccess = false
 

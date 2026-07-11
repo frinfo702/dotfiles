@@ -76,11 +76,15 @@ nvim/lazyvim.json
 **/.DS_Store
 
 # --------------------------------------------
-# grok - allowlist only (config.toml + skills/)
+# grok - allowlist only (shared config)
+# Track: config.toml, skills/, plugins/
+# Runtime CLI state (auth, sessions, installed-plugins,
+# marketplace-cache, bin, logs, …) stays ignored by grok/*
 # Never force-add auth.json or other CLI state.
-# New top-level files from the CLI stay ignored by default.
 # --------------------------------------------
 grok/*
 !grok/config.toml
 !grok/skills/
 !grok/skills/**
+!grok/plugins/
+!grok/plugins/**
