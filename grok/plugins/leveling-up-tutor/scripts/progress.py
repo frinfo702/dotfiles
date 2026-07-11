@@ -151,7 +151,9 @@ def xp_for_level(level: int, scale: float = SCALE, base: float = BASE) -> float:
     return base * (math.exp((level - 1) / scale) - 1.0)
 
 
-def xp_to_next(xp: float, scale: float = SCALE, base: float = BASE) -> tuple[int, float, float]:
+def xp_to_next(
+    xp: float, scale: float = SCALE, base: float = BASE
+) -> tuple[int, float, float]:
     level = level_from_xp(xp, scale, base)
     cur = xp_for_level(level, scale, base)
     nxt = xp_for_level(level + 1, scale, base)
@@ -211,7 +213,9 @@ def load_progress() -> dict[str, Any]:
 
 def atomic_write_json(path: Path, data: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(prefix=".progress-", suffix=".json", dir=str(path.parent))
+    fd, tmp = tempfile.mkstemp(
+        prefix=".progress-", suffix=".json", dir=str(path.parent)
+    )
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
@@ -278,7 +282,9 @@ def milestone_for_level(level: int) -> str | None:
     return table.get(level)
 
 
-def apply_milestones(progress: dict[str, Any], old_level: int, new_level: int) -> list[str]:
+def apply_milestones(
+    progress: dict[str, Any], old_level: int, new_level: int
+) -> list[str]:
     hit: list[str] = []
     if new_level <= old_level:
         return hit
@@ -484,7 +490,9 @@ def compute_session_xp(
     return main_xp, skill_pairs, cats, reason
 
 
-def format_progress(progress: dict[str, Any] | None = None, *, pretty: bool = True) -> str:
+def format_progress(
+    progress: dict[str, Any] | None = None, *, pretty: bool = True
+) -> str:
     p = progress if progress is not None else load_progress()
     total = float(p.get("total_xp") or 0)
     level, need, frac = xp_to_next(total)
@@ -497,7 +505,9 @@ def format_progress(progress: dict[str, Any] | None = None, *, pretty: bool = Tr
     lines.append("│  LEVELING UP TUTOR — Progress                │")
     lines.append("╰──────────────────────────────────────────────╯")
     lines.append(f"  Level  {level}   (uncapped · logarithmic)")
-    lines.append(f"  XP     {total:.1f}   next in {need:.1f}  [{bar}] {frac*100:.0f}%")
+    lines.append(
+        f"  XP     {total:.1f}   next in {need:.1f}  [{bar}] {frac * 100:.0f}%"
+    )
     lines.append("")
 
     # Milestone near
@@ -618,13 +628,13 @@ def context_blob(progress: dict[str, Any] | None = None) -> str:
     return (
         f"<leveling-up-tutor-progress>\n"
         f"Learner global progress (do NOT write code for them; teach, review, Socratic guide).\n"
-        f"Main Level: {level} | Total XP: {total:.1f} | To next: {need:.1f} ({frac*100:.0f}%)\n"
+        f"Main Level: {level} | Total XP: {total:.1f} | To next: {need:.1f} ({frac * 100:.0f}%)\n"
         f"Top skills: {skill_txt}\n"
         f"Suggested focus: {', '.join(focus)}.{quest_txt}\n"
         f"After meaningful learning, award XP via: "
-        f"python3 \"$GROK_PLUGIN_ROOT/scripts/progress.py\" award --amount N "
+        f'python3 "$GROK_PLUGIN_ROOT/scripts/progress.py" award --amount N '
         f"--skill go:12 --skill debugging:8 --reason '...'\n"
-        f"Show card: python3 \"$GROK_PLUGIN_ROOT/scripts/progress.py\" show\n"
+        f'Show card: python3 "$GROK_PLUGIN_ROOT/scripts/progress.py" show\n'
         f"Progress file: {progress_path()}\n"
         f"</leveling-up-tutor-progress>"
     )
@@ -641,7 +651,9 @@ def bump_session(session_id: str | None = None) -> dict[str, Any]:
     return {"ok": True, "sessions": p["stats"]["sessions"]}
 
 
-def add_quest(title: str, detail: str = "", skills: list[str] | None = None) -> dict[str, Any]:
+def add_quest(
+    title: str, detail: str = "", skills: list[str] | None = None
+) -> dict[str, Any]:
     p = load_progress()
     quest = {
         "id": f"q-{int(datetime.now(timezone.utc).timestamp())}",
@@ -864,7 +876,9 @@ def build_parser() -> argparse.ArgumentParser:
     init_p.add_argument("--force", action="store_true")
     init_p.set_defaults(func=cmd_init)
 
-    ss = sub.add_parser("session-start", help="Hook helper: bump session + emit context")
+    ss = sub.add_parser(
+        "session-start", help="Hook helper: bump session + emit context"
+    )
     ss.add_argument("--session-id", default=None)
     ss.set_defaults(func=cmd_session_start)
 
