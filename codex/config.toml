@@ -3,10 +3,11 @@ model_reasoning_effort = "medium"
 personality = "pragmatic"
 
 
-notify = ["/Users/ken702/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
 
 
 
+
+notify = ["/Users/ken702/ghq/github.com/frinfo702/dotfiles/codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
 
 [projects."/Users/ken702/sandbox/rust"]
 trust_level = "trusted"

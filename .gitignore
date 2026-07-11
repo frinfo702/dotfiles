@@ -90,13 +90,13 @@ grok/*
 !grok/plugins/**
 
 # --------------------------------------------
-# Codex - allowlist only (shared configuration)
+# codex - allowlist only (shared configuration)
 # Track: config.toml, AGENTS.md, rules/
 # Runtime state (auth, history, sessions, caches, databases,
 # plugins, generated images, machine identifiers, …) stays ignored.
 # --------------------------------------------
-.codex/*
-!.codex/config.toml
-!.codex/AGENTS.md
-!.codex/rules/
-!.codex/rules/default.rules
+codex/*
+!codex/config.toml
+!codex/AGENTS.md
+!codex/rules/
+!codex/rules/default.rules
