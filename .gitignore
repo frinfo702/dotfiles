@@ -53,6 +53,9 @@ cline/data/sessions/
 cline/data/settings/providers.json
 cline/data/settings/cli-notices.json
 
+# cline installed plugins from git (nested repos; dirty constantly)
+cline/plugins/_installed/git/
+
 # --------------------------------------------
 # .cursor - state files
 # --------------------------------------------
