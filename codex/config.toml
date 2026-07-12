@@ -1,5 +1,5 @@
-model = "gpt-5.6-terra"
-model_reasoning_effort = "medium"
+model = "gpt-5.6-luna"
+model_reasoning_effort = "low"
 personality = "pragmatic"
 
 
@@ -144,6 +144,18 @@ trust_level = "trusted"
 [projects."/Users/ken702/ghq/github.com/frinfo702/dotfiles"]
 trust_level = "trusted"
 
+[projects."/Users/ken702/Documents/Codex/2026-07-12/toefl-toefl3800-deposit-the-deposition-of"]
+trust_level = "trusted"
+
+[projects."/Users/ken702/Documents/Codex/2026-07-12/toefl-toefl3800-deposit-the-deposition-of-2"]
+trust_level = "trusted"
+
+[projects."/Users/ken702/Documents/Codex/2026-07-12/mas"]
+trust_level = "trusted"
+
+[projects."/Users/ken702/Documents/Codex/2026-07-12/c-r"]
+trust_level = "trusted"
+
 [tools]
 
 [features]
@@ -260,7 +272,7 @@ enabled = false
 appearanceTheme = "dark"
 usePointerCursors = true
 mac-menu-bar-enabled = false
-conversationDetailMode = "STEPS_COMMANDS"
+conversationDetailMode = "STEPS_PROSE"
 followUpQueueMode = "queue"
 appearanceDarkCodeThemeId = "linear"
 dock-icon-preference = "codex-system"
