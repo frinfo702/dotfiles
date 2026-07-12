@@ -2,61 +2,55 @@
   "version": 1,
   "skills": {
     "babysit": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "canvas": {
-      "lastSyncedAt": 1783855886815
-    },
-    "automate": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "create-hook": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "create-rule": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "create-skill": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "create-subagent": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "sdk": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "loop": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "migrate-to-skills": {
-      "lastSyncedAt": 1783855886815
-    },
-    "onboard": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "review": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "review-bugbot": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "review-security": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "shell": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "split-to-prs": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "statusline": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "update-cli-config": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     },
     "update-cursor-settings": {
-      "lastSyncedAt": 1783855886815
+      "lastSyncedAt": 1783856690233
     }
   },
   "lastInventoryAt": 1783841413311
