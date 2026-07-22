@@ -62,9 +62,11 @@ cline/plugins/_installed/git/
 .cursor/hooks/state/
 
 # cursor/ (dotfiles copy of ~/.cursor) — runtime / machine-local
-# (also overridden after CURSOR MANAGED BLOCK in cursor/.gitignore)
+# Final ignores live after CURSOR MANAGED BLOCK in cursor/.gitignore
 cursor/projects/
 cursor/plugins/cache/
+cursor/skills-cursor/.sync-manifest.json
+cursor/skills-cursor/.cursor-managed-skills-manifest.json
 
 # --------------------------------------------
 # opencode - generated artifacts
