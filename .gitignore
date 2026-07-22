@@ -108,3 +108,9 @@ codex/*
 !codex/AGENTS.md
 !codex/rules/
 !codex/rules/default.rules
+
+# --------------------------------------------
+# Zed
+# --------------------------------------------
+zed/*.bak.*
+zed/settings_backup.json
