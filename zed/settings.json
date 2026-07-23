@@ -46,7 +46,7 @@
   "tabs": {
     "git_status": false,
     "file_icons": false,
-    "show_diagnostics": "off",
+    "show_diagnostics": "off"
   },
   "toolbar": {
     "breadcrumbs": false,
@@ -54,69 +54,67 @@
     "selections_menu": false
   },
   "indent_guides": {
-    "enabled": false,
+    "enabled": false
   },
   "cli_default_open_behavior": "new_window",
   "project_panel": {
     "button": false,
-    "dock": "left",
+    "dock": "left"
   },
   "outline_panel": {
     "button": false,
-    "dock": "left",
+    "dock": "left"
   },
   "collaboration_panel": {
     "button": false,
-    "dock": "right",
+    "dock": "right"
   },
   "terminal": {
     "button": false,
     "font_family": "SF Mono",
-    "shell": "system",
-    "env": {
-      "JAVA_HOME": "/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home",
-    },
+    "shell": "system"
   },
   "git": {
     "inline_blame": {
-      "show_commit_summary": true,
-    },
+      "enabled": false,
+      "show_commit_summary": true
+    }
   },
   "show_completions_on_input": true,
   "agent_servers": {
     "kimi": {
-      "type": "registry",
+      "type": "registry"
     },
     "claude-acp": {
       "default_config_options": {
         "model": "haiku",
         "effort": "max",
-        "mode": "bypassPermissions",
+        "mode": "bypassPermissions"
       },
-      "type": "registry",
+      "type": "registry"
     },
     "codex-acp": {
       "default_config_options": {
         "mode": "full-access",
-        "model": "gpt-5.4",
+        "model": "gpt-5.4"
       },
-      "type": "registry",
+      "type": "registry"
     },
     "opencode": {
       "default_config_options": {
         "effort": "medium",
-        "model": "deepseek/deepseek-v4-flash",
+        "model": "deepseek/deepseek-v4-flash"
       },
-      "type": "registry",
+      "type": "registry"
     },
     "cursor": {
-      "type": "registry",
-    },
+      "type": "registry"
+    }
   },
   "git_panel": {
     "button": false,
     "dock": "left",
-    "tree_view": true,
+    "tree_view": true
   },
   "ssh_connections": [
     {
@@ -124,26 +122,26 @@
       "args": [],
       "projects": [
         {
-          "paths": ["/home/doffy_pixiv_co_jp"],
-        },
-      ],
+          "paths": ["/home/doffy_pixiv_co_jp"]
+        }
+      ]
     },
     {
       "host": "bastion.tanuking.dev",
       "args": [],
-      "projects": [],
+      "projects": []
     },
     {
       "host": "gitlab.tanuking.dev",
       "args": [],
-      "projects": [],
-    },
+      "projects": []
+    }
   ],
   "relative_line_numbers": "enabled",
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000,
-    },
+      "milliseconds": 1000
+    }
   },
   "show_edit_predictions": false,
   "agent": {
@@ -156,42 +154,47 @@
           "default": "allow",
           "always_allow": [
             {
-              "pattern": "^sed\\b",
+              "pattern": "^sed\\b"
             },
             {
-              "pattern": "^npx\\b",
+              "pattern": "^npx\\b"
             },
             {
-              "pattern": "^python3\\b",
-            },
-          ],
-        },
-      },
+              "pattern": "^python3\\b"
+            }
+          ]
+        }
+      }
     },
     "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
       "model": "gpt-5.4",
       "enable_thinking": true,
-      "effort": "high",
+      "effort": "high"
     },
     "play_sound_when_agent_done": "when_hidden",
     "use_modifier_to_send": false,
     "model_parameters": [],
-    "enable_feedback": false,
+    "enable_feedback": false
   },
   "disable_ai": false,
   "ui_font_weight": 500.0,
   "buffer_font_weight": 500.0,
   "buffer_line_height": "comfortable",
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
+  },
   "helix_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 13,
+  // Local theme inspired by Poolside's warm, high-contrast palette.
   "theme": {
-    "mode": "system",
-    "light": "Ayu Light",
-    "dark": "Ghostty Dark Inspired Theme",
+    "mode": "dark",
+    "light": "poolside-light",
+    "dark": "grok-dark"
   },
   "languages": {
     "Scala": {
@@ -199,13 +202,13 @@
       "format_on_save": "on",
       "tab_size": 2,
       "code_actions_on_format": {
-        "source.organizeImports": false, // auto import TODO: restore later
-      },
+        "source.organizeImports": false // auto import TODO: restore later
+      }
     },
     "YAML": {
       "format_on_save": "on",
-      "formatter": "prettier",
-    },
+      "formatter": "prettier"
+    }
   },
   "file_scan_exclusions": [
     "**/target",
@@ -213,7 +216,7 @@
     "**/project/project",
     "**/node_modules",
     "**/.metals",
-    "**/.bloop",
+    "**/.bloop"
   ],
   // Keep the Metals proxy path so Zed's DAP and Metals tasks remain available.
   // Zed does not implement these refresh notifications in its LSP client.
@@ -222,23 +225,18 @@
       "settings": {
         "autoImportBuilds": "all",
         "bloopSbtAlreadyInstalled": false,
-        // Keep the JDK used by Metals' presentation compiler/indexer aligned
-        // with the project's BSP toolchain (temurin-25). A different JDK here
-        // can produce false unresolved-symbol reports and break navigation.
-        "javaHome": "/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home",
         "enableSemanticHighlighting": false,
-        "testUserInterface": "test explorer",
-        "bloopJvmProperties": [
-          "-Xmx6G",
-          "-Xss4m",
-          "-XX:+UseZGC",
-          "-XX:ZUncommitDelay=30",
-          "-XX:ZCollectionInterval=5",
-        ],
-      },
+        "testUserInterface": "test explorer"
+      }
     },
+    "jdtls": {
+      "settings": {
+        "java_home": "/Users/ken702/.local/share/mise/installs/java/21"
+      }
+    }
   },
-  "experimental.theme_overrides": {
+  "theme_overrides": {
+    "Ghostty Dark Inspired Theme": {
     "border": "#2E2E2E",
     "border.variant": "#51A093",
     "border.focused": "#0078D4",
@@ -399,233 +397,234 @@
       {
         "cursor": "#AEAFAD",
         "background": null,
-        "selection": "#264F78",
+        "selection": "#264F78"
       },
       {
         "cursor": "#39BAE5FF",
         "background": "#39BAE5FF",
-        "selection": "#39BAE53D",
+        "selection": "#39BAE53D"
       },
       {
         "cursor": "#FE8F40FF",
         "background": "#FE8F40FF",
-        "selection": "#FE8F403D",
+        "selection": "#FE8F403D"
       },
       {
         "cursor": "#D2A6FEFF",
         "background": "#D2A6FEFF",
-        "selection": "#D2A6FE3D",
+        "selection": "#D2A6FE3D"
       },
       {
         "cursor": "#95E5CBFF",
         "background": "#95E5CBFF",
-        "selection": "#95E5CB3D",
+        "selection": "#95E5CB3D"
       },
       {
         "cursor": "#EF7177FF",
         "background": "#EF7177FF",
-        "selection": "#EF71773D",
+        "selection": "#EF71773D"
       },
       {
         "cursor": "#FEB454FF",
         "background": "#FEB454FF",
-        "selection": "#FEB4543D",
+        "selection": "#FEB4543D"
       },
       {
         "cursor": "#AAD84CFF",
         "background": "#AAD84CFF",
-        "selection": "#AAD84C3D",
-      },
+        "selection": "#AAD84C3D"
+      }
     ],
     "syntax": {
       "attribute": {
         "color": "#FFFFFF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "boolean": {
         "color": "#569CD6",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "comment": {
         "color": "#60B5A1",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "comment.doc": {
         "color": "#60B5A1",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "constant": {
         "color": "#FFFFFF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "constructor": {
         "color": "#FFFFFF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "embedded": {
         "color": "#D4D4D4",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "emphasis.strong": {
         "color": "#569CD6",
         "background_color": null,
         "font_style": null,
-        "font_weight": 700,
+        "font_weight": 700
       },
       "function": {
         "color": "#FFFFFF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "keyword": {
         "color": "#79FFA0",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "keyword.control": {
         "color": "#52CDFF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "number": {
         "color": "#B5CEA8",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "operator": {
         "color": "#E0BA38",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "preproc": {
         "color": "#569CD6",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "property": {
         "color": "#FFFFFF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "punctuation": {
         "color": "#CCCCCC",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "punctuation.bracket": {
         "color": "#FFCCCE",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "punctuation.delimiter": {
         "color": "#CCCCCC",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "punctuation.list_marker": {
         "color": "#FFCCCE",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "punctuation.special": {
         "color": "#FFCCCE",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "string": {
         "color": "#B581CF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "string.escape": {
         "color": "#D7BA7D",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "string.regex": {
         "color": "#D16969",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "string.special": {
         "color": "#D16969",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "string.special.symbol": {
         "color": "#D16969",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "tag": {
         "color": "#569CD6",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "text.literal": {
         "color": "#CE9178",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "type": {
         "color": "#4EC9B0",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "variable": {
         "color": "#68CAB6",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "variable.parametere": {
         "color": "#52CDFF",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
+        "font_weight": null
       },
       "variable.special": {
         "color": "#569CD6",
         "background_color": null,
         "font_style": null,
-        "font_weight": null,
-      },
+        "font_weight": null
+      }
     },
     "panel.overlay_background": "#000000FF",
-    "panel.overlay_hover": "#000000FF",
-  },
+    "panel.overlay_hover": "#000000FF"
+    }
+  }
 }
