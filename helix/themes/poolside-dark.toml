@@ -1,0 +1,200 @@
+# poolside-dark — Helix port of the Zed theme in zed/themes/poolside-dark.json.
+# Colors without alpha support are composited over the editor background.
+
+# Editor and surfaces
+"ui.background" = { bg = "background" }
+"ui.background.separator" = { fg = "border" }
+"ui.window" = { fg = "border" }
+"ui.gutter" = { bg = "background" }
+"ui.gutter.selected" = { bg = "background" }
+
+# Text
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { fg = "text_bright", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "text_disabled" }
+"ui.text.info" = { fg = "text" }
+"ui.text.directory" = { fg = "accent" }
+
+# Cursor and selection
+"ui.cursor" = { fg = "background", bg = "cursor" }
+"ui.cursor.primary" = { fg = "background", bg = "cursor" }
+"ui.cursor.normal" = { fg = "background", bg = "cursor" }
+"ui.cursor.insert" = { fg = "background", bg = "cursor" }
+"ui.cursor.select" = { fg = "background", bg = "cursor" }
+"ui.cursor.match" = { fg = "orange", modifiers = ["bold"] }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.highlight" = { bg = "element_hover" }
+"ui.highlight.frameline" = { bg = "highlighted_line" }
+
+# Line numbers and cursor line
+"ui.cursorline.primary" = { bg = "active_line" }
+"ui.cursorline.secondary" = { bg = "active_line" }
+"ui.cursorcolumn.primary" = { bg = "active_line" }
+"ui.cursorcolumn.secondary" = { bg = "active_line" }
+"ui.linenr" = { fg = "line_number" }
+"ui.linenr.selected" = { fg = "active_line_number" }
+
+# Status line
+"ui.statusline" = { fg = "text", bg = "surface" }
+"ui.statusline.inactive" = { fg = "text_muted", bg = "surface" }
+"ui.statusline.normal" = { fg = "background", bg = "accent" }
+"ui.statusline.insert" = { fg = "background", bg = "green" }
+"ui.statusline.select" = { fg = "background", bg = "purple" }
+"ui.statusline.separator" = { fg = "border" }
+
+# Buffer line
+"ui.bufferline" = { fg = "text_muted", bg = "surface" }
+"ui.bufferline.active" = { fg = "text_bright", bg = "background" }
+"ui.bufferline.background" = { bg = "surface" }
+
+# Popups, menus, help, and pickers
+"ui.popup" = { fg = "text", bg = "elevated_surface" }
+"ui.popup.info" = { fg = "text", bg = "elevated_surface" }
+"ui.menu" = { fg = "text", bg = "elevated_surface" }
+"ui.menu.selected" = { fg = "text_bright", bg = "element_selected" }
+"ui.menu.scroll" = { fg = "icon_muted", bg = "elevated_surface" }
+"ui.help" = { fg = "text", bg = "elevated_surface" }
+"ui.picker.header" = { fg = "text_bright", bg = "elevated_surface" }
+"ui.picker.header.column" = { fg = "text_muted" }
+"ui.picker.header.column.active" = { fg = "accent", modifiers = ["bold"] }
+
+# Virtual text
+"ui.virtual.whitespace" = { fg = "invisible" }
+"ui.virtual.indent-guide" = { fg = "indent_guide" }
+"ui.virtual.wrap" = { fg = "wrap_guide" }
+"ui.virtual.ruler" = { bg = "active_line" }
+"ui.virtual.inlay-hint" = { fg = "predictive", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "orange" }
+"ui.virtual.inlay-hint.type" = { fg = "purple" }
+"ui.virtual.jump-label" = { fg = "accent", modifiers = ["bold"] }
+
+# Diagnostics
+"error" = { fg = "red" }
+"warning" = { fg = "orange" }
+"info" = { fg = "blue" }
+"hint" = { fg = "cyan" }
+"diagnostic" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# Search
+"ui.search.match" = { bg = "search_match" }
+
+# Diff and version control
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "orange" }
+"diff.delta.moved" = { fg = "cyan" }
+
+# Syntax
+"attribute" = "blue"
+"type" = "purple"
+"type.builtin" = "red"
+"type.enum.variant" = "purple"
+"constructor" = "purple"
+"constant" = "blue"
+"constant.builtin" = "blue"
+"constant.builtin.boolean" = "blue"
+"constant.character" = "green"
+"constant.character.escape" = "orange"
+"constant.numeric" = "blue"
+"string" = "green"
+"string.regexp" = "cyan"
+"string.special" = "cyan"
+"string.special.path" = "cyan"
+"string.special.url" = "cyan"
+"string.special.symbol" = "purple"
+"comment" = "comment"
+"comment.line" = "comment"
+"comment.block" = "comment"
+"comment.documentation" = "comment"
+"variable" = "editor_foreground"
+"variable.builtin" = "blue"
+"variable.parameter" = "orange"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "blue"
+"label" = "orange"
+"keyword" = "red"
+"keyword.control" = "red"
+"keyword.control.conditional" = "red"
+"keyword.control.repeat" = "red"
+"keyword.control.import" = "red"
+"keyword.control.return" = "red"
+"keyword.control.exception" = "red"
+"keyword.directive" = "red"
+"keyword.function" = "red"
+"keyword.operator" = "red"
+"operator" = "red"
+"function" = "purple"
+"function.builtin" = "blue"
+"function.macro" = "purple"
+"function.method" = "purple"
+"tag" = "red"
+"tag.attribute" = "blue"
+"namespace" = "purple"
+"module" = "editor_foreground"
+"special" = "cyan"
+"punctuation" = "editor_foreground"
+"punctuation.bracket" = "editor_foreground"
+"punctuation.delimiter" = "editor_foreground"
+"punctuation.special" = "orange"
+
+# Markup
+"markup.heading" = { fg = "accent", modifiers = ["bold"] }
+"markup.heading.marker" = "red"
+"markup.bold" = { fg = "editor_foreground", modifiers = ["bold"] }
+"markup.italic" = { fg = "purple", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "cyan", modifiers = ["underlined"] }
+"markup.link.text" = "blue"
+"markup.link.label" = "blue"
+"markup.raw" = "green"
+"markup.raw.block" = "green"
+"markup.list" = "red"
+"markup.quote" = "comment"
+
+[palette]
+# Surfaces
+background = "#1a1a1a"
+surface = "#202020"
+elevated_surface = "#242424"
+element_hover = "#2a2a2a"
+element_selected = "#293d42"
+active_line = "#1e1e1e"
+highlighted_line = "#222c2e"
+selection = "#3e4a4d"
+border = "#343434"
+focused_border = "#90bbc6"
+
+# Text and editor chrome
+text = "#e8e8e8"
+text_bright = "#ffffff"
+text_muted = "#a6a6a3"
+text_disabled = "#646464"
+editor_foreground = "#dedede"
+icon_muted = "#929292"
+line_number = "#5f6265"
+active_line_number = "#c5c5c5"
+invisible = "#444444"
+wrap_guide = "#333333"
+indent_guide = "#303030"
+predictive = "#7f858b"
+
+# Accent and syntax colors
+accent = "#afe2ef"
+red = "#f0717d"
+green = "#7fc99a"
+orange = "#f0a05d"
+blue = "#6bb6ff"
+purple = "#b58af0"
+cyan = "#77c4c8"
+comment = "#7c8792"
+cursor = "#afe2ef"
+
+# Alpha colors composited over #1a1a1a
+search_match = "#624725"

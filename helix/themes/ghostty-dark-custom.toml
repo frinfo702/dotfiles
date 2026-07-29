@@ -1,0 +1,3 @@
+# Helix alias matching zed/themes/ghostty-dark-custom.json.
+# ghostty-dark-pro is the existing full port of that Zed theme.
+inherits = "ghostty-dark-pro"

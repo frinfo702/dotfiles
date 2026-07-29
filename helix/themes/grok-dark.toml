@@ -1,0 +1,99 @@
+# grok-dark — Helix port of zed/themes/grok-dark.json.
+# Shared UI mappings come from poolside-dark; every source palette role and
+# differing syntax scope is overridden here.
+inherits = "poolside-dark"
+
+# Diagnostics use dedicated colors because Grok's syntax accents differ.
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "curl" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "curl" } }
+
+# Grok syntax roles that do not follow Poolside's accent assignments.
+"constant" = "yellow"
+"constant.builtin" = "yellow"
+"constant.builtin.boolean" = "yellow"
+"constant.numeric" = "orange"
+"constant.character" = "orange"
+"constant.character.escape" = "yellow"
+"function" = "yellow"
+"function.builtin" = "yellow"
+"function.macro" = "yellow"
+"function.method" = "yellow"
+"keyword.operator" = "syntax_punctuation"
+"operator" = "syntax_punctuation"
+"punctuation" = "syntax_punctuation"
+"punctuation.bracket" = "syntax_punctuation"
+"punctuation.delimiter" = "syntax_punctuation"
+"punctuation.special" = "orange"
+"string.special" = "orange"
+"string.special.path" = "orange"
+"string.special.symbol" = "blue"
+"tag" = "blue"
+"variable.builtin" = "yellow"
+"variable.parameter" = "editor_foreground"
+"variable.other.member" = "blue"
+"variable.special" = "red"
+
+# Markup
+"markup.heading" = { fg = "title", modifiers = ["bold"] }
+"markup.heading.marker" = "list_marker"
+"markup.bold" = { fg = "title", modifiers = ["bold"] }
+"markup.italic" = { fg = "editor_foreground", modifiers = ["italic"] }
+"markup.list" = "list_marker"
+
+[palette]
+# Surfaces
+background = "#000000"
+surface = "#0b0b0b"
+elevated_surface = "#151515"
+element_hover = "#202020"
+element_selected = "#25272c"
+active_line = "#080808"
+highlighted_line = "#0e1013"
+selection = "#2a2d34"
+border = "#292929"
+focused_border = "#666666"
+
+# Text and editor chrome
+text = "#f2f2f2"
+text_bright = "#fafafa"
+text_muted = "#9a9a9a"
+text_disabled = "#5f5f5f"
+editor_foreground = "#d3d3d3"
+icon_muted = "#8d8d8e"
+line_number = "#505050"
+active_line_number = "#acadae"
+invisible = "#333333"
+wrap_guide = "#202020"
+indent_guide = "#202020"
+predictive = "#727985"
+
+# Accent and syntax colors
+accent = "#cacacb"
+red = "#b67caf"
+green = "#d98255"
+orange = "#d98255"
+blue = "#86bed6"
+purple = "#86bed6"
+cyan = "#72b5a4"
+yellow = "#c1c194"
+comment = "#6f9b5c"
+syntax_punctuation = "#bcbcbc"
+list_marker = "#8d8d8e"
+title = "#fafafa"
+cursor = "#fafafa"
+
+# Diagnostics
+diagnostic_error = "#c46f77"
+diagnostic_warning = "#c1c194"
+diagnostic_info = "#86bed6"
+diagnostic_hint = "#72b5a4"
+
+# Alpha colors composited over #000000
+search_match = "#41271a"

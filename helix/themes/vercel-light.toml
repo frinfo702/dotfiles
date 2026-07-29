@@ -1,0 +1,53 @@
+# vercel-light — light counterpart to vercel-dark.
+# It keeps the same syntax roles and adjusts every palette color for contrast
+# against Vercel's white surfaces.
+inherits = "vercel-dark"
+
+[palette]
+# Surfaces
+background = "#ffffff"
+surface = "#fafafa"
+elevated_surface = "#f2f2f2"
+element_hover = "#f5f5f5"
+element_selected = "#fbe7ef"
+active_line = "#fafafa"
+highlighted_line = "#edf6ff"
+selection = "#b9dcfa"
+border = "#dedede"
+focused_border = "#b4235a"
+
+# Text and editor chrome
+text = "#24292f"
+text_bright = "#000000"
+text_muted = "#57606a"
+text_disabled = "#8c959f"
+editor_foreground = "#24292f"
+icon_muted = "#6e7781"
+line_number = "#8c959f"
+active_line_number = "#24292f"
+invisible = "#d0d7de"
+wrap_guide = "#d8dee4"
+indent_guide = "#eaeef2"
+predictive = "#6e7781"
+
+# Light syntax palette
+accent = "#0969da"
+pink = "#b4235a"
+red = "#cf222e"
+green = "#18794e"
+orange = "#9a6700"
+blue = "#0969da"
+purple = "#8250df"
+cyan = "#087ea4"
+muted_blue = "#3d638a"
+comment = "#6e7781"
+syntax_punctuation = "#57606a"
+cursor = "#24292f"
+
+# Diagnostics
+diagnostic_error = "#cf222e"
+diagnostic_warning = "#9a6700"
+diagnostic_info = "#0969da"
+diagnostic_hint = "#18794e"
+
+search_match = "#fff1a8"

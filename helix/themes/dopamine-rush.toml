@@ -1,0 +1,152 @@
+# dopamine-rush — high-saturation theme inspired by short-form video,
+# social media gradients, arcade games, and neon streaming overlays.
+inherits = "vercel-dark"
+
+# High-energy UI accents
+"ui.cursor.match" = { fg = "neon_yellow", modifiers = ["bold"] }
+"ui.highlight.frameline" = { bg = "highlighted_line" }
+"ui.virtual.jump-label" = { fg = "neon_yellow", modifiers = ["bold"] }
+"ui.picker.header.column.active" = { fg = "neon_cyan", modifiers = ["bold"] }
+
+# Diagnostics
+"error" = { fg = "diagnostic_error", modifiers = ["bold"] }
+"warning" = { fg = "diagnostic_warning", modifiers = ["bold"] }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "curl" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "curl" } }
+
+# Diff and version control
+"diff.plus" = { fg = "neon_lime" }
+"diff.minus" = { fg = "neon_red" }
+"diff.delta" = { fg = "neon_orange" }
+"diff.delta.moved" = { fg = "neon_cyan" }
+
+# Syntax
+"attribute" = "neon_cyan"
+"type" = "neon_cyan"
+"type.builtin" = "neon_purple"
+"type.enum.variant" = "neon_lime"
+"constructor" = "neon_yellow"
+"constant" = "neon_purple"
+"constant.builtin" = "neon_pink"
+"constant.builtin.boolean" = "neon_pink"
+"constant.character" = "neon_lime"
+"constant.character.escape" = "neon_yellow"
+"constant.numeric" = "neon_orange"
+"string" = "neon_lime"
+"string.regexp" = "neon_pink"
+"string.special" = "neon_yellow"
+"string.special.path" = "neon_cyan"
+"string.special.url" = "neon_blue"
+"string.special.symbol" = "neon_purple"
+"comment" = "comment"
+"comment.line" = "comment"
+"comment.block" = "comment"
+"comment.documentation" = "comment"
+"variable" = "editor_foreground"
+"variable.builtin" = "neon_cyan"
+"variable.parameter" = "neon_orange"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "neon_pink"
+"label" = "neon_yellow"
+"keyword" = "neon_pink"
+"keyword.control" = "neon_purple"
+"keyword.control.conditional" = "neon_pink"
+"keyword.control.repeat" = "neon_pink"
+"keyword.control.import" = "neon_purple"
+"keyword.control.return" = "neon_purple"
+"keyword.control.exception" = "neon_red"
+"keyword.directive" = "neon_orange"
+"keyword.function" = "neon_pink"
+"keyword.operator" = "neon_cyan"
+"operator" = "neon_cyan"
+"function" = "neon_yellow"
+"function.builtin" = "neon_blue"
+"function.macro" = "neon_orange"
+"function.method" = "neon_yellow"
+"tag" = "neon_pink"
+"tag.attribute" = "neon_cyan"
+"namespace" = "neon_purple"
+"module" = "neon_purple"
+"special" = "neon_yellow"
+"punctuation" = "syntax_punctuation"
+"punctuation.bracket" = "neon_purple"
+"punctuation.delimiter" = "syntax_punctuation"
+"punctuation.special" = "neon_pink"
+
+# Markup
+"markup.heading" = { fg = "neon_yellow", modifiers = ["bold"] }
+"markup.heading.marker" = "neon_pink"
+"markup.bold" = { fg = "neon_orange", modifiers = ["bold"] }
+"markup.italic" = { fg = "neon_purple", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "text_muted", modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "neon_blue", modifiers = ["underlined"] }
+"markup.link.text" = "neon_cyan"
+"markup.link.label" = "neon_purple"
+"markup.raw" = "neon_lime"
+"markup.raw.block" = "neon_lime"
+"markup.list" = "neon_pink"
+"markup.quote" = "comment"
+
+[palette]
+# Dark arcade surfaces
+background = "#07070a"
+surface = "#0d0d14"
+elevated_surface = "#151522"
+element_hover = "#1c1c2d"
+element_selected = "#30204a"
+active_line = "#0d0d18"
+highlighted_line = "#17122b"
+selection = "#23424c"
+border = "#34344a"
+focused_border = "#25f4ee"
+
+# Text and editor chrome
+text = "#e8e8f0"
+text_bright = "#ffffff"
+text_muted = "#9292aa"
+text_disabled = "#56566b"
+editor_foreground = "#f2f2f7"
+icon_muted = "#8585a0"
+line_number = "#5f5f79"
+active_line_number = "#25f4ee"
+invisible = "#36364c"
+wrap_guide = "#29293d"
+indent_guide = "#252539"
+predictive = "#8585a0"
+syntax_punctuation = "#c5c5d4"
+
+# Social, video, and gaming neon palette
+accent = "#25f4ee"
+neon_cyan = "#25f4ee"
+neon_pink = "#fe2c55"
+neon_purple = "#bd5cff"
+neon_orange = "#ff8a00"
+neon_lime = "#b6ff3b"
+neon_yellow = "#ffe600"
+neon_blue = "#45a3ff"
+neon_red = "#ff3b4f"
+
+# Roles inherited by the shared UI mapping
+pink = "#fe2c55"
+red = "#ff3b4f"
+green = "#b6ff3b"
+orange = "#ff8a00"
+blue = "#45a3ff"
+purple = "#bd5cff"
+cyan = "#25f4ee"
+muted_blue = "#9292aa"
+comment = "#77778e"
+cursor = "#25f4ee"
+
+# Diagnostics
+diagnostic_error = "#ff3b4f"
+diagnostic_warning = "#ffe600"
+diagnostic_info = "#45a3ff"
+diagnostic_hint = "#25f4ee"
+
+search_match = "#574900"

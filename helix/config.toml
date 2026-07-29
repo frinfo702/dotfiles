@@ -1,4 +1,4 @@
-theme = "ghostty-dark-pro"
+theme = "vercel-dark"
 
 [editor]
 auto-save = true

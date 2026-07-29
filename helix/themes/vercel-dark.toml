@@ -1,0 +1,138 @@
+# vercel-dark — Helix port of chaqchase/achaq's Vercel Theme for VS Code.
+# The source palette is preserved while Helix UI roles use opaque equivalents
+# for VS Code colors that originally included alpha.
+inherits = "poolside-dark"
+
+# Diagnostics use dedicated colors instead of the pink syntax keyword color.
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "curl" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "curl" } }
+
+# Diff and version control
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "diagnostic_error" }
+"diff.delta" = { fg = "text_bright" }
+"diff.delta.moved" = { fg = "purple" }
+
+# Syntax
+"attribute" = "purple"
+"type" = "blue"
+"type.builtin" = "purple"
+"type.enum.variant" = "text_bright"
+"constructor" = "blue"
+"constant" = "text_bright"
+"constant.builtin" = "blue"
+"constant.builtin.boolean" = "blue"
+"constant.character" = "blue"
+"constant.character.escape" = "blue"
+"constant.numeric" = "text_bright"
+"string" = "green"
+"string.regexp" = "green"
+"string.special" = "green"
+"string.special.path" = "green"
+"string.special.url" = "pink"
+"string.special.symbol" = "purple"
+"comment" = "comment"
+"comment.line" = "comment"
+"comment.block" = "comment"
+"comment.documentation" = "comment"
+"variable" = "editor_foreground"
+"variable.builtin" = "blue"
+"variable.parameter" = "editor_foreground"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "pink"
+"label" = "purple"
+"keyword" = "pink"
+"keyword.control" = "pink"
+"keyword.control.conditional" = "pink"
+"keyword.control.repeat" = "pink"
+"keyword.control.import" = "purple"
+"keyword.control.return" = "pink"
+"keyword.control.exception" = "pink"
+"keyword.directive" = "pink"
+"keyword.function" = "pink"
+"keyword.operator" = "blue"
+"operator" = "syntax_punctuation"
+"function" = "purple"
+"function.builtin" = "text_bright"
+"function.macro" = "purple"
+"function.method" = "purple"
+"tag" = "green"
+"tag.attribute" = "purple"
+"namespace" = "green"
+"module" = "editor_foreground"
+"special" = "blue"
+"punctuation" = "syntax_punctuation"
+"punctuation.bracket" = "syntax_punctuation"
+"punctuation.delimiter" = "syntax_punctuation"
+"punctuation.special" = "blue"
+
+# Markup
+"markup.heading" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.marker" = "pink"
+"markup.bold" = { fg = "pink", modifiers = ["bold"] }
+"markup.italic" = { fg = "pink", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "pink", modifiers = ["underlined"] }
+"markup.link.text" = "pink"
+"markup.link.label" = "blue"
+"markup.raw" = "muted_blue"
+"markup.raw.block" = "muted_blue"
+"markup.list" = "text_bright"
+"markup.quote" = "comment"
+
+[palette]
+# Surfaces
+background = "#000000"
+surface = "#0a0a0a"
+elevated_surface = "#151515"
+element_hover = "#0a0a0a"
+element_selected = "#521f30"
+active_line = "#050505"
+highlighted_line = "#09171f"
+selection = "#163953"
+border = "#454d54"
+focused_border = "#f75f8f"
+
+# Text and editor chrome
+text = "#dce3ea"
+text_bright = "#ffffff"
+text_muted = "#888888"
+text_disabled = "#454d54"
+editor_foreground = "#dce3ea"
+icon_muted = "#718493"
+line_number = "#454d54"
+active_line_number = "#dce3ea"
+invisible = "#34393e"
+wrap_guide = "#34393e"
+indent_guide = "#1b1e21"
+predictive = "#718493"
+
+# Vercel syntax palette
+accent = "#43aaf9"
+pink = "#f75f8f"
+red = "#e61f44"
+green = "#62c073"
+orange = "#cd9731"
+blue = "#43aaf9"
+purple = "#b267e6"
+cyan = "#9fbde0"
+muted_blue = "#9fbde0"
+comment = "#888888"
+syntax_punctuation = "#efefef"
+cursor = "#dce3ea"
+
+# Diagnostics
+diagnostic_error = "#e61f44"
+diagnostic_warning = "#cd9731"
+diagnostic_info = "#43aaf9"
+diagnostic_hint = "#62c073"
+
+# Alpha colors composited over #000000
+search_match = "#163953"

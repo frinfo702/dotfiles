@@ -1,0 +1,123 @@
+# vercel-tint — near-monochrome Vercel theme with restrained spectral accents.
+inherits = "vercel-dark"
+
+# Subtle UI accents
+"ui.cursor.match" = { fg = "tint_purple", modifiers = ["bold"] }
+"ui.highlight.frameline" = { bg = "highlighted_line" }
+"ui.virtual.jump-label" = { fg = "tint_pink", modifiers = ["bold"] }
+"ui.picker.header.column.active" = { fg = "text_bright", modifiers = ["bold"] }
+
+# Syntax: intentionally almost monochrome
+"attribute" = "text_muted"
+"type" = "text_bright"
+"type.builtin" = "text_bright"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "text_bright"
+"constant" = "editor_foreground"
+"constant.builtin" = "editor_foreground"
+"constant.builtin.boolean" = "tint_blue"
+"constant.character" = "editor_foreground"
+"constant.character.escape" = "tint_purple"
+"constant.numeric" = "editor_foreground"
+"string" = "syntax_soft"
+"string.regexp" = "syntax_soft"
+"string.special" = "tint_purple"
+"string.special.path" = "syntax_soft"
+"string.special.url" = "tint_blue"
+"string.special.symbol" = "tint_purple"
+"variable" = "editor_foreground"
+"variable.builtin" = "text_bright"
+"variable.parameter" = "syntax_soft"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "editor_foreground"
+"label" = "syntax_soft"
+"keyword" = "text_bright"
+"keyword.control" = "text_bright"
+"keyword.control.conditional" = "text_bright"
+"keyword.control.repeat" = "text_bright"
+"keyword.control.import" = "syntax_soft"
+"keyword.control.return" = "text_bright"
+"keyword.control.exception" = "text_bright"
+"keyword.directive" = "text_bright"
+"keyword.function" = "text_bright"
+"keyword.operator" = "syntax_punctuation"
+"operator" = "syntax_punctuation"
+"function" = "text_bright"
+"function.builtin" = "text_bright"
+"function.macro" = "text_bright"
+"function.method" = "text_bright"
+"tag" = "text_bright"
+"tag.attribute" = "syntax_soft"
+"namespace" = "syntax_soft"
+"module" = "editor_foreground"
+"special" = "tint_purple"
+"punctuation" = "syntax_punctuation"
+"punctuation.bracket" = "syntax_punctuation"
+"punctuation.delimiter" = "syntax_punctuation"
+"punctuation.special" = "tint_pink"
+
+# Markup
+"markup.heading" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.heading.marker" = "text_muted"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "syntax_soft", modifiers = ["italic"] }
+"markup.link.url" = { fg = "tint_blue", modifiers = ["underlined"] }
+"markup.link.text" = "text_bright"
+"markup.link.label" = "tint_purple"
+"markup.raw" = "syntax_soft"
+"markup.raw.block" = "syntax_soft"
+"markup.list" = "text_muted"
+
+[palette]
+# Black stage and neutral surfaces
+background = "#000000"
+surface = "#080808"
+elevated_surface = "#111111"
+element_hover = "#161616"
+element_selected = "#222222"
+active_line = "#070707"
+highlighted_line = "#111218"
+selection = "#163953"
+border = "#262626"
+focused_border = "#ededed"
+
+# White light and neutral text
+text = "#d4d4d4"
+text_bright = "#ffffff"
+text_muted = "#888888"
+text_disabled = "#4d4d4d"
+editor_foreground = "#ededed"
+icon_muted = "#737373"
+line_number = "#4d4d4d"
+active_line_number = "#ededed"
+invisible = "#2f2f2f"
+wrap_guide = "#242424"
+indent_guide = "#202020"
+predictive = "#737373"
+syntax_soft = "#c7c7c7"
+syntax_punctuation = "#a8a8a8"
+cursor = "#ffffff"
+
+# Tiny spectral tints from the reference image
+accent = "#ffffff"
+tint_blue = "#52a8ff"
+tint_purple = "#9b7cff"
+tint_pink = "#ff5ca8"
+
+# Functional colors remain restrained but distinguishable
+red = "#e5484d"
+green = "#46a758"
+orange = "#d3a243"
+blue = "#52a8ff"
+purple = "#9b7cff"
+cyan = "#52a8ff"
+pink = "#ff5ca8"
+muted_blue = "#9b9da3"
+comment = "#666666"
+
+diagnostic_error = "#e5484d"
+diagnostic_warning = "#d3a243"
+diagnostic_info = "#52a8ff"
+diagnostic_hint = "#9b9da3"
+
+search_match = "#25201a"

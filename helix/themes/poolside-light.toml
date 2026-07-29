@@ -1,0 +1,65 @@
+# poolside-light — Helix port of zed/themes/poolside-light.json.
+# It shares Poolside's scope mapping while overriding the complete light palette.
+inherits = "poolside-dark"
+
+# The light theme has diagnostic colors distinct from some syntax accents.
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "curl" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "curl" } }
+
+# Zed uses a darker blue for headings than for its general accent.
+"markup.heading" = { fg = "title", modifiers = ["bold"] }
+
+[palette]
+# Surfaces
+background = "#faf9f6"
+surface = "#f5f3ee"
+elevated_surface = "#fffefc"
+element_hover = "#eceae5"
+element_selected = "#e6e5ff"
+active_line = "#f5f4f0"
+highlighted_line = "#f2f1fb"
+selection = "#d7d7f8"
+border = "#e4e1d9"
+focused_border = "#3f46ff"
+
+# Text and editor chrome
+text = "#282d33"
+text_bright = "#282d33"
+text_muted = "#6f7780"
+text_disabled = "#a7abae"
+editor_foreground = "#282d33"
+icon_muted = "#777e85"
+line_number = "#a0a4a8"
+active_line_number = "#454b52"
+invisible = "#cbc8c0"
+wrap_guide = "#dedbd4"
+indent_guide = "#e5e2dc"
+predictive = "#7f858b"
+
+# Accent and syntax colors
+accent = "#3f46ff"
+red = "#d33245"
+green = "#167957"
+orange = "#bd5000"
+blue = "#075fbf"
+purple = "#7048d7"
+cyan = "#087f83"
+comment = "#68727d"
+title = "#0a3d78"
+cursor = "#3f46ff"
+
+# Diagnostics
+diagnostic_error = "#d83245"
+diagnostic_warning = "#a86600"
+diagnostic_info = "#075fbf"
+diagnostic_hint = "#087f83"
+
+# Alpha colors composited over #faf9f6
+search_match = "#fcebbd"
