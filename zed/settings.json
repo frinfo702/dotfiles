@@ -210,7 +210,7 @@
   "theme": {
     "mode": "dark",
     "light": "poolside-light",
-    "dark": "vercel-tint"
+    "dark": "codex-dark"
   },
   "languages": {
     "Scala": {
