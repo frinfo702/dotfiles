@@ -106,7 +106,7 @@ grok/*
 # plugins, generated images, machine identifiers, …) stays ignored.
 # --------------------------------------------
 codex/*
-!codex/config.toml
+codex/config.toml
 !codex/AGENTS.md
 !codex/rules/
 !codex/rules/default.rules
