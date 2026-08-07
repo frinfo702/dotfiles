@@ -27,9 +27,7 @@ cursor-color = #da7757
 ###################
 # Favorite themes
 ###################
-theme = IR Black
-# theme = Kanagawa Wave
-# theme = Apple System Colors Light
+theme = GitHub Dark High Contrast
 
 ###################
 # Functions

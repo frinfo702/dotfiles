@@ -20,7 +20,7 @@
     "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
     "explorer.confirmDragAndDrop": false,
-    "editor.minimap.autohide": true,
+    "editor.minimap.autohide": "mouseover",
     "leetcode.hint.commandShortcut": false,
     "leetcode.hint.configWebviewMarkdown": false,
     "files.autoSaveDelay": 100,
