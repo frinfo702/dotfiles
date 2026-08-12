@@ -38,17 +38,12 @@ main() {
   echo
 
   # $HOME
-  link "$DOTFILES_DIR/cline" "$HOME_DIR/.cline"
-  link "$DOTFILES_DIR/codex" "$HOME_DIR/.codex"
-  link "$DOTFILES_DIR/cursor" "$HOME_DIR/.cursor"
-  link "$DOTFILES_DIR/grok" "$HOME_DIR/.grok"
   link "$DOTFILES_DIR/.vimrc" "$HOME_DIR/.vimrc"
 
   # ~/.config
   link "$DOTFILES_DIR/ghostty" "$HOME_DIR/.config/ghostty"
   link "$DOTFILES_DIR/helix" "$HOME_DIR/.config/helix"
   link "$DOTFILES_DIR/nvim" "$HOME_DIR/.config/nvim"
-  link "$DOTFILES_DIR/opencode" "$HOME_DIR/.config/opencode"
   link "$DOTFILES_DIR/zed" "$HOME_DIR/.config/zed"
 
   # VS Code (macOS)
