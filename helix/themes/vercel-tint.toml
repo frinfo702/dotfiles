@@ -1,6 +1,12 @@
 # vercel-tint — near-monochrome Vercel theme with restrained spectral accents.
 inherits = "vercel-dark"
 
+# Diagnostics: error underline as a red solid line (Ghostty can't render curl)
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
 # Subtle UI accents
 "ui.cursor.match" = { fg = "tint_purple", modifiers = ["bold"] }
 "ui.highlight.frameline" = { bg = "highlighted_line" }

@@ -1,0 +1,113 @@
+# Near-black jungle palette inspired by the tork terminal UI.
+inherits = "poolside-dark"
+
+# Keep syntax mostly monochrome. Green is reserved for structural accents,
+# while cool blue and warm sand quietly separate secondary elements.
+"attribute" = "blue"
+"type" = "text_bright"
+"type.builtin" = "text"
+"type.enum.variant" = "text_bright"
+"constructor" = "text_bright"
+"constant" = "sand"
+"constant.builtin" = "sand"
+"constant.builtin.boolean" = "blue"
+"constant.character" = "sand"
+"constant.character.escape" = "blue"
+"constant.numeric" = "sand"
+"string" = "sand"
+"string.regexp" = "sand"
+"string.special" = "blue"
+"string.special.path" = "sand"
+"string.special.url" = "blue"
+"string.special.symbol" = "sand"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment_doc", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "blue"
+"variable.parameter" = "text"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "editor_foreground"
+"label" = "sand"
+"keyword" = "green"
+"keyword.control" = "green"
+"keyword.control.conditional" = "green"
+"keyword.control.repeat" = "green"
+"keyword.control.import" = "blue"
+"keyword.control.return" = "green"
+"keyword.control.exception" = "red"
+"keyword.directive" = "blue"
+"keyword.function" = "green"
+"keyword.operator" = "text_muted"
+"operator" = "text_muted"
+"function" = "text_bright"
+"function.builtin" = "text_bright"
+"function.macro" = "blue"
+"function.method" = "text_bright"
+"tag" = "green"
+"tag.attribute" = "sand"
+"namespace" = "text"
+"module" = "text"
+"special" = "blue"
+"punctuation" = "text_muted"
+"punctuation.bracket" = "text"
+"punctuation.delimiter" = "text_muted"
+"punctuation.special" = "blue"
+
+"markup.heading" = { fg = "green_bright", modifiers = ["bold"] }
+"markup.heading.marker" = "green"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "green_pale", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "text_bright"
+"markup.link.label" = "blue"
+"markup.raw" = "sand"
+"markup.raw.block" = "sand"
+"markup.list" = "green"
+"markup.quote" = "comment_doc"
+
+[palette]
+# Surfaces
+background = "#101110"
+surface = "#151715"
+elevated_surface = "#1b1e1b"
+element_hover = "#202420"
+element_selected = "#29342b"
+active_line = "#171a17"
+highlighted_line = "#1c241e"
+selection = "#304536"
+border = "#303530"
+focused_border = "#79c584"
+
+# Text and editor chrome
+text = "#c8cbc8"
+text_bright = "#edf0ed"
+text_muted = "#8b908b"
+text_disabled = "#555a55"
+editor_foreground = "#d3d6d3"
+icon_muted = "#737973"
+line_number = "#575d57"
+active_line_number = "#a9d5ae"
+invisible = "#363b36"
+wrap_guide = "#303530"
+indent_guide = "#292d29"
+predictive = "#747b74"
+
+# Jungle accents
+accent = "#82ce8c"
+green = "#79c584"
+green_bright = "#91dc99"
+green_soft = "#a5cfa8"
+green_pale = "#b7d8ba"
+blue = "#7fa8e8"
+cyan = "#78b8b0"
+sand = "#d2bd8c"
+orange = "#d49a67"
+purple = "#ad9bd3"
+red = "#df7979"
+comment = "#626862"
+comment_doc = "#788078"
+cursor = "#a6e3ad"
+
+search_match = "#46542d"

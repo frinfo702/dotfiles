@@ -1,4 +1,4 @@
-theme = "vercel-dark"
+theme = "sumi"
 
 [editor]
 auto-save = true
@@ -28,7 +28,7 @@ ignore = true
 
 
 [editor.lsp]
-display-messages = true
+display-messages = false
 display-progress-messages = true
 
 [editor.cursor-shape]

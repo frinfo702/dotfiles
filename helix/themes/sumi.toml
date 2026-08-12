@@ -1,0 +1,139 @@
+# sumi — pure black ink, white light, and two faint accent hues.
+# Syntax stays monochrome; ice blue and rose appear only where they earn it.
+inherits = "vercel-dark"
+
+# Diagnostics: solid underlines (Ghostty can't render curl)
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+# UI accents: faint, never loud
+"ui.cursor.match" = { fg = "ice", modifiers = ["bold"] }
+"ui.virtual.jump-label" = { fg = "rose", modifiers = ["bold"] }
+"ui.highlight.frameline" = { bg = "highlighted_line" }
+"ui.picker.header.column.active" = { fg = "text_bright", modifiers = ["bold"] }
+
+# Syntax: white on black, accents used sparingly
+"attribute" = "text_muted"
+"type" = "text_bright"
+"type.builtin" = "text_bright"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "text_bright"
+"constant" = "editor_foreground"
+"constant.builtin" = "editor_foreground"
+"constant.builtin.boolean" = "ice"
+"constant.character" = "editor_foreground"
+"constant.character.escape" = "rose"
+"constant.numeric" = "ice"
+"string" = "syntax_soft"
+"string.regexp" = "syntax_soft"
+"string.special" = "rose"
+"string.special.path" = "syntax_soft"
+"string.special.url" = "ice"
+"string.special.symbol" = "rose"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment_doc", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "text_bright"
+"variable.parameter" = "syntax_soft"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "editor_foreground"
+"label" = "syntax_soft"
+"keyword" = { fg = "text_bright", modifiers = ["bold"] }
+"keyword.control" = { fg = "text_bright", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "text_bright", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "text_bright", modifiers = ["bold"] }
+"keyword.control.import" = "syntax_soft"
+"keyword.control.return" = { fg = "text_bright", modifiers = ["bold"] }
+"keyword.control.exception" = { fg = "text_bright", modifiers = ["bold"] }
+"keyword.directive" = "text_bright"
+"keyword.function" = { fg = "text_bright", modifiers = ["bold"] }
+"keyword.operator" = "syntax_punctuation"
+"operator" = "syntax_punctuation"
+"function" = "text_bright"
+"function.builtin" = "text_bright"
+"function.macro" = "ice"
+"function.method" = "text_bright"
+"tag" = "text_bright"
+"tag.attribute" = "syntax_soft"
+"namespace" = "syntax_soft"
+"module" = "editor_foreground"
+"special" = "rose"
+"punctuation" = "syntax_punctuation"
+"punctuation.bracket" = "syntax_punctuation"
+"punctuation.delimiter" = "syntax_punctuation"
+"punctuation.special" = "rose"
+
+# Markup
+"markup.heading" = { fg = "ice", modifiers = ["bold"] }
+"markup.heading.marker" = "text_muted"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "syntax_soft", modifiers = ["italic"] }
+"markup.link.url" = { fg = "ice", modifiers = ["underlined"] }
+"markup.link.text" = "text_bright"
+"markup.link.label" = "rose"
+"markup.raw" = "syntax_soft"
+"markup.raw.block" = "syntax_soft"
+"markup.list" = "text_muted"
+"markup.quote" = "comment_doc"
+
+# Diff
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "ice"
+
+[palette]
+# Pure black stage
+background = "#000000"
+surface = "#0a0a0a"
+elevated_surface = "#121212"
+element_hover = "#181818"
+element_selected = "#242424"
+active_line = "#0d0d0d"
+highlighted_line = "#131419"
+selection = "#1c2a38"
+border = "#242424"
+focused_border = "#8fb8d4"
+
+# White light and neutral text
+text = "#f2f2f2"
+text_bright = "#ffffff"
+text_muted = "#8a8a8a"
+text_disabled = "#4d4d4d"
+editor_foreground = "#ffffff"
+icon_muted = "#6e6e6e"
+line_number = "#424242"
+active_line_number = "#cfe3ee"
+invisible = "#2b2b2b"
+wrap_guide = "#222222"
+indent_guide = "#1d1d1d"
+predictive = "#6e6e6e"
+syntax_soft = "#c9c9c9"
+syntax_punctuation = "#9a9a9a"
+cursor = "#ffffff"
+
+# The two faint accents
+accent = "#a8cfe4"
+ice = "#8fb8d4"
+rose = "#d19db4"
+
+# Functional colors, kept quiet
+red = "#e05555"
+green = "#6fae6f"
+orange = "#cf9a52"
+blue = "#8fb8d4"
+purple = "#b3a1d6"
+cyan = "#8fb8d4"
+pink = "#d19db4"
+comment = "#5c5c5c"
+comment_doc = "#747474"
+
+diagnostic_error = "#e05555"
+diagnostic_warning = "#cf9a52"
+diagnostic_info = "#8fb8d4"
+diagnostic_hint = "#8a8a8a"
+
+search_match = "#2b2417"
