@@ -109,4 +109,24 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
 
+    // copy current file path / permalink
+    {
+        "key": "cmd+k r",
+        "command": "copyRelativeFilePath"
+    },
+    {
+        "key": "cmd+k a",
+        "command": "copyFilePath"
+    },
+    {
+        "key": "cmd+k l",
+        "command": "vscode-neovim.send",
+        "args": ":CopyFileLine<CR>",
+        "when": "neovim.init && editorTextFocus"
+    },
+    {
+        "key": "cmd+k g",
+        "command": "issue.copyGithubPermalink"
+    }
+
 ]

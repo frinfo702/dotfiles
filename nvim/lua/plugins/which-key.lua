@@ -25,6 +25,7 @@ return {
         { "<leader>g", group = "Git", mode = "n" },
         { "<leader>t", group = "Test", mode = "n" },
         { "<leader>s", group = "Search", mode = "n" },
+        { "<leader>y", group = "Yank path", mode = { "n", "v" } },
       })
     end,
   },

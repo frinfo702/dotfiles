@@ -165,5 +165,25 @@
             "before": ["g", "p"],
             "after": ["<C-o>"]
         }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<space>", "y", "r"],
+            "commands": ["copyRelativeFilePath"]
+        },
+        {
+            "before": ["<space>", "y", "a"],
+            "commands": ["copyFilePath"]
+        },
+        {
+            "before": ["<space>", "y", "p"],
+            "commands": ["issue.copyGithubPermalink"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<space>", "y", "p"],
+            "commands": ["issue.copyGithubPermalink"]
+        }
     ]
 }

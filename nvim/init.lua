@@ -7,6 +7,7 @@ end
 
 require("config.options")
 require("config.keymaps")
+require("config.copy")
 require("config.lazy")
 
 -- Apply droid-black (black background only, everything else default).
