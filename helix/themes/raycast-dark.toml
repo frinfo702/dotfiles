@@ -1,0 +1,126 @@
+# raycast-dark — Helix theme after Raycast's command palette.
+# Near-black blue-tinted canvas, Raycast Red as punctuation, sky and mint
+# for functions and strings.
+inherits = "poolside-dark"
+
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "yellow" }
+"diff.delta.moved" = { fg = "blue" }
+
+"attribute" = "blue"
+"type" = "blue"
+"type.builtin" = "blue"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "blue"
+"constant" = "yellow"
+"constant.builtin" = "red"
+"constant.builtin.boolean" = "red"
+"constant.character" = "green"
+"constant.character.escape" = "yellow"
+"constant.numeric" = "yellow"
+"string" = "green"
+"string.regexp" = "green"
+"string.special" = "yellow"
+"string.special.path" = "green"
+"string.special.url" = "blue"
+"string.special.symbol" = "red"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "red"
+"variable.parameter" = "yellow"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "blue"
+"label" = "red"
+"keyword" = "red"
+"keyword.control" = "red"
+"keyword.control.conditional" = "red"
+"keyword.control.repeat" = "red"
+"keyword.control.import" = "blue"
+"keyword.control.return" = "red"
+"keyword.control.exception" = "red"
+"keyword.directive" = "blue"
+"keyword.function" = "red"
+"keyword.operator" = "text_muted"
+"operator" = "text_muted"
+"function" = "blue"
+"function.builtin" = "blue"
+"function.macro" = "red"
+"function.method" = "blue"
+"tag" = "red"
+"tag.attribute" = "yellow"
+"namespace" = "blue"
+"module" = "editor_foreground"
+"special" = "red"
+"punctuation" = "text_muted"
+"punctuation.bracket" = "text"
+"punctuation.delimiter" = "text_muted"
+"punctuation.special" = "red"
+
+"markup.heading" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.heading.marker" = "red"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "blue", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "blue"
+"markup.link.label" = "red"
+"markup.raw" = "green"
+"markup.raw.block" = "green"
+"markup.list" = "red"
+"markup.quote" = "comment"
+
+[palette]
+background = "#07080a"
+surface = "#0d0d0d"
+elevated_surface = "#111214"
+element_hover = "#1c1d20"
+element_selected = "#3a2426"
+active_line = "#0c0d0f"
+highlighted_line = "#0c2638"
+selection = "#35383d"
+border = "#252829"
+focused_border = "#ff6363"
+
+text = "#f9f9f9"
+text_bright = "#ffffff"
+text_muted = "#9c9c9d"
+text_disabled = "#6a6b6c"
+editor_foreground = "#e6e6e6"
+icon_muted = "#6a6b6c"
+line_number = "#434345"
+active_line_number = "#d9d9d9"
+invisible = "#434345"
+wrap_guide = "#1b1c1e"
+indent_guide = "#161718"
+predictive = "#6a6b6c"
+
+accent = "#ff6363"
+red = "#ff6363"
+orange = "#ff7777"
+yellow = "#ffc533"
+blue = "#56c2ff"
+purple = "#ff6363"
+cyan = "#57c1ff"
+green = "#59d499"
+comment = "#6a6b6c"
+cursor = "#ff6363"
+
+diagnostic_error = "#ff6363"
+diagnostic_warning = "#ffc533"
+diagnostic_info = "#56c2ff"
+diagnostic_hint = "#59d499"
+
+search_match = "#452324"

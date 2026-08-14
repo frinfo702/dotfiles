@@ -1,0 +1,33 @@
+# notion-light — Ghostty theme after Notion's paper UI.
+# Fonts apply only if font-family is not set in ghostty/config.
+
+background = #ffffff
+foreground = #37352f
+cursor-color = #37352f
+cursor-text = #ffffff
+selection-background = #e8e7e4
+selection-foreground = #37352f
+
+palette = 0=#37352f
+palette = 1=#e03e3e
+palette = 2=#0f7b6c
+palette = 3=#dfab01
+palette = 4=#0b6e99
+palette = 5=#6940a5
+palette = 6=#0b6e99
+palette = 7=#f7f6f3
+palette = 8=#9b9a97
+palette = 9=#e03e3e
+palette = 10=#0f7b6c
+palette = 11=#d9730d
+palette = 12=#0b6e99
+palette = 13=#6940a5
+palette = 14=#0b6e99
+palette = 15=#ffffff
+
+font-family = Menlo
+font-family = Geist Mono
+cursor-style = bar
+window-padding-x = 16
+window-padding-y = 12
+adjust-cell-height = 16%

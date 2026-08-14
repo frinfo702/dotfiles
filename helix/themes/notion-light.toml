@@ -1,0 +1,125 @@
+# notion-light — Helix theme after Notion's paper UI.
+# Warm off-white surfaces, ink #37352F, and Notion's default callout hues.
+inherits = "poolside-dark"
+
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "orange" }
+"diff.delta.moved" = { fg = "blue" }
+
+"attribute" = "purple"
+"type" = "purple"
+"type.builtin" = "purple"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "blue"
+"constant" = "orange"
+"constant.builtin" = "red"
+"constant.builtin.boolean" = "red"
+"constant.character" = "green"
+"constant.character.escape" = "orange"
+"constant.numeric" = "orange"
+"string" = "green"
+"string.regexp" = "green"
+"string.special" = "orange"
+"string.special.path" = "green"
+"string.special.url" = "blue"
+"string.special.symbol" = "purple"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "red"
+"variable.parameter" = "orange"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "blue"
+"label" = "red"
+"keyword" = "red"
+"keyword.control" = "red"
+"keyword.control.conditional" = "red"
+"keyword.control.repeat" = "red"
+"keyword.control.import" = "blue"
+"keyword.control.return" = "red"
+"keyword.control.exception" = "red"
+"keyword.directive" = "purple"
+"keyword.function" = "red"
+"keyword.operator" = "text_muted"
+"operator" = "text_muted"
+"function" = "blue"
+"function.builtin" = "blue"
+"function.macro" = "purple"
+"function.method" = "blue"
+"tag" = "red"
+"tag.attribute" = "orange"
+"namespace" = "purple"
+"module" = "editor_foreground"
+"special" = "orange"
+"punctuation" = "text_muted"
+"punctuation.bracket" = "text"
+"punctuation.delimiter" = "text_muted"
+"punctuation.special" = "orange"
+
+"markup.heading" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.heading.marker" = "text_muted"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "editor_foreground", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "blue"
+"markup.link.label" = "red"
+"markup.raw" = "red"
+"markup.raw.block" = "green"
+"markup.list" = "orange"
+"markup.quote" = "comment"
+
+[palette]
+background = "#ffffff"
+surface = "#f7f6f3"
+elevated_surface = "#ffffff"
+element_hover = "#f1f0ee"
+element_selected = "#e8e7e4"
+active_line = "#f7f6f3"
+highlighted_line = "#fdecc8"
+selection = "#e8e7e4"
+border = "#e3e2de"
+focused_border = "#e03e3e"
+
+text = "#37352f"
+text_bright = "#191919"
+text_muted = "#787774"
+text_disabled = "#9b9a97"
+editor_foreground = "#37352f"
+icon_muted = "#9b9a97"
+line_number = "#c4c3bf"
+active_line_number = "#37352f"
+invisible = "#e3e2de"
+wrap_guide = "#ecebe7"
+indent_guide = "#f1f0ee"
+predictive = "#9b9a97"
+
+accent = "#e03e3e"
+red = "#e03e3e"
+orange = "#d9730d"
+yellow = "#dfab01"
+blue = "#0b6e99"
+purple = "#6940a5"
+cyan = "#0b6e99"
+green = "#0f7b6c"
+comment = "#9b9a97"
+cursor = "#37352f"
+
+diagnostic_error = "#e03e3e"
+diagnostic_warning = "#d9730d"
+diagnostic_info = "#0b6e99"
+diagnostic_hint = "#0f7b6c"
+
+search_match = "#fdecc8"

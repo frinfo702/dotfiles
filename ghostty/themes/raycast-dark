@@ -1,0 +1,33 @@
+# raycast-dark — Ghostty theme after Raycast's command palette.
+# Fonts apply only if font-family is not set in ghostty/config.
+
+background = #07080a
+foreground = #f9f9f9
+cursor-color = #ff6363
+cursor-text = #07080a
+selection-background = #35383d
+selection-foreground = #f9f9f9
+
+palette = 0=#07080a
+palette = 1=#ff6363
+palette = 2=#59d499
+palette = 3=#ffc533
+palette = 4=#56c2ff
+palette = 5=#ff6363
+palette = 6=#57c1ff
+palette = 7=#e6e6e6
+palette = 8=#6a6b6c
+palette = 9=#ff7777
+palette = 10=#59d499
+palette = 11=#ffc533
+palette = 12=#56c2ff
+palette = 13=#ff7777
+palette = 14=#57c1ff
+palette = 15=#ffffff
+
+font-family = Geist Mono
+font-family = Menlo
+cursor-style = bar
+cursor-style-blink = true
+window-padding-x = 8
+window-padding-y = 6

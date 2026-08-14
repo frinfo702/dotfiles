@@ -1,0 +1,130 @@
+# cursor-dark — Helix port of Cursor IDE's Cursor Dark.
+# Surfaces and syntax tokens follow the Cursor Dark workbench / TextMate scopes.
+inherits = "poolside-dark"
+
+# Diagnostics: solid underlines (Ghostty cannot render curl)
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "diagnostic_error" }
+"diff.delta" = { fg = "accent" }
+"diff.delta.moved" = { fg = "purple" }
+
+"attribute" = "purple"
+"type" = "blue"
+"type.builtin" = "keyword"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "blue"
+"constant" = "keyword"
+"constant.builtin" = "keyword"
+"constant.builtin.boolean" = "keyword"
+"constant.character" = "string"
+"constant.character.escape" = "yellow"
+"constant.numeric" = "yellow"
+"string" = "string"
+"string.regexp" = "string"
+"string.special" = "yellow"
+"string.special.path" = "string"
+"string.special.url" = "accent"
+"string.special.symbol" = "purple"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "rose"
+"variable.parameter" = "yellow"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "purple"
+"label" = "orange"
+"keyword" = "keyword"
+"keyword.control" = "keyword"
+"keyword.control.conditional" = "keyword"
+"keyword.control.repeat" = "keyword"
+"keyword.control.import" = "keyword"
+"keyword.control.return" = "keyword"
+"keyword.control.exception" = "keyword"
+"keyword.directive" = "green_soft"
+"keyword.function" = "keyword"
+"keyword.operator" = "editor_foreground"
+"operator" = "editor_foreground"
+"function" = "orange"
+"function.builtin" = "keyword"
+"function.macro" = "green_soft"
+"function.method" = "yellow"
+"tag" = "keyword"
+"tag.attribute" = "purple"
+"namespace" = "blue"
+"module" = "editor_foreground"
+"special" = "accent"
+"punctuation" = "editor_foreground"
+"punctuation.bracket" = "editor_foreground"
+"punctuation.delimiter" = "editor_foreground"
+"punctuation.special" = "yellow"
+
+"markup.heading" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.marker" = "keyword"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "purple", modifiers = ["italic"] }
+"markup.link.url" = { fg = "accent", modifiers = ["underlined"] }
+"markup.link.text" = "blue"
+"markup.link.label" = "orange"
+"markup.raw" = "string"
+"markup.raw.block" = "string"
+"markup.list" = "keyword"
+"markup.quote" = "comment"
+
+[palette]
+background = "#181818"
+surface = "#141414"
+elevated_surface = "#1c1c1c"
+element_hover = "#262626"
+element_selected = "#343434"
+active_line = "#262626"
+highlighted_line = "#2a2a2a"
+selection = "#303030"
+border = "#2a2a2a"
+focused_border = "#88c0d0"
+
+text = "#e4e4e4"
+text_bright = "#ffffff"
+text_muted = "#8d8d8d"
+text_disabled = "#5a5a5a"
+editor_foreground = "#d6d6dd"
+icon_muted = "#7a7a7a"
+line_number = "#5a5a5a"
+active_line_number = "#e4e4e4"
+invisible = "#505050"
+wrap_guide = "#2a2a2a"
+indent_guide = "#2a2a2a"
+predictive = "#6a6a6a"
+
+accent = "#88c0d0"
+keyword = "#82d2ce"
+orange = "#efb080"
+yellow = "#ebc88d"
+blue = "#87c3ff"
+purple = "#aaa0fa"
+string = "#e394dc"
+green = "#3fa266"
+green_soft = "#a8cc7c"
+cyan = "#88c0d0"
+rose = "#cc7c8a"
+red = "#fc6b83"
+comment = "#636363"
+cursor = "#e4e4e4"
+
+diagnostic_error = "#e34671"
+diagnostic_warning = "#f1b467"
+diagnostic_info = "#88c0d0"
+diagnostic_hint = "#70b489"
+
+search_match = "#445b62"

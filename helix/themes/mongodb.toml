@@ -1,0 +1,127 @@
+# mongodb — Helix theme after MongoDB LeafyGreen.
+# Forest-navy canvas (#001E2B) with spring green (#00ED64) used as the
+# brand accent, not sprayed across every syntax role.
+inherits = "poolside-dark"
+
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "diagnostic_error" }
+"diff.delta" = { fg = "yellow" }
+"diff.delta.moved" = { fg = "purple" }
+
+"attribute" = "purple"
+"type" = "blue"
+"type.builtin" = "blue"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "blue"
+"constant" = "yellow"
+"constant.builtin" = "green"
+"constant.builtin.boolean" = "green"
+"constant.character" = "green_soft"
+"constant.character.escape" = "yellow"
+"constant.numeric" = "yellow"
+"string" = "green_soft"
+"string.regexp" = "green_soft"
+"string.special" = "yellow"
+"string.special.path" = "green_soft"
+"string.special.url" = "blue"
+"string.special.symbol" = "purple"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "green"
+"variable.parameter" = "text"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "green_soft"
+"label" = "green"
+"keyword" = "green"
+"keyword.control" = "green"
+"keyword.control.conditional" = "green"
+"keyword.control.repeat" = "green"
+"keyword.control.import" = "blue"
+"keyword.control.return" = "green"
+"keyword.control.exception" = "red"
+"keyword.directive" = "blue"
+"keyword.function" = "green"
+"keyword.operator" = "text_muted"
+"operator" = "text_muted"
+"function" = "green_soft"
+"function.builtin" = "green_soft"
+"function.macro" = "purple"
+"function.method" = "green_soft"
+"tag" = "green"
+"tag.attribute" = "blue"
+"namespace" = "blue"
+"module" = "editor_foreground"
+"special" = "accent"
+"punctuation" = "text_muted"
+"punctuation.bracket" = "text"
+"punctuation.delimiter" = "text_muted"
+"punctuation.special" = "accent"
+
+"markup.heading" = { fg = "accent", modifiers = ["bold"] }
+"markup.heading.marker" = "green"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "green_soft", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "green_soft"
+"markup.link.label" = "blue"
+"markup.raw" = "green_soft"
+"markup.raw.block" = "green_soft"
+"markup.list" = "green"
+"markup.quote" = "comment"
+
+[palette]
+background = "#001e2b"
+surface = "#112733"
+elevated_surface = "#21313c"
+element_hover = "#21313c"
+element_selected = "#023430"
+active_line = "#112733"
+highlighted_line = "#0c2f2c"
+selection = "#023430"
+border = "#3d4f58"
+focused_border = "#00ed64"
+
+text = "#e8edeb"
+text_bright = "#ffffff"
+text_muted = "#c1c7c6"
+text_disabled = "#889397"
+editor_foreground = "#e8edeb"
+icon_muted = "#889397"
+line_number = "#5c6c75"
+active_line_number = "#71f6ba"
+invisible = "#3d4f58"
+wrap_guide = "#21313c"
+indent_guide = "#21313c"
+predictive = "#889397"
+
+accent = "#00ed64"
+green = "#00a35c"
+green_soft = "#71f6ba"
+yellow = "#ffc010"
+orange = "#ffc010"
+blue = "#0498ec"
+purple = "#b45af2"
+cyan = "#0498ec"
+red = "#ef5752"
+comment = "#889397"
+cursor = "#00ed64"
+
+diagnostic_error = "#ef5752"
+diagnostic_warning = "#ffc010"
+diagnostic_info = "#0498ec"
+diagnostic_hint = "#71f6ba"
+
+search_match = "#00684a"

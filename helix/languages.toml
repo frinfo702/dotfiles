@@ -58,30 +58,106 @@ formatter = { command = "prettier", args = ["--parser", "yaml"] }
 ################################
 # TypeScript / JavaScript
 ################################
-# LSP: typescript-language-server (npm i -g typescript-language-server)
+# Default: PATH `tsc --lsp` (TypeScript 7+) and PATH `biome`.
+# Per-project override: <repo>/.helix/languages.toml (merged on top of this file).
+# Example:
+#   [language-server.tsc]
+#   command = "./node_modules/.bin/tsc"
+#   args = ["--lsp", "--stdio"]
+#   [language-server.biome]
+#   command = "./node_modules/.bin/biome"
+#   args = ["lsp-proxy"]
+# TypeScript 6 and older cannot speak --lsp; point `command` at
+# typescript-language-server instead.
+
+[language-server.tsc]
+command = "tsc"
+args = ["--lsp", "--stdio"]
+
+[language-server.tsc.config.typescript]
+format.enabled = false
+inlayHints.enumMemberValues.enabled = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.parameterTypes.enabled = true
+inlayHints.parameterNames.enabled = "all"
+inlayHints.propertyDeclarationTypes.enabled = true
+inlayHints.variableTypes.enabled = true
+
+[language-server.tsc.config.javascript]
+format.enabled = false
+inlayHints.enumMemberValues.enabled = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.parameterTypes.enabled = true
+inlayHints.parameterNames.enabled = "all"
+inlayHints.propertyDeclarationTypes.enabled = true
+inlayHints.variableTypes.enabled = true
+
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
+
 [[language]]
 name = "typescript"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
-language-servers = ["typescript-language-server"]
+roots = ["biome.json", "biome.jsonc", "tsconfig.json", "package.json"]
+language-servers = [
+  { name = "tsc", except-features = ["format"] },
+  "biome",
+]
 
 [[language]]
 name = "tsx"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
-language-servers = ["typescript-language-server"]
+roots = ["biome.json", "biome.jsonc", "tsconfig.json", "package.json"]
+language-servers = [
+  { name = "tsc", except-features = ["format"] },
+  "biome",
+]
 
 [[language]]
 name = "javascript"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "babel"] }
-language-servers = ["typescript-language-server"]
+roots = ["biome.json", "biome.jsonc", "jsconfig.json", "package.json"]
+language-servers = [
+  { name = "tsc", except-features = ["format"] },
+  "biome",
+]
 
 [[language]]
 name = "jsx"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "babel"] }
-language-servers = ["typescript-language-server"]
+roots = ["biome.json", "biome.jsonc", "jsconfig.json", "package.json"]
+language-servers = [
+  { name = "tsc", except-features = ["format"] },
+  "biome",
+]
+
+################################
+# MongoDB playgrounds
+################################
+# Official MongoDB LSP lives inside the VS Code extension and is not a
+# standalone server. Playgrounds are JS (mongosh API), so reuse tsc + biome
+# with the javascript grammar. Run queries with mongosh, not an LSP.
+# Files: *.mongodb.js (current) and *.mongodb (legacy playgrounds).
+[[language]]
+name = "mongodb"
+scope = "source.mongodb"
+injection-regex = "mongodb"
+language-id = "javascript"
+grammar = "javascript"
+file-types = [
+  { glob = "*.mongodb.js" },
+  { glob = "*.mongodb" },
+]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+roots = ["biome.json", "biome.jsonc", "package.json"]
+indent = { tab-width = 2, unit = "  " }
+auto-format = true
+language-servers = [
+  { name = "tsc", except-features = ["format"] },
+  "biome",
+]
 
 ################################
 # C / C++

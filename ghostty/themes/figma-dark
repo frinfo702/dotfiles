@@ -1,0 +1,32 @@
+# figma-dark — Ghostty theme after Figma's five-color mark.
+# Fonts apply only if font-family is not set in ghostty/config.
+
+background = #1e1e1e
+foreground = #e5e5e5
+cursor-color = #f24e1e
+cursor-text = #ffffff
+selection-background = #3a3a3a
+selection-foreground = #e5e5e5
+
+palette = 0=#1e1e1e
+palette = 1=#f24e1e
+palette = 2=#0acf83
+palette = 3=#ff7262
+palette = 4=#1abcfe
+palette = 5=#a259ff
+palette = 6=#1abcfe
+palette = 7=#e5e5e5
+palette = 8=#6e6e6e
+palette = 9=#ff7262
+palette = 10=#0acf83
+palette = 11=#ff7262
+palette = 12=#1abcfe
+palette = 13=#a259ff
+palette = 14=#1abcfe
+palette = 15=#ffffff
+
+font-family = Geist Mono
+font-family = Menlo
+cursor-style = bar
+window-padding-x = 10
+window-padding-y = 8

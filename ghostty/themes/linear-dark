@@ -1,0 +1,34 @@
+# linear-dark — Ghostty theme after Linear's product UI.
+# Fonts apply only if font-family is not set in ghostty/config.
+# Linear ships Berkeley Mono; Menlo is the closest installed stand-in.
+
+background = #08090a
+foreground = #f7f8f8
+cursor-color = #5e6ad2
+cursor-text = #ffffff
+selection-background = #1e2238
+selection-foreground = #f7f8f8
+
+palette = 0=#0f1011
+palette = 1=#eb5757
+palette = 2=#4cb782
+palette = 3=#f2c94c
+palette = 4=#5e6ad2
+palette = 5=#8b5cf6
+palette = 6=#828fff
+palette = 7=#d0d6e0
+palette = 8=#62666d
+palette = 9=#eb5757
+palette = 10=#4cb782
+palette = 11=#f2994a
+palette = 12=#828fff
+palette = 13=#8b5cf6
+palette = 14=#828fff
+palette = 15=#f7f8f8
+
+font-family = Menlo
+font-family = Geist Mono
+cursor-style = block
+window-padding-x = 14
+window-padding-y = 10
+adjust-cell-height = 12%

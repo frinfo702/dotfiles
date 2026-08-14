@@ -1,0 +1,125 @@
+# figma-dark — Helix theme after Figma's five-color mark on dark chrome.
+# Canvas matches Figma's dark UI; logo red, orange, purple, green, and blue
+# map onto syntax roles so the editor reads like a Figma file.
+inherits = "poolside-dark"
+
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "orange" }
+"diff.delta.moved" = { fg = "purple" }
+
+"attribute" = "purple"
+"type" = "blue"
+"type.builtin" = "blue"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "purple"
+"constant" = "orange"
+"constant.builtin" = "orange"
+"constant.builtin.boolean" = "orange"
+"constant.character" = "green"
+"constant.character.escape" = "orange"
+"constant.numeric" = "orange"
+"string" = "green"
+"string.regexp" = "green"
+"string.special" = "orange"
+"string.special.path" = "green"
+"string.special.url" = "blue"
+"string.special.symbol" = "purple"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "red"
+"variable.parameter" = "orange"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "purple"
+"label" = "red"
+"keyword" = "red"
+"keyword.control" = "red"
+"keyword.control.conditional" = "red"
+"keyword.control.repeat" = "red"
+"keyword.control.import" = "purple"
+"keyword.control.return" = "red"
+"keyword.control.exception" = "red"
+"keyword.directive" = "purple"
+"keyword.function" = "red"
+"keyword.operator" = "text_muted"
+"operator" = "text_muted"
+"function" = "purple"
+"function.builtin" = "purple"
+"function.macro" = "purple"
+"function.method" = "purple"
+"tag" = "red"
+"tag.attribute" = "blue"
+"namespace" = "blue"
+"module" = "editor_foreground"
+"special" = "orange"
+"punctuation" = "text_muted"
+"punctuation.bracket" = "text"
+"punctuation.delimiter" = "text_muted"
+"punctuation.special" = "orange"
+
+"markup.heading" = { fg = "red", modifiers = ["bold"] }
+"markup.heading.marker" = "orange"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "purple", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "blue"
+"markup.link.label" = "purple"
+"markup.raw" = "green"
+"markup.raw.block" = "green"
+"markup.list" = "orange"
+"markup.quote" = "comment"
+
+[palette]
+background = "#1e1e1e"
+surface = "#2c2c2c"
+elevated_surface = "#333333"
+element_hover = "#383838"
+element_selected = "#3d2a28"
+active_line = "#262626"
+highlighted_line = "#2a3033"
+selection = "#3a3a3a"
+border = "#444444"
+focused_border = "#f24e1e"
+
+text = "#e5e5e5"
+text_bright = "#ffffff"
+text_muted = "#a0a0a0"
+text_disabled = "#6e6e6e"
+editor_foreground = "#e5e5e5"
+icon_muted = "#8c8c8c"
+line_number = "#6e6e6e"
+active_line_number = "#e5e5e5"
+invisible = "#4a4a4a"
+wrap_guide = "#333333"
+indent_guide = "#2c2c2c"
+predictive = "#8c8c8c"
+
+accent = "#f24e1e"
+red = "#f24e1e"
+orange = "#ff7262"
+purple = "#a259ff"
+green = "#0acf83"
+blue = "#1abcfe"
+cyan = "#1abcfe"
+comment = "#8c8c8c"
+cursor = "#f24e1e"
+
+diagnostic_error = "#f24e1e"
+diagnostic_warning = "#ff7262"
+diagnostic_info = "#1abcfe"
+diagnostic_hint = "#0acf83"
+
+search_match = "#3d2a28"

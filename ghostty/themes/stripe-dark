@@ -1,0 +1,33 @@
+# stripe-dark — Ghostty theme after Stripe navy + blurple.
+# Fonts apply only if font-family is not set in ghostty/config.
+
+background = #0a2540
+foreground = #c4d0db
+cursor-color = #635bff
+cursor-text = #ffffff
+selection-background = #1c3870
+selection-foreground = #c4d0db
+
+palette = 0=#0a2540
+palette = 1=#cd3d64
+palette = 2=#24b47e
+palette = 3=#ffd978
+palette = 4=#635bff
+palette = 5=#7a73ff
+palette = 6=#00d4ff
+palette = 7=#adbdcc
+palette = 8=#4a5d73
+palette = 9=#cd3d64
+palette = 10=#24b47e
+palette = 11=#ffd978
+palette = 12=#80e9ff
+palette = 13=#7a73ff
+palette = 14=#00d4ff
+palette = 15=#ffffff
+
+font-family = Geist Mono
+font-family = Menlo
+cursor-style = block
+window-padding-x = 16
+window-padding-y = 12
+adjust-cell-height = 10%

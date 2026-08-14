@@ -1,0 +1,33 @@
+# mongodb — Ghostty theme after MongoDB LeafyGreen.
+# Fonts apply only if font-family is not set in ghostty/config.
+# Source Code Pro is MongoDB's code face; Menlo is the fallback.
+
+background = #001e2b
+foreground = #e8edeb
+cursor-color = #00ed64
+cursor-text = #001e2b
+selection-background = #023430
+selection-foreground = #e8edeb
+
+palette = 0=#001e2b
+palette = 1=#ef5752
+palette = 2=#00a35c
+palette = 3=#ffc010
+palette = 4=#0498ec
+palette = 5=#b45af2
+palette = 6=#71f6ba
+palette = 7=#e8edeb
+palette = 8=#5c6c75
+palette = 9=#ef5752
+palette = 10=#00ed64
+palette = 11=#ffc010
+palette = 12=#0498ec
+palette = 13=#b45af2
+palette = 14=#71f6ba
+palette = 15=#ffffff
+
+font-family = Source Code Pro
+font-family = Menlo
+cursor-style = block
+window-padding-x = 12
+window-padding-y = 8

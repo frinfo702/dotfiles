@@ -1,4 +1,6 @@
-theme = "sumi"
+# Custom themes live in themes/: cursor-dark, cursor-light, mongodb,
+# linear-dark, linear-light, stripe-dark, figma-dark, raycast-dark, notion-light.
+theme = "raycast-dark"
 
 [editor]
 auto-save = true

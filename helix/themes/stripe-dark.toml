@@ -1,0 +1,124 @@
+# stripe-dark — Helix theme after Stripe's navy + blurple system.
+# Canvas is Stripe Slate (#0A2540); keywords and focus use Blurple (#635BFF).
+inherits = "poolside-dark"
+
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "diagnostic_error" }
+"diff.delta" = { fg = "cyan" }
+"diff.delta.moved" = { fg = "accent" }
+
+"attribute" = "accent"
+"type" = "cyan"
+"type.builtin" = "accent"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "cyan"
+"constant" = "cyan"
+"constant.builtin" = "accent"
+"constant.builtin.boolean" = "accent"
+"constant.character" = "cyan"
+"constant.character.escape" = "cyan"
+"constant.numeric" = "text_bright"
+"string" = "cyan"
+"string.regexp" = "cyan"
+"string.special" = "accent"
+"string.special.path" = "cyan"
+"string.special.url" = "accent"
+"string.special.symbol" = "accent"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "accent"
+"variable.parameter" = "text"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "cyan"
+"label" = "accent"
+"keyword" = "accent"
+"keyword.control" = "accent"
+"keyword.control.conditional" = "accent"
+"keyword.control.repeat" = "accent"
+"keyword.control.import" = "accent"
+"keyword.control.return" = "accent"
+"keyword.control.exception" = "red"
+"keyword.directive" = "cyan"
+"keyword.function" = "accent"
+"keyword.operator" = "text_muted"
+"operator" = "text_muted"
+"function" = "cyan"
+"function.builtin" = "cyan"
+"function.macro" = "accent"
+"function.method" = "cyan"
+"tag" = "accent"
+"tag.attribute" = "cyan"
+"namespace" = "cyan"
+"module" = "editor_foreground"
+"special" = "accent"
+"punctuation" = "text_muted"
+"punctuation.bracket" = "text"
+"punctuation.delimiter" = "text_muted"
+"punctuation.special" = "cyan"
+
+"markup.heading" = { fg = "cyan", modifiers = ["bold"] }
+"markup.heading.marker" = "accent"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "cyan", modifiers = ["italic"] }
+"markup.link.url" = { fg = "accent", modifiers = ["underlined"] }
+"markup.link.text" = "cyan"
+"markup.link.label" = "accent"
+"markup.raw" = "cyan"
+"markup.raw.block" = "cyan"
+"markup.list" = "accent"
+"markup.quote" = "comment"
+
+[palette]
+background = "#0a2540"
+surface = "#0d2d4a"
+elevated_surface = "#123056"
+element_hover = "#16345c"
+element_selected = "#1b2a6b"
+active_line = "#0d2d4a"
+highlighted_line = "#123056"
+selection = "#1c3870"
+border = "#1b3a5a"
+focused_border = "#635bff"
+
+text = "#c4d0db"
+text_bright = "#ffffff"
+text_muted = "#6b7c93"
+text_disabled = "#4a5d73"
+editor_foreground = "#adbdcc"
+icon_muted = "#6b7c93"
+line_number = "#4a5d73"
+active_line_number = "#c4d0db"
+invisible = "#1b3a5a"
+wrap_guide = "#16345c"
+indent_guide = "#123056"
+predictive = "#6b7c93"
+
+accent = "#635bff"
+green = "#24b47e"
+orange = "#ffd978"
+blue = "#80e9ff"
+purple = "#7a73ff"
+cyan = "#00d4ff"
+red = "#cd3d64"
+comment = "#6b7c93"
+cursor = "#635bff"
+
+diagnostic_error = "#cd3d64"
+diagnostic_warning = "#ffd978"
+diagnostic_info = "#00d4ff"
+diagnostic_hint = "#24b47e"
+
+search_match = "#1b2a6b"

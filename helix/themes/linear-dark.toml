@@ -1,0 +1,126 @@
+# linear-dark — Helix theme after Linear's product UI.
+# Near-black surfaces, hairline borders, and indigo used as the single
+# chromatic accent. Status greens/ambers appear only on strings and diffs.
+inherits = "poolside-dark"
+
+"error" = { fg = "diagnostic_error" }
+"warning" = { fg = "diagnostic_warning" }
+"info" = { fg = "diagnostic_info" }
+"hint" = { fg = "diagnostic_hint" }
+"diagnostic" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.error" = { underline = { color = "diagnostic_error", style = "solid" } }
+"diagnostic.warning" = { underline = { color = "diagnostic_warning", style = "solid" } }
+"diagnostic.info" = { underline = { color = "diagnostic_info", style = "solid" } }
+"diagnostic.hint" = { underline = { color = "diagnostic_hint", style = "solid" } }
+
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "diagnostic_error" }
+"diff.delta" = { fg = "orange" }
+"diff.delta.moved" = { fg = "accent" }
+
+"attribute" = "accent"
+"type" = "text_bright"
+"type.builtin" = "accent"
+"type.enum.variant" = "editor_foreground"
+"constructor" = "text_bright"
+"constant" = "editor_foreground"
+"constant.builtin" = "accent"
+"constant.builtin.boolean" = "accent"
+"constant.character" = "green"
+"constant.character.escape" = "orange"
+"constant.numeric" = "orange"
+"string" = "green"
+"string.regexp" = "green"
+"string.special" = "orange"
+"string.special.path" = "green"
+"string.special.url" = "accent"
+"string.special.symbol" = "accent"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.documentation" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "editor_foreground"
+"variable.builtin" = "accent"
+"variable.parameter" = "text"
+"variable.other" = "editor_foreground"
+"variable.other.member" = "text"
+"label" = "accent"
+"keyword" = "accent"
+"keyword.control" = "accent"
+"keyword.control.conditional" = "accent"
+"keyword.control.repeat" = "accent"
+"keyword.control.import" = "accent"
+"keyword.control.return" = "accent"
+"keyword.control.exception" = "diagnostic_error"
+"keyword.directive" = "accent"
+"keyword.function" = "accent"
+"keyword.operator" = "text_muted"
+"operator" = "text_muted"
+"function" = "accent_bright"
+"function.builtin" = "accent_bright"
+"function.macro" = "accent"
+"function.method" = "accent_bright"
+"tag" = "accent"
+"tag.attribute" = "text"
+"namespace" = "text"
+"module" = "editor_foreground"
+"special" = "accent_bright"
+"punctuation" = "text_muted"
+"punctuation.bracket" = "text"
+"punctuation.delimiter" = "text_muted"
+"punctuation.special" = "accent"
+
+"markup.heading" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.heading.marker" = "accent"
+"markup.bold" = { fg = "text_bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "text", modifiers = ["italic"] }
+"markup.link.url" = { fg = "accent", modifiers = ["underlined"] }
+"markup.link.text" = "accent_bright"
+"markup.link.label" = "accent"
+"markup.raw" = "green"
+"markup.raw.block" = "green"
+"markup.list" = "accent"
+"markup.quote" = "comment"
+
+[palette]
+background = "#08090a"
+surface = "#0f1011"
+elevated_surface = "#191a1b"
+element_hover = "#141516"
+element_selected = "#1e2030"
+active_line = "#0f1011"
+highlighted_line = "#14161c"
+selection = "#1e2238"
+border = "#23252a"
+focused_border = "#5e6ad2"
+
+text = "#f7f8f8"
+text_bright = "#ffffff"
+text_muted = "#8a8f98"
+text_disabled = "#62666d"
+editor_foreground = "#d0d6e0"
+icon_muted = "#8a8f98"
+line_number = "#3e3e44"
+active_line_number = "#d0d6e0"
+invisible = "#34343a"
+wrap_guide = "#23252a"
+indent_guide = "#1c1d1e"
+predictive = "#62666d"
+
+accent = "#5e6ad2"
+accent_bright = "#828fff"
+green = "#4cb782"
+orange = "#f2994a"
+blue = "#5e6ad2"
+purple = "#8b5cf6"
+cyan = "#828fff"
+red = "#eb5757"
+comment = "#8a8f98"
+cursor = "#f7f8f8"
+
+diagnostic_error = "#eb5757"
+diagnostic_warning = "#f2c94c"
+diagnostic_info = "#5e6ad2"
+diagnostic_hint = "#4cb782"
+
+search_match = "#2a2d4a"

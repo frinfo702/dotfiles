@@ -1,0 +1,46 @@
+# linear-light — Linear's product light theme.
+# White canvas, cool gray type, same indigo accent as linear-dark.
+inherits = "linear-dark"
+
+[palette]
+background = "#ffffff"
+surface = "#f7f8f8"
+elevated_surface = "#f3f4f5"
+element_hover = "#f0f1f2"
+element_selected = "#eceef8"
+active_line = "#f7f8f8"
+highlighted_line = "#eef0f8"
+selection = "#d9dcf5"
+border = "#e5e5e6"
+focused_border = "#5e6ad2"
+
+text = "#0f1011"
+text_bright = "#000000"
+text_muted = "#62666d"
+text_disabled = "#8a8f98"
+editor_foreground = "#1a1a1a"
+icon_muted = "#8a8f98"
+line_number = "#c0c2c6"
+active_line_number = "#0f1011"
+invisible = "#d0d6e0"
+wrap_guide = "#e5e5e6"
+indent_guide = "#ececed"
+predictive = "#8a8f98"
+
+accent = "#5e6ad2"
+accent_bright = "#4752c4"
+green = "#27a644"
+orange = "#c97a2a"
+blue = "#5e6ad2"
+purple = "#6d28d9"
+cyan = "#4752c4"
+red = "#d94c4c"
+comment = "#8a8f98"
+cursor = "#0f1011"
+
+diagnostic_error = "#d94c4c"
+diagnostic_warning = "#c9a227"
+diagnostic_info = "#5e6ad2"
+diagnostic_hint = "#27a644"
+
+search_match = "#eceef8"
