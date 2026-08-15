@@ -85,17 +85,6 @@
   },
   "show_completions_on_input": true,
   "agent_servers": {
-    "kimi": {
-      "type": "registry"
-    },
-    "claude-acp": {
-      "default_config_options": {
-        "model": "haiku",
-        "effort": "max",
-        "mode": "bypassPermissions"
-      },
-      "type": "registry"
-    },
     "codex-acp": {
       "default_config_options": {
         "reasoning_effort": "high",
@@ -210,9 +199,9 @@
   "buffer_font_size": 13,
   // Local theme inspired by Poolside's warm, high-contrast palette.
   "theme": {
-    "mode": "dark",
-    "light": "poolside-light",
-    "dark": "codex-dark"
+    "mode": "light",
+    "light": "notion-light",
+    "dark": "raycast-dark"
   },
   "languages": {
     "Scala": {
