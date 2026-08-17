@@ -2,11 +2,19 @@
   {
     "context": "Terminal",
     "bindings": {
+      "cmd-shift-j": [
+        "action::Sequence",
+        ["workspace::ZoomOut", "terminal_panel::Toggle"],
+      ],
       "shift-enter": ["terminal::SendText", "\u001b\r"],
     },
   },
   {
     "bindings": {
+      "cmd-shift-j": [
+        "action::Sequence",
+        ["terminal_panel::ToggleFocus", "workspace::ZoomIn"],
+      ],
       "cmd-g": "git_panel::ToggleFocus",
     },
   },

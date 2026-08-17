@@ -20,7 +20,7 @@ font-family = Geist Mono
 font-family = Geist
 font-feature = -calt, -liga, -dlig
 font-size = 14
-background-image = "./wallpaper/spaceX-wallpaper.png"
+# background-image = "./wallpaper/spaceX-wallpaper.png"
 background-image-opacity = 0.3
 background-image-fit = "cover"
 background-opacity = 0.95
@@ -51,7 +51,7 @@ mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
 term = xterm-256color
-window-padding-balance = true 
+window-padding-balance = true
 window-save-state = always
 macos-titlebar-style=transparent
 shell-integration = zsh

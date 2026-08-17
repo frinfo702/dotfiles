@@ -118,3 +118,6 @@ zed/*.bak.*
 zed/*.bak*
 zed/settings_backup.json
 zed/prompts/
+
+# zsh
+.zshrc.local
