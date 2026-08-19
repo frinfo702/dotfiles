@@ -39,7 +39,7 @@ main() {
 
   # $HOME
   link "$DOTFILES_DIR/.vimrc" "$HOME_DIR/.vimrc"
-  link "$DOTFILES_DIR/.zshrc" "$HOME_DIR/.zshrc"
+  link "$DOTFILES_DIR/zsh/.zshrc" "$HOME_DIR/.zshrc"
 
   # ~/.config
   link "$DOTFILES_DIR/ghostty" "$HOME_DIR/.config/ghostty"
