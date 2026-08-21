@@ -200,3 +200,4 @@ autoload -Uz compinit && compinit -C
 # <<< grok installer <<<
 
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/pr-challenge.zsh
+source ~/ghq/github.com/frinfo702/dotfiles/zsh/q.zsh
