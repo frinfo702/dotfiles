@@ -97,8 +97,9 @@
     },
     "opencode": {
       "default_config_options": {
-        "effort": "medium",
-        "model": "deepseek/deepseek-v4-flash"
+        "mode": "teacher",
+        "effort": "high",
+        "model": "vercel/deepseek/deepseek-v4-flash-0731"
       },
       "type": "registry"
     },
