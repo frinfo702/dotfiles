@@ -1,0 +1,26 @@
+# opencode-dark — screenshot-calibrated OpenCode dark theme.
+# Pure black canvas with muted orange, violet, blue, and sage accents.
+
+background = #000000
+foreground = #f2f2f2
+cursor-color = #f2f2f2
+cursor-text = #000000
+selection-background = #3a3a3a
+selection-foreground = #f2f2f2
+
+palette = 0=#000000
+palette = 1=#c86f6f
+palette = 2=#a3ab93
+palette = 3=#c99675
+palette = 4=#7fa0c1
+palette = 5=#b7aac3
+palette = 6=#859fb9
+palette = 7=#f2f2f2
+palette = 8=#5d5b65
+palette = 9=#d98282
+palette = 10=#b0b99e
+palette = 11=#d7a486
+palette = 12=#91aecb
+palette = 13=#c3b5cf
+palette = 14=#96adc4
+palette = 15=#e7e7e9

@@ -1,0 +1,27 @@
+# arc-raiders-dark — Ghostty theme inspired by ARC Raiders' industrial UI.
+# Soot-black panels, field ivory text, signal yellow, and oxidized cyan.
+
+background = #080a10
+foreground = #efe4d6
+cursor-color = #f2b31c
+cursor-text = #080a10
+selection-background = #303342
+selection-foreground = #fff7e9
+
+palette = 0=#0e0c10
+palette = 1=#d95745
+palette = 2=#76a86f
+palette = 3=#f2b31c
+palette = 4=#4c82b8
+palette = 5=#8f6da8
+palette = 6=#5d8d92
+palette = 7=#efe4d6
+palette = 8=#655b57
+palette = 9=#ef6b52
+palette = 10=#8bbd79
+palette = 11=#f7c946
+palette = 12=#65a0d0
+palette = 13=#aa82c0
+palette = 14=#6fb5b8
+palette = 15=#fff7e9
+

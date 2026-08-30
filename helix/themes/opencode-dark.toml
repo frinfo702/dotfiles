@@ -1,0 +1,216 @@
+# opencode-dark — screenshot-calibrated OpenCode dark theme.
+# Pure black UI; muted orange keywords, violet types, blue functions, sage strings.
+
+# Editor and surfaces
+"ui.background" = { bg = "background" }
+"ui.background.separator" = { fg = "border_subtle" }
+"ui.window" = { fg = "border" }
+"ui.gutter" = { bg = "background" }
+"ui.gutter.selected" = { bg = "background_panel" }
+
+# Text
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { fg = "text", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "text_muted" }
+"ui.text.info" = { fg = "text" }
+"ui.text.directory" = { fg = "primary" }
+
+# Cursor and selection
+"ui.cursor" = { fg = "background", bg = "primary" }
+"ui.cursor.primary" = { fg = "background", bg = "primary" }
+"ui.cursor.normal" = { fg = "background", bg = "primary" }
+"ui.cursor.insert" = { fg = "background", bg = "syntax_string" }
+"ui.cursor.select" = { fg = "background", bg = "accent" }
+"ui.cursor.match" = { fg = "syntax_keyword", modifiers = ["bold"] }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection_primary" }
+"ui.highlight" = { bg = "background_element" }
+"ui.highlight.frameline" = { bg = "selection" }
+
+# Line numbers and cursor line
+"ui.cursorline.primary" = { bg = "active_line" }
+"ui.cursorline.secondary" = { bg = "active_line" }
+"ui.cursorcolumn.primary" = { bg = "active_line" }
+"ui.cursorcolumn.secondary" = { bg = "active_line" }
+"ui.linenr" = { fg = "line_number" }
+"ui.linenr.selected" = { fg = "primary" }
+
+# Status line
+"ui.statusline" = { fg = "text", bg = "background_panel" }
+"ui.statusline.inactive" = { fg = "text_muted", bg = "background_panel" }
+"ui.statusline.normal" = { fg = "background", bg = "primary" }
+"ui.statusline.insert" = { fg = "background", bg = "syntax_string" }
+"ui.statusline.select" = { fg = "background", bg = "accent" }
+"ui.statusline.separator" = { fg = "border_subtle" }
+
+# Buffer line
+"ui.bufferline" = { fg = "text_muted", bg = "background_panel" }
+"ui.bufferline.active" = { fg = "text", bg = "background_element", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "background_panel" }
+
+# Popups, menus, help, and pickers
+"ui.popup" = { fg = "text", bg = "background_panel" }
+"ui.popup.info" = { fg = "text", bg = "background_panel" }
+"ui.menu" = { fg = "text", bg = "background_panel" }
+"ui.menu.selected" = { fg = "primary", bg = "background_element", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "border_active", bg = "background_panel" }
+"ui.help" = { fg = "text", bg = "background_panel" }
+"ui.picker.header" = { fg = "text", bg = "background_panel", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "text_muted" }
+"ui.picker.header.column.active" = { fg = "primary", modifiers = ["bold"] }
+
+# Virtual text
+"ui.virtual.whitespace" = { fg = "border_subtle" }
+"ui.virtual.indent-guide" = { fg = "background_element" }
+"ui.virtual.wrap" = { fg = "border_subtle" }
+"ui.virtual.ruler" = { bg = "background_panel" }
+"ui.virtual.inlay-hint" = { fg = "text_muted" }
+"ui.virtual.inlay-hint.parameter" = { fg = "syntax_variable" }
+"ui.virtual.inlay-hint.type" = { fg = "syntax_type" }
+"ui.virtual.jump-label" = { fg = "primary", modifiers = ["bold"] }
+
+# Diagnostics
+"error" = { fg = "error" }
+"warning" = { fg = "warning" }
+"info" = { fg = "info" }
+"hint" = { fg = "success" }
+"diagnostic" = { underline = { color = "info", style = "curl" } }
+"diagnostic.error" = { underline = { color = "error", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "warning", style = "curl" } }
+"diagnostic.info" = { underline = { color = "info", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "success", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# Search
+"ui.search.match" = { fg = "background", bg = "primary" }
+
+# Diff and version control
+"diff.plus" = { fg = "diff_added" }
+"diff.minus" = { fg = "diff_removed" }
+"diff.delta" = { fg = "diff_context" }
+"diff.delta.moved" = { fg = "diff_highlight_added" }
+
+# Syntax
+"attribute" = "syntax_variable"
+"type" = "syntax_type"
+"type.builtin" = "syntax_type"
+"type.enum.variant" = "syntax_type"
+"constructor" = "syntax_type"
+"constant" = "syntax_constant"
+"constant.builtin" = "syntax_variable"
+"constant.builtin.boolean" = "syntax_number"
+"constant.character" = "syntax_string"
+"constant.character.escape" = "syntax_operator"
+"constant.numeric" = "syntax_number"
+"string" = "syntax_string"
+"string.regexp" = "syntax_string"
+"string.special" = "syntax_operator"
+"string.special.path" = "syntax_string"
+"string.special.url" = "syntax_function"
+"string.special.symbol" = "syntax_variable"
+"comment" = "syntax_comment"
+"comment.line" = "syntax_comment"
+"comment.block" = "syntax_comment"
+"comment.documentation" = "syntax_comment"
+"variable" = "syntax_variable"
+"variable.builtin" = "syntax_variable"
+"variable.parameter" = "syntax_variable"
+"variable.other" = "syntax_variable"
+"variable.other.member" = "syntax_property"
+"label" = "syntax_keyword"
+"keyword" = "syntax_keyword"
+"keyword.control" = "syntax_keyword"
+"keyword.control.conditional" = "syntax_keyword"
+"keyword.control.repeat" = "syntax_keyword"
+"keyword.control.import" = "syntax_keyword"
+"keyword.control.return" = "syntax_keyword"
+"keyword.control.exception" = "syntax_keyword"
+"keyword.directive" = "syntax_keyword"
+"keyword.function" = "syntax_keyword"
+"keyword.operator" = "syntax_operator"
+"operator" = "syntax_operator"
+"function" = "syntax_function"
+"function.builtin" = "syntax_function"
+"function.macro" = "syntax_function"
+"function.method" = "syntax_function"
+"tag" = "syntax_keyword"
+"tag.attribute" = "syntax_variable"
+"namespace" = "syntax_variable"
+"module" = "syntax_variable"
+"special" = "syntax_operator"
+"punctuation" = "syntax_punctuation"
+"punctuation.bracket" = "syntax_punctuation"
+"punctuation.delimiter" = "syntax_punctuation"
+"punctuation.special" = "syntax_operator"
+
+# Markup
+"markup.heading" = { fg = "markdown_heading", modifiers = ["bold"] }
+"markup.heading.marker" = "markdown_list_item"
+"markup.bold" = { fg = "markdown_strong", modifiers = ["bold"] }
+"markup.italic" = { fg = "markdown_emph", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "markdown_link", modifiers = ["underlined"] }
+"markup.link.text" = "markdown_link_text"
+"markup.link.label" = "markdown_link_text"
+"markup.raw" = "markdown_code"
+"markup.raw.block" = "markdown_code_block"
+"markup.list" = "markdown_list_item"
+"markup.quote" = "markdown_block_quote"
+
+[palette]
+# Surfaces
+background = "#000000"
+background_panel = "#060606"
+background_element = "#141414"
+active_line = "#212121"
+selection = "#212121"
+selection_primary = "#3a3a3a"
+border = "#212121"
+border_active = "#323232"
+border_subtle = "#141414"
+
+# UI and semantic colors
+primary = "#7fa0c1"
+secondary = "#859fb9"
+accent = "#b7aac3"
+error = "#c86f6f"
+warning = "#c99675"
+success = "#a3ab93"
+info = "#7fa0c1"
+text = "#f2f2f2"
+text_muted = "#6f6e71"
+line_number = "#323232"
+
+# Syntax
+syntax_comment = "#5d5b65"
+syntax_keyword = "#c99675"
+syntax_function = "#7fa0c1"
+syntax_variable = "#f2f2f2"
+syntax_string = "#a3ab93"
+syntax_number = "#c99675"
+syntax_type = "#b7aac3"
+syntax_operator = "#a6a6a6"
+syntax_punctuation = "#a6a6a6"
+syntax_property = "#f2f2f2"
+syntax_primitive = "#b7aac3"
+syntax_constant = "#b7aac3"
+syntax_object = "#b7aac3"
+
+# Markdown
+markdown_heading = "#c99675"
+markdown_link = "#7fa0c1"
+markdown_link_text = "#859fb9"
+markdown_code = "#a3ab93"
+markdown_block_quote = "#6f6e71"
+markdown_emph = "#b7aac3"
+markdown_strong = "#f2f2f2"
+markdown_list_item = "#c99675"
+markdown_code_block = "#f2f2f2"
+
+# Diff
+diff_added = "#4fd6be"
+diff_removed = "#c53b53"
+diff_context = "#828bb8"
+diff_highlight_added = "#b8db87"
+diff_highlight_removed = "#e26a75"

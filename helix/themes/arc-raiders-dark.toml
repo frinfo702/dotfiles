@@ -1,0 +1,61 @@
+# arc-raiders-dark — Helix theme inspired by ARC Raiders' industrial UI.
+# It combines soot-black panels, field ivory, signal yellow, and oxidized cyan.
+inherits = "opencode-dark"
+
+[palette]
+# Surfaces
+background = "#080a10"
+background_panel = "#0e0c10"
+background_element = "#1f1b24"
+active_line = "#262735"
+selection = "#303342"
+selection_primary = "#414652"
+border = "#414652"
+border_active = "#6b6a70"
+border_subtle = "#303342"
+
+# UI and semantic colors
+primary = "#f2b31c"
+secondary = "#5d8d92"
+accent = "#ef7b3b"
+error = "#d95745"
+warning = "#f2b31c"
+success = "#76a86f"
+info = "#5d9fb1"
+text = "#efe4d6"
+text_muted = "#918a84"
+line_number = "#414652"
+
+# Syntax
+syntax_comment = "#655b57"
+syntax_keyword = "#cb936e"
+syntax_function = "#f2b31c"
+syntax_variable = "#efe4d6"
+syntax_string = "#8eac77"
+syntax_number = "#e7a049"
+syntax_type = "#5d9fb1"
+syntax_operator = "#d7c8b6"
+syntax_punctuation = "#c2b4a5"
+syntax_property = "#efe4d6"
+syntax_primitive = "#5d9fb1"
+syntax_constant = "#e7a049"
+syntax_object = "#5d9fb1"
+
+# Markdown
+markdown_heading = "#f2b31c"
+markdown_link = "#5d9fb1"
+markdown_link_text = "#6fb5b8"
+markdown_code = "#8eac77"
+markdown_block_quote = "#918a84"
+markdown_emph = "#cb936e"
+markdown_strong = "#fff7e9"
+markdown_list_item = "#ef7b3b"
+markdown_code_block = "#efe4d6"
+
+# Diff
+diff_added = "#76a86f"
+diff_removed = "#d95745"
+diff_context = "#5d8d92"
+diff_highlight_added = "#a7c880"
+diff_highlight_removed = "#ef6b52"
+

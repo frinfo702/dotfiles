@@ -1,6 +1,7 @@
-# Custom themes live in themes/: cursor-dark, cursor-light, mongodb,
+# Custom themes live in themes/: opencode-dark, opencode-light,
+# arc-raiders-dark, arc-raiders-light, cursor-dark, cursor-light, mongodb,
 # linear-dark, linear-light, stripe-dark, figma-dark, raycast-dark, notion-light.
-theme = "raycast-dark"
+theme = "dark_high_contrast"
 
 [editor]
 auto-save = true

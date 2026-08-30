@@ -1,0 +1,27 @@
+# arc-raiders-light — Ghostty theme inspired by ARC Raiders' printed UI.
+# Weathered field paper with navy ink and restrained signal colors.
+
+background = #f3ebdd
+foreground = #211b25
+cursor-color = #9a6500
+cursor-text = #f3ebdd
+selection-background = #d8c7aa
+selection-foreground = #17131d
+
+palette = 0=#211b25
+palette = 1=#b33d32
+palette = 2=#507348
+palette = 3=#9a6500
+palette = 4=#356e7c
+palette = 5=#71527d
+palette = 6=#3d7580
+palette = 7=#e6dac8
+palette = 8=#6d6258
+palette = 9=#c85140
+palette = 10=#64875a
+palette = 11=#b77a09
+palette = 12=#4d8290
+palette = 13=#876591
+palette = 14=#568b92
+palette = 15=#fff9ef
+

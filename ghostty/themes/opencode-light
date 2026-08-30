@@ -1,0 +1,26 @@
+# opencode-light — light counterpart to the screenshot-calibrated dark theme.
+# The same muted syntax roles are darkened for a white canvas.
+
+background = #ffffff
+foreground = #1a1a1a
+cursor-color = #3f668b
+cursor-text = #ffffff
+selection-background = #dadde1
+selection-foreground = #1a1a1a
+
+palette = 0=#1a1a1a
+palette = 1=#b84a4a
+palette = 2=#526f47
+palette = 3=#995631
+palette = 4=#3f668b
+palette = 5=#725f86
+palette = 6=#486f93
+palette = 7=#f2f2f2
+palette = 8=#747478
+palette = 9=#c45b5b
+palette = 10=#617f55
+palette = 11=#a96846
+palette = 12=#52789d
+palette = 13=#846f98
+palette = 14=#5b809f
+palette = 15=#ffffff

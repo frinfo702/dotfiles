@@ -1,0 +1,61 @@
+# arc-raiders-light — light counterpart inspired by ARC Raiders' printed UI.
+# Weathered field paper replaces the dark panels while preserving role colors.
+inherits = "arc-raiders-dark"
+
+[palette]
+# Surfaces
+background = "#f3ebdd"
+background_panel = "#eadfce"
+background_element = "#ded1bd"
+active_line = "#e6dac8"
+selection = "#d8c7aa"
+selection_primary = "#efc66f"
+border = "#c8b9a5"
+border_active = "#8e7d67"
+border_subtle = "#ded1bd"
+
+# UI and semantic colors
+primary = "#9a6500"
+secondary = "#356e7c"
+accent = "#a64e22"
+error = "#b33d32"
+warning = "#9a6500"
+success = "#507348"
+info = "#356e7c"
+text = "#211b25"
+text_muted = "#6d6258"
+line_number = "#b4a694"
+
+# Syntax
+syntax_comment = "#807469"
+syntax_keyword = "#9c5735"
+syntax_function = "#9a6500"
+syntax_variable = "#211b25"
+syntax_string = "#4f7347"
+syntax_number = "#a65d25"
+syntax_type = "#356e7c"
+syntax_operator = "#685e55"
+syntax_punctuation = "#685e55"
+syntax_property = "#211b25"
+syntax_primitive = "#356e7c"
+syntax_constant = "#a65d25"
+syntax_object = "#356e7c"
+
+# Markdown
+markdown_heading = "#9a6500"
+markdown_link = "#356e7c"
+markdown_link_text = "#3d7580"
+markdown_code = "#4f7347"
+markdown_block_quote = "#6d6258"
+markdown_emph = "#9c5735"
+markdown_strong = "#17131d"
+markdown_list_item = "#a64e22"
+markdown_code_block = "#211b25"
+
+# Diff
+diff_added = "#507348"
+diff_removed = "#b33d32"
+diff_context = "#356e7c"
+diff_highlight_added = "#64875a"
+diff_highlight_removed = "#c85140"
+

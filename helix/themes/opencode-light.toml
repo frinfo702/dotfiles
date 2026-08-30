@@ -1,0 +1,60 @@
+# opencode-light — light counterpart to the screenshot-calibrated dark theme.
+# Scope mapping is shared; muted roles are darkened for a white canvas.
+inherits = "opencode-dark"
+
+[palette]
+# Surfaces
+background = "#ffffff"
+background_panel = "#fafafa"
+background_element = "#f2f2f2"
+active_line = "#f0f0f0"
+selection = "#e8e8e8"
+selection_primary = "#dadde1"
+border = "#dedede"
+border_active = "#b8b8b8"
+border_subtle = "#e8e8e8"
+
+# UI and semantic colors
+primary = "#3f668b"
+secondary = "#486f93"
+accent = "#725f86"
+error = "#b84a4a"
+warning = "#995631"
+success = "#526f47"
+info = "#3f668b"
+text = "#262629"
+text_muted = "#747478"
+line_number = "#b0b0b0"
+
+# Syntax
+syntax_comment = "#8a8a8e"
+syntax_keyword = "#a55f3f"
+syntax_function = "#3f668b"
+syntax_variable = "#262629"
+syntax_string = "#526f47"
+syntax_number = "#995631"
+syntax_type = "#725f86"
+syntax_operator = "#65656a"
+syntax_punctuation = "#65656a"
+syntax_property = "#262629"
+syntax_primitive = "#725f86"
+syntax_constant = "#725f86"
+syntax_object = "#725f86"
+
+# Markdown
+markdown_heading = "#a55f3f"
+markdown_link = "#3f668b"
+markdown_link_text = "#486f93"
+markdown_code = "#526f47"
+markdown_block_quote = "#747478"
+markdown_emph = "#725f86"
+markdown_strong = "#262629"
+markdown_list_item = "#a55f3f"
+markdown_code_block = "#262629"
+
+# Diff
+diff_added = "#1e725c"
+diff_removed = "#c53b53"
+diff_context = "#7086b5"
+diff_highlight_added = "#4db380"
+diff_highlight_removed = "#f52a65"
