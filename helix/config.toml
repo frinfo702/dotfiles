@@ -1,7 +1,7 @@
 # Custom themes live in themes/: opencode-dark, opencode-light,
 # arc-raiders-dark, arc-raiders-light, cursor-dark, cursor-light, mongodb,
 # linear-dark, linear-light, stripe-dark, figma-dark, raycast-dark, notion-light.
-theme = "dark_high_contrast"
+theme = "arc-raiders-dark"
 
 [editor]
 auto-save = true
