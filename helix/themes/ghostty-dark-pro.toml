@@ -50,7 +50,7 @@
 "ui.bufferline.background" = { bg = "bg" }
 
 # ── Popups, menus, help, pickers ─────────────────────────────────────
-"ui.popup" = { bg = "bg_alt" }
+"ui.popup" = { bg = "selection" }
 "ui.popup.info" = { bg = "bg_alt" }
 "ui.menu" = { fg = "fg_bright", bg = "bg_alt" }
 "ui.menu.selected" = { fg = "fg_bright", bg = "hover" }

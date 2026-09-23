@@ -49,7 +49,7 @@
 "ui.bufferline.background" = { bg = "background_panel" }
 
 # Popups, menus, help, and pickers
-"ui.popup" = { fg = "text", bg = "background_panel" }
+"ui.popup" = { fg = "text", bg = "selection" }
 "ui.popup.info" = { fg = "text", bg = "background_panel" }
 "ui.menu" = { fg = "text", bg = "background_panel" }
 "ui.menu.selected" = { fg = "primary", bg = "background_element", modifiers = ["bold"] }

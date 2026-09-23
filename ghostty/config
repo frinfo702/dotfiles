@@ -32,11 +32,11 @@ background-opacity = 0.95
 # Favorite themes
 ###################
 # Built-in:
-# theme = GitHub Dark High Contrast
+theme = GitHub Dark High Contrast
 # Custom (files in ~/.config/ghostty/themes):
 # theme = opencode-dark
 # theme = opencode-light
-theme = arc-raiders-dark
+# theme = arc-raiders-dark
 # theme = arc-raiders-light
 # theme = cursor-dark
 # theme = cursor-light

@@ -88,18 +88,18 @@
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
-        "reasoning_effort": "high",
+        "reasoning_effort": "xhigh",
         "fast-mode": false,
         "mode": "agent-full-access",
-        "model": "gpt-5.6-sol"
+        "model": "gpt-5.6-luna"
       },
       "type": "registry"
     },
     "opencode": {
       "default_config_options": {
         "mode": "build",
-        "effort": "high",
-        "model": "vercel/deepseek/deepseek-v4-flash-vision-exp"
+        "effort": "medium",
+        "model": "opencode-go/grok-4.6"
       },
       "type": "registry"
     },
@@ -153,6 +153,9 @@
   },
   "show_edit_predictions": false,
   "agent": {
+    "thinking_display": "always_collapsed",
+    "expand_edit_card": false,
+    "expand_terminal_card": false,
     "show_merge_conflict_indicator": true,
     "button": false,
     "tool_permissions": {
@@ -201,7 +204,7 @@
   "theme": {
     "mode": "dark",
     "light": "notion-light",
-    "dark": "vercel-tint"
+    "dark": "grok-dark"
   },
   "languages": {
     "Scala": {
