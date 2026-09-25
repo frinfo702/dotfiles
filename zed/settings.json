@@ -104,6 +104,9 @@
       "type": "registry"
     },
     "cursor": {
+      "default_config_options": {
+        "model": "auto-smart"
+      },
       "type": "registry"
     }
   },
