@@ -86,6 +86,13 @@
   },
   "show_completions_on_input": true,
   "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "model": "haiku",
+        "mode": "bypassPermissions"
+      },
+      "type": "registry"
+    },
     "codex-acp": {
       "default_config_options": {
         "reasoning_effort": "xhigh",
