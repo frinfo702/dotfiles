@@ -57,18 +57,6 @@ cline/data/settings/cli-notices.json
 cline/plugins/_installed/git/
 
 # --------------------------------------------
-# .cursor - state files
-# --------------------------------------------
-.cursor/hooks/state/
-
-# cursor/ (dotfiles copy of ~/.cursor) — runtime / machine-local
-# Final ignores live after CURSOR MANAGED BLOCK in cursor/.gitignore
-cursor/projects/
-cursor/plugins/cache/
-cursor/skills-cursor/.sync-manifest.json
-cursor/skills-cursor/.cursor-managed-skills-manifest.json
-
-# --------------------------------------------
 # opencode - generated artifacts
 # --------------------------------------------
 opencode/skills/skill-creator/scripts/__pycache__/
@@ -98,18 +86,6 @@ grok/*
 !grok/skills/**
 !grok/plugins/
 !grok/plugins/**
-
-# --------------------------------------------
-# codex - allowlist only (shared configuration)
-# Track: config.toml, AGENTS.md, rules/
-# Runtime state (auth, history, sessions, caches, databases,
-# plugins, generated images, machine identifiers, …) stays ignored.
-# --------------------------------------------
-codex/*
-codex/config.toml
-!codex/AGENTS.md
-!codex/rules/
-!codex/rules/default.rules
 
 # --------------------------------------------
 # Zed
