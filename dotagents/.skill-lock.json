@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "skills": {
+    "0-autoresearch-skill": {
+      "source": "orchestra-research/ai-research-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/orchestra-research/ai-research-skills.git",
+      "skillPath": "0-autoresearch-skill/SKILL.md",
+      "skillFolderHash": "507c103b02c3498020c16b836b9a611cf2c2caff",
+      "installedAt": "2026-04-28T10:12:28Z",
+      "updatedAt": "2026-05-02T14:07:56Z"
+    },
+    "20-ml-paper-writing": {
+      "source": "orchestra-research/ai-research-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/orchestra-research/ai-research-skills.git",
+      "skillPath": "20-ml-paper-writing/SKILL.md",
+      "skillFolderHash": "5b2e6c38f400f14cd2a33ca497558d89fec93c2f",
+      "installedAt": "2026-04-28T10:12:28Z",
+      "updatedAt": "2026-05-02T14:07:56Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-01-27T01:08:25.755Z",
+      "updatedAt": "2026-05-24T06:29:15.404Z"
+    },
+    "gh-stack": {
+      "source": "github/gh-stack",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/gh-stack.git",
+      "skillPath": "skills/gh-stack/SKILL.md",
+      "skillFolderHash": "bde7bcf5a96697d31aa55b33565fa0ff002167ca",
+      "installedAt": "2026-10-07T08:54:25Z",
+      "updatedAt": "2026-10-07T08:54:25Z"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "skillFolderHash": "2a1ad17028306ebe45f0e49703fa28b9b2e7f499",
+      "installedAt": "2026-06-07T09:47:17.126Z",
+      "updatedAt": "2026-06-07T09:47:17.126Z"
+    },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+      "skillFolderHash": "2c3a4e48571bfe42203ed7b49cae85f31ef4b6f2",
+      "installedAt": "2026-06-07T09:47:17.128Z",
+      "updatedAt": "2026-06-07T09:47:17.128Z"
+    },
+    "mintlify": {
+      "source": "mintlify.com",
+      "sourceType": "well-known",
+      "sourceUrl": "https://mintlify.com/docs/.well-known/skills/mintlify/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-04-13T10:46:03.948Z",
+      "updatedAt": "2026-04-13T10:46:03.948Z"
+    },
+    "mintlify-api": {
+      "source": "mintlify.com",
+      "sourceType": "well-known",
+      "sourceUrl": "https://mintlify.com/docs/.well-known/skills/mintlify-api/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-04-13T10:46:03.949Z",
+      "updatedAt": "2026-04-13T10:46:03.949Z"
+    },
+    "mintlify-docs": {
+      "source": "mintlify.com",
+      "sourceType": "well-known",
+      "sourceUrl": "https://mintlify.com/docs/.well-known/skills/mintlify-docs/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-04-13T10:46:03.949Z",
+      "updatedAt": "2026-04-13T10:46:03.949Z"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "skillFolderHash": "7bd8fc459f09f0e14dcc2adbb4a5a58e60ea755c",
+      "installedAt": "2026-02-04T05:09:09.079Z",
+      "updatedAt": "2026-02-04T05:09:09.079Z"
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/tdd/SKILL.md",
+      "skillFolderHash": "75beb3030b4c979205dd771ff85ac600baeb68f4",
+      "installedAt": "2026-06-07T09:47:17.129Z",
+      "updatedAt": "2026-06-07T09:47:17.129Z"
+    },
+    "typst-writing-document": {
+      "source": "Myriad-Dreamin/tinymist",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Myriad-Dreamin/tinymist.git",
+      "skillPath": ".codex/skills/typst-writing-document/SKILL.md",
+      "skillFolderHash": "6186c6316e6497ccb9254833a0ea8564a9755c68",
+      "installedAt": "2026-04-05T13:24:30.315Z",
+      "updatedAt": "2026-04-05T13:24:30.315Z"
+    },
+    "uv-package-manager": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/python-development/skills/uv-package-manager/SKILL.md",
+      "skillFolderHash": "cd5fceeaba8a0831758d9f82403658737cc3b5f1",
+      "installedAt": "2026-03-21T01:00:05.395Z",
+      "updatedAt": "2026-03-21T01:00:05.395Z"
+    },
+    "agent-memory-repo": {
+      "source": "AgentMemoryRepo/agentmemoryrepo",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/AgentMemoryRepo/agentmemoryrepo.git",
+      "skillPath": "skills/agent-memory-repo/SKILL.md",
+      "skillFolderHash": "409d45a18722d66ddfe6ffe14bbc1ecf6d17262e",
+      "installedAt": "2026-10-08T13:48:04.796Z",
+      "updatedAt": "2026-10-08T13:48:04.796Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "pi",
+    "warp",
+    "zed",
+    "claude-code"
+  ]
+}
