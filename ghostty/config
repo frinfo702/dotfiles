@@ -16,8 +16,8 @@
 ####################
 # font-family / font-feature / font-size here override every theme file.
 # Comment them out if you want a custom theme to pick its own typeface.
-font-family = Geist Mono
-font-family = Geist
+font-family = Paper Mono
+font-family = Noto Sans JP
 font-feature = -calt, -liga, -dlig
 font-size = 14
 # background-image = "./wallpaper/spaceX-wallpaper.png"
