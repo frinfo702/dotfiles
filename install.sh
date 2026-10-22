@@ -47,13 +47,6 @@ main() {
   link "$DOTFILES_DIR/nvim" "$HOME_DIR/.config/nvim"
   link "$DOTFILES_DIR/zed" "$HOME_DIR/.config/zed"
 
-  # VS Code (macOS)
-  if [[ "$(uname -s)" == "Darwin" ]]; then
-    local vscode_user="$HOME_DIR/Library/Application Support/Code/User"
-    link "$DOTFILES_DIR/vscode/setting.json" "$vscode_user/settings.json"
-    link "$DOTFILES_DIR/vscode/keybinding.json" "$vscode_user/keybindings.json"
-  fi
-
   echo
   echo "done."
 }
