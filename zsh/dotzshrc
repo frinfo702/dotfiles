@@ -132,7 +132,7 @@ local YELLOW='%F{yellow}'
 local RESET='%f'
 
 # Prompt format
-PROMPT='${GREEN}%n${RESET} ${BLUE}%1~${RESET} ${YELLOW}${vcs_info_msg_0_}${RESET}
+PROMPT='${GREEN}keng${RESET} ${BLUE}%1~${RESET} ${YELLOW}${vcs_info_msg_0_}${RESET}
 > '
 
 zstyle ':vcs_info:git:*' formats '(%b)'
