@@ -1,0 +1,12 @@
+# Read by every zsh, including non-interactive ones (`zsh -c`, `zsh -lc`)
+# that coding agents like Codex and opencode spawn, so keep PATH setup here.
+
+. "$HOME/.cargo/env"
+
+# uv
+export PATH="$HOME/.local/bin:$PATH"
+
+# nix (CLI tools come from dotfiles/flake.nix)
+if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
+  . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+fi
