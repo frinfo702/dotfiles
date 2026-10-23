@@ -18,8 +18,6 @@ brew "hf"
 brew "openclaw/tap/gogcli"
 brew "withgraphite/tap/graphite"
 brew "openvpn"
-brew "openjdk@17"
-brew "openjdk@21"
 brew "llvm"
 
 cask "block-goose"
