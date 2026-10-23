@@ -6,6 +6,9 @@
 # uv
 export PATH="$HOME/.local/bin:$PATH"
 
+# brew (GUI / tap-only tools; .zshrc.local also calls brew)
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # nix (CLI tools come from dotfiles/flake.nix)
 if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
   . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh

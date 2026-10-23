@@ -97,11 +97,4 @@ eval "$(atuin init zsh)"
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/pr-challenge.zsh
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/q.zsh
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/doffy/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 export PATH="$HOME/.local/bin:$PATH"
-
-
-# Added by Antigravity CLI installer
-export PATH="/Users/doffy/.local/bin:$PATH"
