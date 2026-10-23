@@ -103,7 +103,12 @@ end
 
 vim.o.statusline = "%!v:lua.require'config.ui'.statusline()"
 vim.o.tabline = "%!v:lua.require'config.ui'.tabline()"
-vim.api.nvim_create_autocmd({ "BufAdd", "BufDelete", "BufWipeout", "OptionSet" }, {
+vim.api.nvim_create_autocmd({ "BufAdd", "BufDelete", "BufWipeout" }, {
+  callback = vim.schedule_wrap(M.update_tabline),
+})
+-- only buflisted: update_tabline sets showtabline, so a bare OptionSet would loop forever
+vim.api.nvim_create_autocmd("OptionSet", {
+  pattern = "buflisted",
   callback = vim.schedule_wrap(M.update_tabline),
 })
 
