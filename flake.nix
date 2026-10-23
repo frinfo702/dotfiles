@@ -13,7 +13,8 @@
   #   - GUI apps, tap-only tools (mac)      -> Brewfile
   #   - GPU drivers / CUDA / nvtop (ubuntu) -> apt (nix binaries can't see the host's libcuda)
   #   - python envs, torch                  -> uv
-  #   - toolchains per project (rustup, node via fnm, jdk) -> rustup / fnm / project devShell
+  #   - the toolchains themselves (rust, node, python, jdk) -> rustup / fnm / uv / mise, installed from here
+  #   - local builds and crates not in nixpkgs (hxr, cargo-compete) -> cargo install
   #   - fast-moving AI CLIs                 -> their own installers
   outputs =
     { nixpkgs, ... }:
@@ -62,10 +63,16 @@
             lazydocker
             hunk
             herdr
+            jujutsu
+            zellij
+            lumen
             # languages / build
             uv
             fnm
             go
+            rustup # toolchains stay per-project via rust-toolchain.toml
+            cargo-watch
+            cargo-edit
             cmake
             sbt
             ammonite
