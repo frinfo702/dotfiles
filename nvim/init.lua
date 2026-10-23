@@ -6,12 +6,15 @@ if vim.fn.has("mac") == 1 then
 end
 
 require("config.options")
+local settings = require("config.settings")
+settings.load()
+require("config.plugins")
+require("config.lsp").setup()
+require("config.ui")
+require("config.panel")
 require("config.keymaps")
 require("config.copy")
-require("config.lazy")
-
--- Apply droid-black (black background only, everything else default).
-require("config.droid-black").setup()
+settings.apply_all()
 
 -- :Nigga command - お祭り絵文字が飛び出る
 require("config.nigga-party")
