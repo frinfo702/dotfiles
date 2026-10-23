@@ -23,11 +23,11 @@ Neovim 0.12+。helix の体験（テーマ・LSP・UI・キー）を移植した
 - バイナリ: `<root>/node_modules/.bin` → `<root>/.venv/bin` → `<root>/venv/bin` → `$PATH`
 - 設定: lspconfig のデフォルト < `lsp/<name>.lua` < `settings.json` の `lsp.config` < `.nvim/settings.json` の `lsp.config`
 
-グローバルなサーバーは dotfiles の `flake.nix` で管理しています（`~/.nix-profile/bin` に入る）。
+グローバルなサーバーは dotfiles の `flake.nix`（CLI ツール全体と同じ env）で管理しています（`~/.nix-profile/bin` に入る）。
 
 ```sh
-nix profile install .#lsp                        # 初回（dotfiles のルートで）
-nix flake update && nix profile upgrade lsp      # 更新
+nix profile install .#cli                        # 初回（dotfiles のルートで）
+nix flake update && nix profile upgrade cli      # 更新
 ```
 
 プロジェクト専用のサーバーは、そのプロジェクトの devShell に入れて direnv の `use flake` で読み込めば、PATH の先頭に来るのでグローバルより優先されます。

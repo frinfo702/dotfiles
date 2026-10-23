@@ -1,8 +1,7 @@
-if vim.fn.has("mac") == 1 then
-  local homebrew_bin = "/opt/homebrew/bin"
-  if not string.find(vim.env.PATH, homebrew_bin, 1, true) then
-    vim.env.PATH = homebrew_bin .. ":" .. vim.env.PATH
-  end
+-- when launched outside a login shell (GUI, launchd), still find nix-installed tools
+local nix_bin = vim.fs.normalize("~/.nix-profile/bin")
+if not string.find(vim.env.PATH, nix_bin, 1, true) then
+  vim.env.PATH = nix_bin .. ":" .. vim.env.PATH
 end
 
 require("config.options")
