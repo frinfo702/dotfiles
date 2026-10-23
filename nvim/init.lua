@@ -1,17 +1,19 @@
-if vim.fn.has("mac") == 1 then
-  local homebrew_bin = "/opt/homebrew/bin"
-  if not string.find(vim.env.PATH, homebrew_bin, 1, true) then
-    vim.env.PATH = homebrew_bin .. ":" .. vim.env.PATH
-  end
+-- when launched outside a login shell (GUI, launchd), still find nix-installed tools
+local nix_bin = vim.fs.normalize("~/.nix-profile/bin")
+if not string.find(vim.env.PATH, nix_bin, 1, true) then
+  vim.env.PATH = nix_bin .. ":" .. vim.env.PATH
 end
 
 require("config.options")
+local settings = require("config.settings")
+settings.load()
+require("config.plugins")
+require("config.lsp").setup()
+require("config.ui")
+require("config.panel")
 require("config.keymaps")
 require("config.copy")
-require("config.lazy")
-
--- Apply droid-black (black background only, everything else default).
-require("config.droid-black").setup()
+settings.apply_all()
 
 -- :Nigga command - お祭り絵文字が飛び出る
 require("config.nigga-party")

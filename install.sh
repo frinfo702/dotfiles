@@ -45,6 +45,7 @@ main() {
   link "$DOTFILES_DIR/ghostty" "$HOME_DIR/.config/ghostty"
   link "$DOTFILES_DIR/helix" "$HOME_DIR/.config/helix"
   link "$DOTFILES_DIR/nvim" "$HOME_DIR/.config/nvim"
+  link "$DOTFILES_DIR/nix/nix.conf" "$HOME_DIR/.config/nix/nix.conf"
   link "$DOTFILES_DIR/zed" "$HOME_DIR/.config/zed"
 
   echo
