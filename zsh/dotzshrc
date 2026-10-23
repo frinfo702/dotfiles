@@ -3,11 +3,12 @@ typeset zsh_config_dir="${${(%):-%x}:A:h}"
 [[ -r "$zsh_config_dir/.zshrc.local" ]] && source "$zsh_config_dir/.zshrc.local"
 unset zsh_config_dir
 
-# nix (puts ~/.nix-profile/bin on PATH; CLI tools come from dotfiles/flake.nix)
-if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
-  . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-fi
+# nix is set up in .zshenv; /etc/zprofile's path_helper and brew shellenv push it
+# back behind the system dirs in login shells, so put it in front again.
+typeset -U path
+path=("$HOME/.nix-profile/bin" /nix/var/nix/profiles/default/bin $path)
 
+autoload -Uz compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C "$(command -v terraform)" terraform
 eval "$(direnv hook zsh)"
@@ -96,11 +97,4 @@ eval "$(atuin init zsh)"
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/pr-challenge.zsh
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/q.zsh
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/doffy/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 export PATH="$HOME/.local/bin:$PATH"
-
-
-# Added by Antigravity CLI installer
-export PATH="/Users/doffy/.local/bin:$PATH"
