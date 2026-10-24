@@ -97,4 +97,4 @@ eval "$(atuin init zsh)"
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/pr-challenge.zsh
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/q.zsh
 
-export PATH="$HOME/.local/bin:$PATH"
+path=("$HOME/.local/bin" $path)
