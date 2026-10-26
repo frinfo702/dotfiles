@@ -98,3 +98,5 @@ source ~/ghq/github.com/frinfo702/dotfiles/zsh/pr-challenge.zsh
 source ~/ghq/github.com/frinfo702/dotfiles/zsh/q.zsh
 
 path=("$HOME/.local/bin" $path)
+
+export HF_HOME="/Volumes/sandisk/cache/huggingface"
