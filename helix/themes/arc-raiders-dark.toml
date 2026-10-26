@@ -2,6 +2,10 @@
 # It combines soot-black panels, field ivory, signal yellow, and oxidized cyan.
 inherits = "opencode-dark"
 
+"ui.cursor" = { fg = "background", bg = "cursor" }
+"ui.cursor.primary" = { fg = "background", bg = "cursor" }
+"ui.cursor.normal" = { fg = "background", bg = "cursor" }
+
 [palette]
 # Surfaces
 background = "#080a10"
@@ -16,6 +20,7 @@ border_subtle = "#303342"
 
 # UI and semantic colors
 primary = "#f2b31c"
+cursor = "#e8262b"
 secondary = "#5d8d92"
 accent = "#ef7b3b"
 error = "#d95745"
