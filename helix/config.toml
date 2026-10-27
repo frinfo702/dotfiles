@@ -22,7 +22,7 @@ space = "·"
 nbsp = "⍽"
 tab = "→"
 newline = "⏎"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [editor.file-picker]
 hidden = false
@@ -49,13 +49,13 @@ skip-levels = 0
   "extend_to_line_bounds",
   "delete_selection",
   "move_line_up",
-  "paste_before"
+  "paste_before",
 ]
 "A-j" = [
   "extend_to_line_bounds",
   "delete_selection",
   "move_line_down",
-  "paste_before"
+  "paste_before",
 ]
 
 # Remove vscode "training wheels"
