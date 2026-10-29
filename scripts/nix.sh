@@ -3,4 +3,4 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-nix profile install .#cli
+nix profile add .#cli
