@@ -1,0 +1,10 @@
+# global npm packages not in nixpkgs. one per line; re-run after switching node with fnm.
+#   grep -v '^#' npmfile | xargs npm i -g
+
+# npmfile should contain only cli which is not available as nix package or binary.
+
+chrome-devtools-axi
+firecrawl-cli
+gh-axi
+tasks-axi
+quota-axi
