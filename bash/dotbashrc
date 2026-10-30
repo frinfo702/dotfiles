@@ -26,7 +26,7 @@ parse_git_branch() {
   branch=$(git branch --show-current 2>/dev/null)
   [[ -n "$branch" ]] && echo "($branch)"
 }
-PS1='\[\e[32m\]\h\[\e[0m\] \[\e[34m\]\W\[\e[0m\] \[\e[33m\]$(parse_git_branch)\[\e[0m\]\n> '
+PS1='\[\e[32m\]ken-nishilab\[\e[0m\] \[\e[34m\]\W\[\e[0m\] \[\e[33m\]$(parse_git_branch)\[\e[0m\]\n> '
 
 # =======================================
 # Git Branch Switcher
