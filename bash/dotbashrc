@@ -1,0 +1,64 @@
+# Interactive bash only.
+case $- in
+  *i*) ;;
+  *) return ;;
+esac
+
+# Load machine-local environment variables and secrets.
+bash_config_dir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+[[ -r "$bash_config_dir/.bashrc.local" ]] && source "$bash_config_dir/.bashrc.local"
+unset bash_config_dir
+
+# nix (CLI tools come from dotfiles/flake.nix)
+if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
+  . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+fi
+export PATH="$HOME/.local/bin:$HOME/.nix-profile/bin:$PATH"
+
+command -v direnv >/dev/null && eval "$(direnv hook bash)"
+command -v fnm >/dev/null && eval "$(fnm env)"
+
+# =======================================
+# Prompt
+# =======================================
+parse_git_branch() {
+  local branch
+  branch=$(git branch --show-current 2>/dev/null)
+  [[ -n "$branch" ]] && echo "($branch)"
+}
+PS1='\[\e[32m\]\h\[\e[0m\] \[\e[34m\]\W\[\e[0m\] \[\e[33m\]$(parse_git_branch)\[\e[0m\]\n> '
+
+# =======================================
+# Git Branch Switcher
+# =======================================
+# sw          : Graphical branch switcher with commit graph preview
+# sw -simple  : Simple branch switcher (log preview only)
+sw() {
+  if [ "$1" = "-simple" ]; then
+    git branch --format="%(refname:short)" |
+      fzf --preview='git log --pretty=format:"%h %cd %s" --date=format:"%Y-%m-%d %H:%M " {}' \
+          --preview-window=right:70%:wrap \
+          --ansi |
+      xargs git checkout
+  else
+    git branch --format="%(refname:short)" |
+      fzf --preview='git log --graph --oneline --decorate --color=always {}' \
+          --preview-window=right:70%:wrap \
+          --ansi |
+      xargs git checkout
+  fi
+}
+
+ghq-fzf() {
+  local src
+  src=$(ghq list --full-path | fzf --preview 'ls -la {}')
+  [ -n "$src" ] && cd "$src"
+}
+bind -x '"\C-g": ghq-fzf'
+
+alias rm="rm -i"
+
+if [ -f "$HOME/.atuin/bin/env" ]; then
+  . "$HOME/.atuin/bin/env"
+  eval "$(atuin init bash)"
+fi

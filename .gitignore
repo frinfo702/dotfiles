@@ -91,3 +91,6 @@ zed/prompts/
 
 # zsh
 .zshrc.local
+
+# bash
+.bashrc.local
