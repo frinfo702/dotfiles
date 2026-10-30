@@ -3,6 +3,8 @@
 
   inputs = {
     nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst";
+    # Prebuilt Rex. Pre-release: needs the token in the netrc that nix/nix.conf includes.
+    rex.url = "https://pkgs.superlogical.com/rex/nix/preview.tar.gz";
   };
 
   # Install:  nix profile install .#cli
@@ -16,8 +18,11 @@
   #   - the toolchains themselves (rust, node, python, jdk) -> rustup / fnm / uv / mise, installed from here
   #   - local builds and crates not in nixpkgs (hxr, cargo-compete) -> cargo install
   #   - fast-moving AI CLIs                 -> their own installers
+  #
+  # Rex alone (linux):  nix profile add .#rex
+  # Update Rex:         nix flake update rex && nix profile upgrade rex
   outputs =
-    { nixpkgs, ... }:
+    { nixpkgs, rex, ... }:
     let
       systems = [
         "aarch64-darwin"
@@ -131,7 +136,7 @@
 
           darwin = with pkgs; [ xcodegen ];
 
-          linux = [ ];
+          linux = [ rex.packages.${system}.rex ];
 
           cli = pkgs.buildEnv {
             name = "cli";
@@ -141,6 +146,7 @@
         {
           inherit cli;
           default = cli;
+          rex = rex.packages.${system}.rex;
         }
       );
     };
