@@ -62,3 +62,7 @@ if [ -f "$HOME/.atuin/bin/env" ]; then
   . "$HOME/.atuin/bin/env"
   eval "$(atuin init bash)"
 fi
+
+# Drop repeated PATH entries, keeping the first (like zsh's `typeset -U path`).
+PATH="$(printf '%s' "$PATH" | awk -v RS=: -v ORS=: '!seen[$0]++')"
+PATH="${PATH%:}"
