@@ -13,10 +13,10 @@
   #
   # Not here on purpose:
   #   - GUI apps, tap-only tools (mac)      -> Brewfile
-  #   - GPU drivers / CUDA / nvtop (ubuntu) -> apt (nix binaries can't see the host's libcuda)
+  #   - GPU drivers / CUDA / nvtop (ubuntu) -> apt
   #   - python envs, torch                  -> uv
   #   - the toolchains themselves (rust, node, python, jdk) -> rustup / fnm / uv / mise, installed from here
-  #   - local builds and crates not in nixpkgs (hxr, cargo-compete) -> cargo install
+  #   - local builds and crates not in nixpkgs (e.g. cargo-compete) -> cargo install
   #   - fast-moving AI CLIs                 -> their own installers
   #
   # Rex alone (linux):  nix profile add .#rex
@@ -68,8 +68,6 @@
             lazydocker
             hunk
             herdr
-            jujutsu
-            zellij
             lumen
             # languages / build
             uv
