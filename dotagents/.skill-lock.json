@@ -123,6 +123,15 @@
       "skillFolderHash": "409d45a18722d66ddfe6ffe14bbc1ecf6d17262e",
       "installedAt": "2026-10-08T13:48:04.796Z",
       "updatedAt": "2026-10-08T13:48:04.796Z"
+    },
+    "invoke-bot": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/invoke-bot/SKILL.md",
+      "skillFolderHash": "bdced31e0f066dea33509387552bf82ab7863d0e",
+      "installedAt": "2026-10-31T01:53:36.687Z",
+      "updatedAt": "2026-10-31T01:53:36.687Z"
     }
   },
   "dismissed": {
