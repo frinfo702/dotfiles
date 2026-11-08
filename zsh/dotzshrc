@@ -70,18 +70,11 @@ sw() {
 # Matlab alias
 alias matlab="/Applications/MATLAB_R2025b.app/bin/matlab -nojvm -nodesktop"
 
-
-
 function ghq-fzf() {
-  local src=$(ghq list --full-path | fzf --preview "ls -laTp {1}")
-  if [ -n "$src" ]; then
-    BUFFER="cd $src"
-    zle accept-line
-  fi
-  zle -R -c
+  local src=$(ghq list --full-path | fzf --preview "ls -laTp {}")
+  [ -n "$src" ] && cd "$src"
 }
-zle -N ghq-fzf
-bindkey '^g' ghq-fzf  # Binds to Ctrl+g
+alias g=ghq-fzf
 
 alias sshserver='TERM=xterm ssh -J frinfo702@100.124.199.38 frinfo@10.40.18.155'
 
@@ -100,3 +93,5 @@ source ~/ghq/github.com/frinfo702/dotfiles/zsh/q.zsh
 path=("$HOME/.local/bin" $path)
 
 export HF_HOME="/Volumes/sandisk/cache/huggingface"
+
+export PATH="$PATH:$(go env GOPATH)/bin"

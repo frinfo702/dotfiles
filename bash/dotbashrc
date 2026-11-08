@@ -54,7 +54,7 @@ ghq-fzf() {
   src=$(ghq list --full-path | fzf --preview 'ls -la {}')
   [ -n "$src" ] && cd "$src"
 }
-bind -x '"\C-g": ghq-fzf'
+alias g=ghq-fzf
 
 alias rm="rm -i"
 
