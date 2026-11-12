@@ -15,6 +15,7 @@ brew "coursier/formulas/coursier" # scala/metals
 brew "hf"
 brew "openvpn"
 brew "llvm"
+brew "cloudflared"
 
 cask "font-symbols-only-nerd-font"
 cask "frinfo702/rexdiff/rexdiff"

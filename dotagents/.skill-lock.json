@@ -131,7 +131,115 @@
       "skillPath": "skills/invoke-bot/SKILL.md",
       "skillFolderHash": "bdced31e0f066dea33509387552bf82ab7863d0e",
       "installedAt": "2026-10-31T01:53:36.687Z",
-      "updatedAt": "2026-10-31T01:53:36.687Z"
+      "updatedAt": "2026-11-09T14:33:23.251Z"
+    },
+    "assist-research": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/assist-research/SKILL.md",
+      "skillFolderHash": "7f28daebf003454073d6e5a43fed042c7a1ab681",
+      "installedAt": "2026-11-09T14:33:23.246Z",
+      "updatedAt": "2026-11-09T14:33:23.246Z"
+    },
+    "create-ml-experiment-pr": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/create-ml-experiment-pr/SKILL.md",
+      "skillFolderHash": "36cdfe2310ffd41b20b2b3d42356f9a1e0c97d49",
+      "installedAt": "2026-11-09T14:33:23.249Z",
+      "updatedAt": "2026-11-09T14:33:23.249Z"
+    },
+    "draw-typst-figure": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/draw-typst-figure/SKILL.md",
+      "skillFolderHash": "e4e6ed388d3814c3904e1d733ea9b8d8c0487652",
+      "installedAt": "2026-11-09T14:33:23.250Z",
+      "updatedAt": "2026-11-09T14:33:23.250Z"
+    },
+    "invoke-ghost": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/invoke-ghost/SKILL.md",
+      "skillFolderHash": "e9f4ef61b3bba7410320b04492de6d5f386dd911",
+      "installedAt": "2026-11-09T14:33:23.252Z",
+      "updatedAt": "2026-11-09T14:33:23.252Z"
+    },
+    "invoke-monk": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/invoke-monk/SKILL.md",
+      "skillFolderHash": "f912bcab67102d0730f22a31fe38b2409451a9bf",
+      "installedAt": "2026-11-09T14:33:23.253Z",
+      "updatedAt": "2026-11-09T14:33:23.253Z"
+    },
+    "make-clear-linear-task": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/make-clear-linear-task/SKILL.md",
+      "skillFolderHash": "7524b0738c1bd679fb16b533c89148e90e72e430",
+      "installedAt": "2026-11-09T14:33:23.253Z",
+      "updatedAt": "2026-11-09T14:33:23.253Z"
+    },
+    "make-research-figure": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/make-research-figure/SKILL.md",
+      "skillFolderHash": "4317360ea2a23bce1c078544e3e1874693f71e8a",
+      "installedAt": "2026-11-09T14:33:23.254Z",
+      "updatedAt": "2026-11-09T14:33:23.254Z"
+    },
+    "make-research-slides": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/make-research-slides/SKILL.md",
+      "skillFolderHash": "c372569bc9816860ee4d529530e11bfdd521b2e9",
+      "installedAt": "2026-11-09T14:33:23.255Z",
+      "updatedAt": "2026-11-09T14:33:23.255Z"
+    },
+    "mitigate-prose-density": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/mitigate-prose-density/SKILL.md",
+      "skillFolderHash": "f8021d205052178e9b512fde7bab49ec44bc0fee",
+      "installedAt": "2026-11-09T14:33:23.256Z",
+      "updatedAt": "2026-11-09T14:33:23.256Z"
+    },
+    "review-resume": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/review-resume/SKILL.md",
+      "skillFolderHash": "121a79aa8fc4133094056e689379b039afd9cd5c",
+      "installedAt": "2026-11-09T14:33:23.256Z",
+      "updatedAt": "2026-11-09T14:33:23.256Z"
+    },
+    "rule-of-one": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/rule-of-one/SKILL.md",
+      "skillFolderHash": "08fd037a1030fe4577699363345dd1128155402e",
+      "installedAt": "2026-11-09T14:33:23.257Z",
+      "updatedAt": "2026-11-09T14:33:23.257Z"
+    },
+    "teachme": {
+      "source": "frinfo702/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/frinfo702/skills.git",
+      "skillPath": "skills/teachme/SKILL.md",
+      "skillFolderHash": "f62f23c4e6bcea26b867de3f781449eb6c5f9541",
+      "installedAt": "2026-11-09T14:33:23.257Z",
+      "updatedAt": "2026-11-09T14:33:23.257Z"
     }
   },
   "dismissed": {

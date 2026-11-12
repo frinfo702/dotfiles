@@ -75,8 +75,9 @@ function ghq-fzf() {
   [ -n "$src" ] && cd "$src"
 }
 alias g=ghq-fzf
-
 alias sshserver='TERM=xterm ssh -J frinfo702@100.124.199.38 frinfo@10.40.18.155'
+alias claude-perso='CLAUDE_CONFIG_DIR=~/.claude-personal command claude'
+
 
 # bun completions
 [ -s "/Users/ken702/.bun/_bun" ] && source "/Users/ken702/.bun/_bun"
