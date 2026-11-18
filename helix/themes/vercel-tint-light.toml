@@ -1,0 +1,56 @@
+# vercel-tint-light — light counterpart to vercel-tint.
+# Same near-monochrome syntax roles, palette flipped to black ink on white.
+inherits = "vercel-tint"
+
+[palette]
+# White stage and neutral surfaces
+background = "#ffffff"
+surface = "#fafafa"
+elevated_surface = "#f2f2f2"
+element_hover = "#ebebeb"
+element_selected = "#e0e0e0"
+active_line = "#fafafa"
+highlighted_line = "#f0f1f7"
+selection = "#cfe5fb"
+border = "#e5e5e5"
+focused_border = "#171717"
+
+# Black ink and neutral text
+text = "#333333"
+text_bright = "#000000"
+text_muted = "#6b6b6b"
+text_disabled = "#b3b3b3"
+editor_foreground = "#171717"
+icon_muted = "#8f8f8f"
+line_number = "#b3b3b3"
+active_line_number = "#171717"
+invisible = "#d9d9d9"
+wrap_guide = "#e5e5e5"
+indent_guide = "#ededed"
+predictive = "#8f8f8f"
+syntax_soft = "#4d4d4d"
+syntax_punctuation = "#6b6b6b"
+cursor = "#000000"
+
+# Spectral tints, darkened for contrast on white
+accent = "#000000"
+tint_blue = "#0068d6"
+tint_purple = "#7d4cdb"
+tint_pink = "#d6246e"
+
+red = "#da2f35"
+green = "#297a3a"
+orange = "#a35200"
+blue = "#0068d6"
+purple = "#7d4cdb"
+cyan = "#0068d6"
+pink = "#d6246e"
+muted_blue = "#6b6e76"
+comment = "#8f8f8f"
+
+diagnostic_error = "#da2f35"
+diagnostic_warning = "#a35200"
+diagnostic_info = "#0068d6"
+diagnostic_hint = "#6b6e76"
+
+search_match = "#fff3c4"
