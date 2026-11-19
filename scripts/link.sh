@@ -12,6 +12,8 @@ link "$DOTFILES_DIR/.vimrc" "$HOME_DIR/.vimrc"
 # ~/.config
 link "$DOTFILES_DIR/ghostty" "$HOME_DIR/.config/ghostty"
 link "$DOTFILES_DIR/helix" "$HOME_DIR/.config/helix"
+link "$DOTFILES_DIR/rex" "$HOME_DIR/.config/rex"
+link "$DOTFILES_DIR/karabiner" "$HOME_DIR/.config/karabiner"
 link "$DOTFILES_DIR/nvim" "$HOME_DIR/.config/nvim"
 link "$DOTFILES_DIR/nix/nix.conf" "$HOME_DIR/.config/nix/nix.conf"
 link "$DOTFILES_DIR/zed" "$HOME_DIR/.config/zed"
