@@ -27,7 +27,7 @@
             "devices": [
                 {
                     "identifiers": {
-                        "device_address": "c0-01-51-02-a6-51",
+                        "device_address": "c0-02-51-02-a6-51",
                         "is_keyboard": true,
                         "is_pointing_device": true
                     },

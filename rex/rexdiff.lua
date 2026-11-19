@@ -4,11 +4,11 @@
 -- To change a setting, edit it, then run "rex config reload".
 -- Install and upgrades keep this part.
 local settings = {
-  -- key = "shift+cmd+r", -- the key of the toggle, or false for none
-  -- placement = "split", -- split, zoomed, tab, or overlay
-  -- layout = "unified", -- split (side by side when it fits) or unified
-  -- guide_agent = "claude -p", -- the agent that writes the Guide tab
-  editor = "hx", -- rexdiff does not get $EDITOR from Rex
+	-- key = "shift+cmd+r", -- the key of the toggle, or false for none
+	-- placement = "split", -- split, zoomed, tab, or overlay
+	-- layout = "unified", -- split (side by side when it fits) or unified
+	-- guide_agent = "claude -p", -- the agent that writes the Guide tab
+	editor = "hx", -- rexdiff does not get $EDITOR from Rex
 }
 
 -- rexdiff code below. Install and upgrades replace it. Do not edit this line.

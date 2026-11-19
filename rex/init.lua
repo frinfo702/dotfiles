@@ -208,5 +208,42 @@ rex.action{
   end,
 }
 
+-- New worktrees go in <main>/.worktrees/<branch>, not beside <main>, so
+-- `ghq list` (Go to Project) doesn't list them as projects.
+rex.action{
+  name  = "worktree_new",
+  title = "New Worktree…",
+  run   = function(ctx)
+    local cwd = cwd_of(ctx)
+    if cwd == nil then error("can't tell the focused terminal's directory", 0) end
+    local common = sh({ "git", "rev-parse", "--path-format=absolute", "--git-common-dir" }, { cwd = cwd })
+    local git_dir = common:gsub("%s+$", "")
+    local root = git_dir:gsub("/%.git$", "")
+    -- Ask again on an invalid name instead of failing the action.
+    local title, branch = "New worktree", nil
+    while true do
+      branch = rex.ui.input{ title = title, placeholder = "Branch name", value = branch, confirm = "Create" }
+      if branch == nil then return end
+      branch = branch:gsub("^%s+", ""):gsub("%s+$", "")
+      if branch == "" then return end
+      local r = rex.exec({ "git", "check-ref-format", "--branch", branch }, { cwd = root })
+      if r and r.ok then break end
+      title = "Not a valid branch name: " .. branch
+    end
+    -- Ignore .worktrees locally so the main checkout's status stays clean.
+    sh({ "/bin/sh", "-c", 'mkdir -p "$1/info" && { grep -qxF /.worktrees/ "$1/info/exclude" 2>/dev/null || echo /.worktrees/ >> "$1/info/exclude"; }',
+         "sh", git_dir })
+    local path = root .. "/.worktrees/" .. branch
+    local function has(ref) local r = rex.exec({ "git", "show-ref", "--verify", "--quiet", ref }, { cwd = root }); return r and r.ok end
+    if has("refs/heads/" .. branch) or has("refs/remotes/origin/" .. branch) then
+      sh({ "git", "worktree", "add", path, branch }, { cwd = root })
+    else
+      sh({ "git", "worktree", "add", "-b", branch, path }, { cwd = root })
+    end
+    cd_to(ctx, path)
+  end,
+}
+
 rex.bind("alt+cmd+p", "project_picker")
 rex.bind("alt+cmd+w", "worktree_picker")
+rex.bind("alt+cmd+n", "worktree_new")

@@ -98,3 +98,5 @@ export HF_HOME="/Volumes/sandisk/cache/huggingface"
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 alias fx-fork='~/ghq/github.com/frinfo702/fx/zig-out/bin/fx'
+
+export EDITOR='hx'
