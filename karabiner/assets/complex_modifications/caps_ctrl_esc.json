@@ -1,0 +1,19 @@
+{
+  "title": "Caps Lock: hold = Control, tap = Escape",
+  "rules": [
+    {
+      "description": "Caps Lock: Control when held with another key, Escape when tapped alone",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [{ "key_code": "left_control", "lazy": true }],
+          "to_if_alone": [{ "key_code": "escape" }]
+        }
+      ]
+    }
+  ]
+}
