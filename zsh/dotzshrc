@@ -70,11 +70,11 @@ sw() {
 # Matlab alias
 alias matlab="/Applications/MATLAB_R2025b.app/bin/matlab -nojvm -nodesktop"
 
-function ghq-fzf() {
-  local src=$(ghq list --full-path | fzf --preview "ls -laTp {}")
+# Repos live in ~/src/<host>/<owner>/<repo> (see clone_repository in rex/init.lua).
+function g() {
+  local src=$(find ~/src -mindepth 4 -maxdepth 4 -name .git | sed 's|/\.git$||' | fzf --preview "ls -laTp {}")
   [ -n "$src" ] && cd "$src"
 }
-alias g=ghq-fzf
 alias sshserver='TERM=xterm ssh -J frinfo702@100.124.199.38 frinfo@10.40.18.155'
 alias claude-perso='CLAUDE_CONFIG_DIR=~/.claude-personal command claude'
 
@@ -88,8 +88,8 @@ alias rm="rm -i"
 
 eval "$(atuin init zsh)"
 
-source ~/ghq/github.com/frinfo702/dotfiles/zsh/pr-challenge.zsh
-source ~/ghq/github.com/frinfo702/dotfiles/zsh/q.zsh
+source ~/src/github.com/frinfo702/dotfiles/zsh/pr-challenge.zsh
+source ~/src/github.com/frinfo702/dotfiles/zsh/q.zsh
 
 path=("$HOME/.local/bin" $path)
 
@@ -97,6 +97,6 @@ export HF_HOME="/Volumes/sandisk/cache/huggingface"
 
 export PATH="$PATH:$(go env GOPATH)/bin"
 
-alias fx-fork='~/ghq/github.com/frinfo702/fx/zig-out/bin/fx'
+alias fx-fork='~/src/github.com/frinfo702/fx/zig-out/bin/fx'
 
 export EDITOR='hx'

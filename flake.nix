@@ -43,7 +43,6 @@
             # shell / files
             git
             gh
-            ghq
             delta
             direnv
             nix-direnv

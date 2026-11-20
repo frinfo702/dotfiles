@@ -134,11 +134,14 @@ rex.bind("tmux/x", "then_normal", { action = "pane.close" })
 
 
 -- ===========================================================================
--- Pickers (rex.ui.pick): cd the focused terminal into a ghq project or a git
--- worktree. Replaces `g` (ghq-fzf) in zsh/dotzshrc.
+-- Pickers (rex.ui.pick): cd the focused terminal into a project under ~/src
+-- (laid out ghq-style as <host>/<owner>/<repo>) or a git worktree.
+-- Replaces `g` (ghq-fzf) in zsh/dotzshrc.
 -- ===========================================================================
 local TERMINAL = "com.superlogical.terminal"
 local HOME = os.getenv("HOME")
+-- Lua doesn't expand ~, so swap it for $HOME here.
+local SRC = ("~/src"):gsub("^~", function() return HOME end)
 
 local function sh(argv, opts)
   local r, err = rex.exec(argv, opts)
@@ -172,9 +175,10 @@ rex.action{
   title = "Go to Project…",
   run   = function(ctx)
     local items = {}
-    -- The Rex server's PATH lacks ~/.nix-profile/bin, so ask a login shell.
-    local out = sh({ "/bin/zsh", "-lc", "ghq list --full-path" })
-    for path in out:gmatch("[^\n]+") do
+    -- .git is a file in worktrees, so match any type.
+    local out = sh({ "find", SRC, "-mindepth", "4", "-maxdepth", "4", "-name", ".git" })
+    for git in out:gmatch("[^\n]+") do
+      local path = git:gsub("/%.git$", "")
       items[#items + 1] = { id = path, title = path:match("[^/]+/[^/]+$"),
                             subtitle = tilde(path), icon = "folder" }
     end
@@ -208,8 +212,41 @@ rex.action{
   end,
 }
 
+-- clone_path maps a clone URL to <host>/<owner>/<repo>, as ghq does:
+-- https://github.com/a/b(.git), git@github.com:a/b.git, ssh://git@host:22/a/b.
+local function clone_path(url)
+  local p = url:gsub("^%s+", ""):gsub("%s+$", "")
+  p = p:gsub("^%a[%w+.-]*://", ""):gsub("^[^@/]+@", "")
+  p = p:gsub("^([^/:]+):%d+/", "%1/"):gsub("^([^/:]+):", "%1/")
+  p = p:gsub("/+$", ""):gsub("%.git$", "")
+  if not p:match("^[^/]+/[^/]+/[^/]+$") or p:match("%.%.") then return nil end
+  return p
+end
+
+rex.action{
+  name  = "clone_repository",
+  title = "Clone Repository…",
+  run   = function(ctx)
+    local title, url = "Clone repository", nil
+    local rel
+    while true do
+      url = rex.ui.input{ title = title, placeholder = "Repository URL", value = url, confirm = "Clone" }
+      if url == nil or url:match("^%s*$") then return end
+      rel = clone_path(url)
+      if rel then break end
+      title = "Not a <host>/<owner>/<repo> URL: " .. url
+    end
+    local dir = SRC .. "/" .. rel
+    -- Already cloned: just go there.
+    if not rex.exec({ "test", "-e", dir }).ok then
+      sh({ "git", "clone", "--", (url:gsub("^%s+", ""):gsub("%s+$", "")), dir })
+    end
+    cd_to(ctx, dir)
+  end,
+}
+
 -- New worktrees go in <main>/.worktrees/<branch>, not beside <main>, so
--- `ghq list` (Go to Project) doesn't list them as projects.
+-- Go to Project doesn't list them as projects.
 rex.action{
   name  = "worktree_new",
   title = "New Worktree…",
@@ -247,3 +284,4 @@ rex.action{
 rex.bind("alt+cmd+p", "project_picker")
 rex.bind("alt+cmd+w", "worktree_picker")
 rex.bind("alt+cmd+n", "worktree_new")
+rex.bind("alt+cmd+c", "clone_repository")
