@@ -70,4 +70,4 @@ export UV_CACHE_DIR=/mnt/data/uv-cache
 export UV_LINK_MODE=copy
 
 alias claude-perso="CLAUDE_CONFIG_DIR=~/.claude-perso command claude"
-alias fx-fork='~/ghq/github.com/frinfo702/fx/zig-out/bin/fx'
+alias fx-fork='~/src/github.com/frinfo702/fx/zig-out/bin/fx'

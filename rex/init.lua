@@ -154,11 +154,16 @@ local function tilde(path)
   return (path:gsub("^" .. HOME:gsub("%p", "%%%0"), "~"))
 end
 
--- cd_to types `cd '<dir>'` at the focused terminal's prompt.
+-- cd_to types `cd '<dir>'` at the focused terminal's prompt. Paths under
+-- $HOME go as `cd ~/'<rest>'`: this Lua runs on the local server (macOS
+-- $HOME), but the terminal may be on another host whose shell expands ~.
 local function cd_to(ctx, dir)
+  local t = tilde(dir)
+  local pre, rest = "", t
+  if t:sub(1, 2) == "~/" then pre, rest = "~/", t:sub(3) end
   rex.block.call(TERMINAL, "write", {
     block_id = ctx.block_id,
-    data = "cd '" .. dir:gsub("'", "'\\''") .. "'\r",
+    data = "cd " .. pre .. "'" .. rest:gsub("'", "'\\''") .. "'\r",
   })
 end
 
@@ -174,13 +179,22 @@ rex.action{
   name  = "project_picker",
   title = "Go to Project…",
   run   = function(ctx)
+    -- List via the terminal, not rex.exec: this Lua runs on the local
+    -- server, but the terminal may be on another host with its own ~/src.
+    local function ls(path)
+      local r = rex.block.call(TERMINAL, "list_dir", { block_id = ctx.block_id, path = path })
+      return (r and r.status == "ok" and r.entries) or {}
+    end
+    -- ponytail: takes every <host>/<owner>/<repo> dir without checking .git.
     local items = {}
-    -- .git is a file in worktrees, so match any type.
-    local out = sh({ "find", SRC, "-mindepth", "4", "-maxdepth", "4", "-name", ".git" })
-    for git in out:gmatch("[^\n]+") do
-      local path = git:gsub("/%.git$", "")
-      items[#items + 1] = { id = path, title = path:match("[^/]+/[^/]+$"),
-                            subtitle = tilde(path), icon = "folder" }
+    for _, h in ipairs(ls("~/src")) do
+      for _, o in ipairs(ls("~/src/" .. h.name)) do
+        for _, r in ipairs(ls("~/src/" .. h.name .. "/" .. o.name)) do
+          local path = "~/src/" .. h.name .. "/" .. o.name .. "/" .. r.name
+          items[#items + 1] = { id = path, title = o.name .. "/" .. r.name,
+                                subtitle = path, icon = "folder" }
+        end
+      end
     end
     local dir = rex.ui.pick{ title = "Go to project", placeholder = "Filter projects", items = items }
     if dir then cd_to(ctx, dir) end
