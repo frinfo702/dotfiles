@@ -37,14 +37,14 @@ sw() {
   if [ "$1" = "-simple" ]; then
     git branch --format="%(refname:short)" |
       fzf --preview='git log --pretty=format:"%h %cd %s" --date=format:"%Y-%m-%d %H:%M " {}' \
-          --preview-window=right:70%:wrap \
-          --ansi |
+        --preview-window=right:70%:wrap \
+        --ansi |
       xargs git checkout
   else
     git branch --format="%(refname:short)" |
       fzf --preview='git log --graph --oneline --decorate --color=always {}' \
-          --preview-window=right:70%:wrap \
-          --ansi |
+        --preview-window=right:70%:wrap \
+        --ansi |
       xargs git checkout
   fi
 }
@@ -65,3 +65,9 @@ fi
 # Drop repeated PATH entries, keeping the first (like zsh's `typeset -U path`).
 PATH="$(printf '%s' "$PATH" | awk -v RS=: -v ORS=: '!seen[$0]++')"
 PATH="${PATH%:}"
+
+export UV_CACHE_DIR=/mnt/data/uv-cache
+export UV_LINK_MODE=copy
+
+alias claude-perso="CLAUDE_CONFIG_DIR=~/.claude-perso command claude"
+alias fx-fork='~/ghq/github.com/frinfo702/fx/zig-out/bin/fx'
